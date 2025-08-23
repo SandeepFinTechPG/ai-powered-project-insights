@@ -1,0 +1,196 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, find the following: \n-Nearest MRT stations:(Station name, MRT line, Distance in kilometers, Estimated walking time in minutes, Latitude and longitude, Station code (e.g., CC6), Whether it is an interchange, Accessibility features (e.g., lift, tactile paving)),\n- Nearby bus stops: (Stop name, LTA bus stop code, Distance in kilometers, Latitude and longitude, Served bus services (numbers), Accessibility features),\n- Expressways: List all nearby expressways accessible from the site (e.g., ECP, PIE, KPE),\n- Shuttle Service Availability: Indicate whether the property provided shuttle service is available.\n\nUse OneMap.sg, LTA Datamall, URA, Google Maps and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "connectivity": {
+            "type": "object",
+            "properties": {
+              "nearest_mrt": {
+                "type": "array",
+                "description": "Nearest MRT stations with full geolocation and details",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "station": {
+                      "type": "string",
+                      "description": "MRT station name, e.g., 'Stadium MRT'"
+                    },
+                    "station_code": {
+                      "type": "string",
+                      "description": "LTA MRT station code, e.g., 'CC6'"
+                    },
+                    "line": {
+                      "type": "string",
+                      "description": "MRT line name, e.g., 'Circle Line'"
+                    },
+                    "distance_km": {
+                      "type": "number",
+                      "description": "Walking distance in kilometers"
+                    },
+                    "walk_time_min": {
+                      "type": "number",
+                      "description": "Estimated walk time in minutes"
+                    },
+                    "latitude": {
+                      "type": "number",
+                      "description": "Latitude of the MRT station"
+                    },
+                    "longitude": {
+                      "type": "number",
+                      "description": "Longitude of the MRT station"
+                    },
+                    "is_interchange": {
+                      "type": "boolean",
+                      "description": "Whether this is an MRT interchange station"
+                    },
+                    "accessibility_features": {
+                      "type": "array",
+                      "description": "Accessibility features like lifts, tactile paving, etc.",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "station",
+                    "station_code",
+                    "line",
+                    "distance_km",
+                    "walk_time_min",
+                    "latitude",
+                    "longitude",
+                    "is_interchange",
+                    "accessibility_features"
+                  ]
+                }
+              },
+              "bus_stops": {
+                "type": "array",
+                "description": "Nearby bus stops with walk distance and coordinates",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "stop_name": {
+                      "type": "string",
+                      "description": "Name of the bus stop"
+                    },
+                    "bus_stop_code": {
+                      "type": "string",
+                      "description": "LTA bus stop code, e.g., '80279'"
+                    },
+                    "distance_km": {
+                      "type": "number",
+                      "description": "Walking distance in kilometers"
+                    },
+                    "latitude": {
+                      "type": "number",
+                      "description": "Latitude of the bus stop"
+                    },
+                    "longitude": {
+                      "type": "number",
+                      "description": "Longitude of the bus stop"
+                    },
+                    "served_bus_services": {
+                      "type": "array",
+                      "description": "List of bus service numbers at this stop",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "accessibility_features": {
+                      "type": "array",
+                      "description": "e.g., 'wheelchair ramp', 'sheltered walkway'",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "stop_name",
+                    "bus_stop_code",
+                    "distance_km",
+                    "latitude",
+                    "longitude",
+                    "served_bus_services",
+                    "accessibility_features"
+                  ]
+                }
+              },
+              "expressways": {
+                "type": "array",
+                "description": "Nearby expressways accessible from the site with details",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Full name of the expressway, e.g., 'Pan Island Expressway'"
+                    },
+                    "abbreviation": {
+                      "type": "string",
+                      "description": "Expressway abbreviation, e.g., 'PIE'"
+                    },
+                    "distance_km": {
+                      "type": "number",
+                      "description": "Distance from property to nearest entry/exit of this expressway"
+                    },
+                    "nearby_entry_points": {
+                      "type": "array",
+                      "description": "List of accessible entry or exit ramps near the property",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "connects": {
+                      "type": "array",
+                      "description": "Key areas or hubs connected by this expressway",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "traffic_conditions": {
+                      "type": "string",
+                      "description": "Typical traffic behavior, e.g., 'Heavy during peak hours'"
+                    }
+                  },
+                  "required": ["name", "abbreviation", "distance_km", "nearby_entry_points"]
+                }
+              },
+
+              "shuttle_service_available": {
+                "type": "boolean",
+                "description": "Whether the condo provides a private shuttle service"
+              }
+            },
+            "required": [
+              "nearest_mrt",
+              "bus_stops",
+              "expressways",
+              "shuttle_service_available"
+            ]
+          }
+        },
+        "required": ["connectivity"]
+      }
+    }
+  }
+}

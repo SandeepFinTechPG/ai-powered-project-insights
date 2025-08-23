@@ -1,0 +1,155 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, return the **full ownership_costs** breakdown for **each unit type:**\n\n{{ $json.unitTypes.map(u => u.key).join(', ') }}.\n\nYou MUST return:\n- A JSON object with key `ownership_costs`\n- Each key in ownership_costs is a unit type (e.g. '1BR')\n- Each unit type object MUST include EXACTLY these 5 sections:\n  - `upfront_costs`\n  - `financing_costs`\n  - `recurring_costs`\n  - `exit_costs`\n  - `opportunity_costs`\n\nInside each section:\n- Use **only the field names and types exactly as defined in the schema**.\n- All fields are **required**. If any data is not available, set the value to `null`.\n- Do NOT rename or omit any fields. Do NOT add any fields.\n- Do NOT return explanations, markdown, units like \"$\" or \"approx.\", or placeholders like \"TBD\".\n- Every `number` field must return a raw number. Every `boolean` field must return `true` or `false`.\n- The output must be **pure JSON** — no extra comments, no formatting.\n\n⚠️ IMPORTANT:\n- This will be parsed and validated by a strict JSON Schema validator.\n- If you change field names, skip fields, or use incorrect data types (like strings instead of numbers), the response will be rejected. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "ownership_costs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "unit_type": { "type": "string" },
+
+                "upfront_costs": {
+                  "type": "object",
+                  "properties": {
+                    "bsd_amount": { "type": "number" },
+                    "absd_amount": { "type": "number" },
+                    "legal_fees": { "type": "number" },
+                    "option_fee": { "type": "number" },
+                    "valuation_fee": { "type": "number" },
+                    "mortgage_processing_fee": { "type": "number" }
+                  },
+                  "required": [
+                    "bsd_amount",
+                    "absd_amount",
+                    "legal_fees",
+                    "option_fee",
+                    "valuation_fee",
+                    "mortgage_processing_fee"
+                  ],
+                  "additionalProperties": false
+                },
+
+                "financing_costs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "bank_name": { "type": "string" },
+                      "interest_rate_percent": { "type": "number" },
+                      "loan_tenure_years": { "type": "number" },
+                      "ltv_ratio_percent": { "type": "number" },
+                      "monthly_repayment": { "type": "number" },
+                      "total_interest_paid": { "type": "number" }
+                    },
+                    "required": [
+                      "bank_name",
+                      "interest_rate_percent",
+                      "loan_tenure_years",
+                      "ltv_ratio_percent",
+                      "monthly_repayment",
+                      "total_interest_paid"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+
+                "recurring_costs": {
+                  "type": "object",
+                  "properties": {
+                    "property_tax_annual": { "type": "number" },
+                    "mcst_maintenance_fee_monthly": { "type": "number" },
+                    "sinking_fund_monthly": { "type": "number" },
+                    "conservancy_charges_monthly": { "type": "number" },
+                    "home_insurance_annual": { "type": "number" },
+                    "utilities_estimate_monthly": { "type": "number" },
+                    "renovation_loan_details": {
+                      "type": "object",
+                      "properties": {
+                        "amount": { "type": "number" },
+                        "interest_rate_percent": { "type": "number" },
+                        "tenure_years": { "type": "number" }
+                      },
+                      "required": [
+                        "amount",
+                        "interest_rate_percent",
+                        "tenure_years"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "property_tax_annual",
+                    "mcst_maintenance_fee_monthly",
+                    "sinking_fund_monthly",
+                    "conservancy_charges_monthly",
+                    "home_insurance_annual",
+                    "utilities_estimate_monthly",
+                    "renovation_loan_details"
+                  ],
+                  "additionalProperties": false
+                },
+
+                "exit_costs": {
+                  "type": "object",
+                  "properties": {
+                    "ssd_applicable": { "type": "boolean" },
+                    "ssd_amount": { "type": "number" },
+                    "agent_commission_percent": { "type": "number" },
+                    "legal_fees_on_sale": { "type": "number" },
+                    "loan_prepayment_penalty": { "type": "number" }
+                  },
+                  "required": [
+                    "ssd_applicable",
+                    "ssd_amount",
+                    "agent_commission_percent",
+                    "legal_fees_on_sale",
+                    "loan_prepayment_penalty"
+                  ],
+                  "additionalProperties": false
+                },
+
+                "opportunity_costs": {
+                  "type": "object",
+                  "properties": {
+                    "cash_purchase_opportunity_cost": { "type": "number" },
+                    "renovation_depreciation_5yr": { "type": "number" }
+                  },
+                  "required": [
+                    "cash_purchase_opportunity_cost",
+                    "renovation_depreciation_5yr"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "unit_type",
+                "upfront_costs",
+                "financing_costs",
+                "recurring_costs",
+                "exit_costs",
+                "opportunity_costs"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": ["ownership_costs"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

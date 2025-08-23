@@ -1,0 +1,150 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide a detailed **Resident Profile & Community Vibe** report. \n\nBreak the data into the following categories:\n\n**1. Resident Profile & Community Vibe Demographics:**\n- Age group breakdown \n- Family types \n- Occupation profiles \n- Expatriate ratio or nationality distribution\n- Owner-occupier vs rental ratio\n\n**2. Lifestyle & Community Traits:**\n- Community vibe\n- Resident events or interest groups \n- Guest policies, visitor friendliness\n- MCST engagement level\n\n**3. Usage Trends:**\n- Percentage of investor-owned units vs owner-occupied\n- Average length of stay \n- Turnover rate or resale frequency\n\n**4. Neighbourhood Context:**\n- Similar developments nearby\n- Gentrification phase (e.g., mature, emerging, revitalizing)\n- Safety perception\n\n**5. Resident Reviews & Reputation:**\n- Positive sentiment themes \n- Negative sentiment themes \n- Average review rating (if available).\n Use URA, EdgeProp, PropertyGuru, developer brochures and similar reliable sources for information. Make sure that if any data is unavailable, use null. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "resident_profile_community_vibe": {
+            "type": "object",
+            "properties": {
+              "demographics": {
+                "type": "object",
+                "properties": {
+                  "age_groups_percent": {
+                    "type": "object",
+                    "properties": {
+                      "0-18": { "type": "number" },
+                      "18-30": { "type": "number" },
+                      "30-45": { "type": "number" },
+                      "45-60": { "type": "number" },
+                      "60+": { "type": "number" }
+                    }
+                  },
+                  "family_types_percent": {
+                    "type": "object",
+                    "properties": {
+                      "singles": { "type": "number" },
+                      "couples": { "type": "number" },
+                      "families_with_children": { "type": "number" },
+                      "multi-generational": { "type": "number" }
+                    }
+                  },
+                  "occupations_percent": {
+                    "type": "object",
+                    "properties": {
+                      "professionals": { "type": "number" },
+                      "retirees": { "type": "number" },
+                      "students": { "type": "number" },
+                      "service_industry": { "type": "number" },
+                      "others": { "type": "number" }
+                    }
+                  },
+                  "expat_ratio_percent": { "type": "number" },
+                  "owner_vs_renter_percent": {
+                    "type": "object",
+                    "properties": {
+                      "owner": { "type": "number" },
+                      "renter": { "type": "number" }
+                    }
+                  }
+                }
+              },
+              "lifestyle_and_community": {
+                "type": "object",
+                "properties": {
+                  "community_vibe": { "type": "string", "description": "quiet, family-oriented, expat-friendly, pet-friendly, etc." },
+                  "resident_events_or_interest_groups": {
+                    "type": "array",
+                    "items": { "type": "string", "description": "yoga, parenting groups, retirees group" }
+                  },
+                  "guest_policies": { "type": "object", "properties": {
+                      "registration_required": { "type": "boolean" },
+                      "max_guests": { "type": "number" },
+                      "guest_parking": { "type": "boolean" },
+                      "guest_policies": { "type": "string" }
+                  }},
+                  "pet_friendly": { "type": "object", "properties": {
+                      "pet_allowed": { "type": "boolean" },
+                      "kind_of_pets_allowed": { 
+                        "type": "array", 
+                        "items": { "type": "string", "description": "e.g., dogs, cats" } 
+                      },
+                      "pet_restrictions": { "type": "string" }
+                  }},
+                  "visitor_friendly": {
+                    "type": "object",
+                    "properties": {
+                        "visitor_allowed": { "type": "boolean" },
+                        "visitor_parking": { "type": "boolean" },
+                        "visitor_policies": { "type": "string" }
+                    }
+                  },
+                  "mcst_engagement_level": { "type": "string" }
+                }
+              },
+              "usage_trends": {
+                "type": "object",
+                "properties": {
+                  "investor_owned_percent": { "type": "number" },
+                  "average_stay_owner_years": { "type": "number", "description": "average number of years owners stay" },
+                  "average_stay_tenant_years": { "type": "number", "description": "average number of years tenants stay" },
+                  "resale_turnover_rate_percent": { "type": "number", "description": "percentage of units sold in the last year" }
+                }
+              },
+              "neighbourhood_context": {
+                "type": "object",
+                "properties": {
+                  "similar_developments": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "gentrification_status": { "type": "string", "description": "e.g., mature, emerging, revitalizing" },
+                  "safety_rating_description": { "type": "string", "description": "general safety perception of the area" }
+                }
+              },
+              "reviews_and_sentiment": {
+                "type": "object",
+                "properties": {
+                  "positive_sentiment": {
+                    "type": "array",
+                    "items": { "type": "string", "description": "e.g., well-located, family-friendly, green spaces" }
+                  },
+                  "negative_sentiment_keywords": {
+                    "type": "array",
+                    "items": { "type": "string", "description": "e.g., MCST issues, noise complaints, visitor parking problems" }
+                  },
+                  "average_rating_out_of_5": { "type": "number" }
+                }
+              }
+            },
+            "required": [
+              "demographics",
+              "lifestyle_and_community",
+              "usage_trends",
+              "neighbourhood_context",
+              "reviews_and_sentiment"
+            ]
+          }
+        },
+        "required": ["resident_profile_community_vibe"]
+      }
+    }
+  }
+}

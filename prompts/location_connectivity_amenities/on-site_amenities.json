@@ -1,0 +1,55 @@
+{
+  "model": "sonar-pro",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, find the following: \n-Fitness and recreational (gym, pool, tennis court, BBQ pit) \n- Smart home features (apps, parcel lockers), \n-Co-working spaces or lounges, .\n\nUse developer brochures or listing portals and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "on_site_facilities": {
+            "type": "array",
+            "description": "List of on-site condo facilities available",
+            "items": {
+              "type": "string",
+              "enum": [
+                "gym",
+                "pool",
+                "tennis court",
+                "BBQ pit",
+                "parcel locker",
+                "coworking space",
+                "lounge",
+                "sauna",
+                "jacuzzi",
+                "function room",
+                "playground",
+                "security system",
+                "smart home app",
+                "fitness studio",
+                "bicycle rack",
+                "library"
+              ]
+            }
+          }
+        },
+        "required": ["on_site_facilities"]
+      }
+    }
+  }
+}

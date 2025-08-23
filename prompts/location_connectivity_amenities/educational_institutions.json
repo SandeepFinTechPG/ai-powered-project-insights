@@ -1,0 +1,125 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, find the following: \n-MOE schools within 1km and 2km, \n-International schools nearby (with distance), \n-Any elite schools (ACS, Tao Nan, etc.), \n-Colleges.\n\nUse OneMap.sg, LTA Datamall, URA, Google Maps and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "education_institutions": {
+            "type": "object",
+            "description": "Information about educational institutions near the property",
+            "properties": {
+              "within_1km": {
+                "type": "array",
+                "description": "MOE schools within 1 km radius",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "level": {
+                      "type": "string",
+                      "description": "e.g., 'Primary', 'Secondary', 'Junior College'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "address": { "type": "string" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "level", "distance_km"]
+                }
+              },
+              "within_2km": {
+                "type": "array",
+                "description": "MOE schools within 2 km radius",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "level": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "address": { "type": "string" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "level", "distance_km"]
+                }
+              },
+              "international_schools": {
+                "type": "array",
+                "description": "Nearby international schools",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "address": { "type": "string" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "distance_km"]
+                }
+              },
+              "colleges": {
+                "type": "array",
+                "description": "Nearby colleges (e.g., Junior Colleges, Polytechnics, Technical Colleges)",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'Junior College', 'Polytechnic', 'Institute of Technical Education'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "address": { "type": "string" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km"]
+                }
+              },
+              "school_rankings": {
+                "type": "object",
+                "description": "Rankings or notable achievements of schools if available. Also ",
+                "additionalProperties": {
+                  "type": "string",
+                  "description": "Ranking details or notes keyed by school name"
+                }
+              }
+            },
+            "required": [
+              "within_1km",
+              "within_2km",
+              "international_schools",
+              "colleges",
+              "school_rankings"
+            ]
+          }
+        },
+        "required": [
+          "within_1km",
+          "within_2km",
+          "international_schools",
+          "colleges",
+          "school_rankings"
+        ]
+      }
+    }
+  }
+}

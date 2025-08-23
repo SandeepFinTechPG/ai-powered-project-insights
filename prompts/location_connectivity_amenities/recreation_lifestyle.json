@@ -1,0 +1,233 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, find the following:\n- Parks & Nature Trails\n- Beaches & Waterfronts\n- Gyms & Sports Facilities\n- Country Clubs\n- Shopping, Malls & Lifestyle\n- F&B, Cafes & Restaurants\n- Hawker Centers\n- Nightlife & Entertainments\n- Wellness. \n\nUse OneMap.sg, LTA Datamall, URA, Google Maps and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "recreational_lifestyle": {
+            "type": "object",
+            "description": "Information about recreational and lifestyle amenities near the property",
+            "properties": {
+              "parks_nature": {
+                "type": "array",
+                "description": "Nearby parks, nature reserves, PCNs, etc.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'park', 'nature reserve', 'PCN'"
+                    },
+                    "activities": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "description": "E.g., 'jogging', 'cycling', 'barbecue pits'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km", "walk_time_min"]
+                }
+              },
+              "beaches_waterfronts": {
+                "type": "array",
+                "description": "Nearby beaches or waterfront recreational areas",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "features": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "description": "E.g., 'beach access', 'kayaking', 'sunset view'"
+                    },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "distance_km"]
+                }
+              },
+              "gyms_sports_facilities": {
+                "type": "array",
+                "description": "Nearby sports complexes, stadiums, gyms, etc.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'gym', 'swimming complex', 'sports hall'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "membership_required": { "type": "boolean" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km", "walk_time_min"]
+                }
+              },
+              "country_clubs": {
+                "type": "array",
+                "description": "Nearby country or social clubs",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "membership_required": { "type": "boolean" },
+                    "features": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "description": "E.g., 'golf', 'spa', 'private dining'"
+                    },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "distance_km"]
+                }
+              },
+              "shopping_malls_lifestyle": {
+                "type": "array",
+                "description": "Lifestyle-focused shopping malls with entertainment, dining, or cultural offerings",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "notable_brands": {
+                      "type": "array",
+                      "items": { "type": "string" }
+                    },
+                    "features": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "description": "E.g., 'cinema', 'events hall', 'rooftop garden'"
+                    },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "distance_km"]
+                }
+              },
+              "fnb_cafes_restaurants": {
+                "type": "array",
+                "description": "F&B spots excluding hawker centres",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'café', 'restaurant', 'bar'"
+                    },
+                    "cuisine": { "type": "string", "nullable": true },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "rating": { "type": "number", "minimum": 0, "maximum": 5 },
+                    "review_count": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km", "walk_time_min"]
+                }
+              },
+              "hawker_centres": {
+                "type": "array",
+                "description": "Nearby hawker centres",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "rating": { "type": "number" },
+                    "review_count": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "distance_km", "walk_time_min"]
+                }
+              },
+              "nightlife_entertainment": {
+                "type": "array",
+                "description": "Nearby nightlife and entertainment hubs",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'bar', 'nightclub', 'bowling alley', 'cinema'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "rating": { "type": "number" },
+                    "review_count": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km", "walk_time_min"]
+                }
+              },
+              "wellness": {
+                "type": "array",
+                "description": "Nearby spas, wellness centers, aesthetic clinics, yoga/pilates studios",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'spa', 'yoga studio', 'TCM clinic'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "rating": { "type": "number" },
+                    "review_count": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km", "walk_time_min"]
+                }
+              }
+            },
+            "required": [
+              "parks_nature",
+              "beaches_waterfronts",
+              "gyms_sports_facilities",
+              "country_clubs",
+              "shopping_malls_lifestyle",
+              "fnb_cafes_restaurants",
+              "hawker_centres",
+              "nightlife_entertainment",
+              "wellness"
+            ]
+          }
+        },
+        "required": ["recreational_lifestyle"]
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, return **sales pricing and resale trends** data for **each unit type:**\n\n{{ $json.unitTypes.map(u => u.key).join(', ') }}.\n\nYou MUST return:\n- A JSON object with key `sales_transactions_pricing`\n- Inside it, a key `unit_types`, which must be an array\n- Each item in `unit_types` is an object with the following fields:\n  - `unit_type`\n  - `market_performance_pricing`\n    - `launch_price_psf`\n    - `current_price_psf`\n    - `peak_price_psf`\n    - `resale_price_trends` (array of {date, price_psf})\n  - `recent_transactions` (array of transactions with date, unit_type, floor_level, price, psf)\n\n⚠️ STRICT RULES:\n- All fields are **required**\n- Do NOT rename, skip, or add any fields\n- Do NOT return markdown, explanations, or symbols like `$`\n- All numbers must be raw\n- Output must be **pure JSON only**, nothing else\n\nThis will be validated by a strict JSON Schema. Any deviation from the structure will be rejected. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "sales_transactions_pricing": {
+            "type": "object",
+            "properties": {
+              "unit_types": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "unit_type": { "type": "string" },
+                    "market_performance_pricing": {
+                      "type": "object",
+                      "properties": {
+                        "launch_price_psf": { "type": "number" },
+                        "current_price_psf": { "type": "number" },
+                        "peak_price_psf": { "type": "number" },
+                        "resale_price_trends": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "date": { "type": "string" },
+                              "price_psf": { "type": "number" }
+                            },
+                            "required": ["date", "price_psf"],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "launch_price_psf",
+                        "current_price_psf",
+                        "peak_price_psf",
+                        "resale_price_trends"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "recent_transactions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "date": { "type": "string" },
+                          "unit_type": { "type": "string" },
+                          "floor_level": { "type": "string" },
+                          "price": { "type": "number" },
+                          "psf": { "type": "number" }
+                        },
+                        "required": [
+                          "date",
+                          "unit_type",
+                          "floor_level",
+                          "price",
+                          "psf"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "unit_type",
+                    "market_performance_pricing",
+                    "recent_transactions"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["unit_types"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["sales_transactions_pricing"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

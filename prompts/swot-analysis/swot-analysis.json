@@ -1,0 +1,56 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide a detailed and synthesized SWOT (Strengths, Weaknesses, Opportunities, Threats) analysis of the project. Include:\n\n- Strengths: Key advantages like location, facilities, developer reputation, pricing, design, and connectivity\n- Weaknesses: Limitations or challenges such as pricing concerns, competition, accessibility issues, or management\n- Opportunities: Market trends, upcoming infrastructure, demand drivers, or potential appreciation\n- Threats: Risks such as competing projects, regulatory changes, market downturns, or oversupply\n\nBase your insights on data from URA, EdgeProp, PropertyGuru, market reports, developer materials, and expert commentary. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "swot_analysis": {
+            "type": "object",
+            "properties": {
+              "strengths": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "weaknesses": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "opportunities": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "threats": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": [
+              "strengths",
+              "weaknesses",
+              "opportunities",
+              "threats"
+            ]
+          }
+        },
+        "required": ["swot_analysis"]
+      }
+    }
+  }
+}

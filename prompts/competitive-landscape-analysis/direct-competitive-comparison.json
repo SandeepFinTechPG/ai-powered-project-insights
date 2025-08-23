@@ -1,0 +1,92 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, find **direct competitor projects** within a 1-2KM radius. Provide detailed comparative data on each competitor covering:\n\n- Project name\n- TOP year\n- Tenure\n- Distance from {{ $json.propertyName }} (KM)\n- Unit mix summary\n- Launch price PSF\n- Current average resale price PSF\n- Rental price PSF\n- Rental yield (gross and net)\n- Occupancy or vacancy rate\n- Developer name and reputation\n- Key facilities and amenities\n- Transport connectivity highlights\n- Typical resident/tenant profile\n- Current market sentiment or popularity\n\nUse reliable sources such as URA, EdgeProp, PropertyGuru, SRX, developer websites, and real estate forums. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "direct_competitor_comparison": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "project_name": { "type": "string" },
+                "top_year": { "type": "number" },
+                "tenure": { "type": "string" },
+                "distance_km": { "type": "number" },
+                "unit_mix_summary": { 
+                    "type": "object",
+                    "properties": {
+                      "total_units": { "type": "number" },
+                      "unit_types": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "type": { "type": "string" },
+                            "count": { "type": "number" }
+                          },
+                          "required": ["type", "count"]
+                        }
+                      }
+                    }
+                },
+                "launch_price_psf": { "type": "number" },
+                "current_resale_price_psf": { "type": "number" },
+                "rental_price_psf": { "type": "number" },
+                "rental_yield_gross_percent": { "type": "number" },
+                "rental_yield_net_percent": { "type": "number" },
+                "occupancy_rate_percent": { "type": "number" },
+                "developer_name": { "type": "string" },
+                "developer_reputation": { "type": "string" },
+                "key_facilities_amenities": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "transport_connectivity_highlights": { "type": "string" },
+                "resident_tenant_profile": { "type": "string" },
+                "market_sentiment": { "type": "string" }
+              },
+              "required": [
+                "project_name",
+                "top_year",
+                "tenure",
+                "distance_km",
+                "unit_mix_summary",
+                "launch_price_psf",
+                "current_resale_price_psf",
+                "rental_price_psf",
+                "rental_yield_gross_percent",
+                "rental_yield_net_percent",
+                "occupancy_rate_percent",
+                "developer_name",
+                "developer_reputation",
+                "key_facilities_amenities",
+                "transport_connectivity_highlights",
+                "resident_tenant_profile",
+                "market_sentiment"
+              ]
+            }
+          }
+        },
+        "required": ["direct_competitor_comparison"]
+      }
+    }
+  }
+}

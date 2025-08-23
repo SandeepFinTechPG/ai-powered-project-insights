@@ -1,0 +1,165 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide a full **Rental Market Analysis for each unit type: {{ $json.unitTypes.map(u => u.key).join(', ') }} **. \n\nFor each unit type, include:\n\n**1. Historical Data:**\n- Average rental PSF (monthly $/sqft)\n- Median rent per month\n- Annual rental growth over past 3–5 years (%)\n- Occupancy rate (%)\n\n**2. Current Market Data:**\n- Asking rent with floor/view premiums\n- Rental range (min, median, max)\n- Gross & Net rental yield (%)\n- Maintenance fees (sinking fund + conservancy)\n- Expected ROI for investors\n- Vacancy rate (%)\n- Average time on market (days)\n- Break-even rental (landlord perspective)\n\n**3. Policy & Sentiment:**\n- Minimum lease period (months)\n- Tax implications for landlords\n- Foreign worker policy impact\n- Rental market sentiment\n\n**4. Rental Comparables (within 1–2KM):**\n- Project name, TOP year, tenure, unit mix, rent PSF, yield, tenant demographics.\n\nUse URA, EdgeProp, PropertyGuru, SRX, OneMap, developer brochures, and reliable data sources.\n\nInside each section:\n- Use **only the field names and types exactly as defined in the schema**.\n- All fields are **required**. If any data is not available, set the value to `null`.\n- Do NOT rename or omit any fields. Do NOT add any fields.\n- Do NOT return explanations, markdown, units like \"$\" or \"approx.\", or placeholders like \"TBD\".\n- Every `number` field must return a raw number. Every `boolean` field must return `true` or `false`.\n- The output must be **pure JSON** — no extra comments, no formatting.\n\n⚠️ IMPORTANT:\n- This will be parsed and validated by a strict JSON Schema validator.\n- If you change field names, skip fields, or use incorrect data types (like strings instead of numbers), the response will be rejected. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "rental_market_analysis": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "unit_type": { "type": "string" },
+                "historical_data": {
+                  "type": "object",
+                  "properties": {
+                    "average_rental_psf": { "type": "number" },
+                    "median_rent_monthly": { "type": "number" },
+                    "annual_rental_growth_percent": { "type": "number" },
+                    "occupancy_rate_percent": { "type": "number" }
+                  },
+                  "required": [
+                    "average_rental_psf",
+                    "median_rent_monthly",
+                    "annual_rental_growth_percent",
+                    "occupancy_rate_percent"
+                  ]
+                },
+                "current_market_data": {
+                  "type": "object",
+                  "properties": {
+                    "current_asking_rents": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "floor_level": { "type": "string" },
+                          "view_premium": { "type": "string" },
+                          "asking_rent": { "type": "number" }
+                        },
+                        "required": ["asking_rent"]
+                      }
+                    },
+                    "rental_range": {
+                      "type": "object",
+                      "properties": {
+                        "min_rent": { "type": "number" },
+                        "median_rent": { "type": "number" },
+                        "max_rent": { "type": "number" }
+                      },
+                      "required": ["min_rent", "median_rent", "max_rent"]
+                    },
+                    "rental_yield": {
+                      "type": "object",
+                      "properties": {
+                        "gross_yield_percent": { "type": "number" },
+                        "net_yield_percent": { "type": "number" }
+                      },
+                      "required": ["gross_yield_percent", "net_yield_percent"]
+                    },
+                    "maintenance_fees": {
+                      "type": "object",
+                      "properties": {
+                        "sinking_fund": { "type": "number" },
+                        "conservancy_charges": { "type": "number" }
+                      },
+                      "required": ["sinking_fund", "conservancy_charges"]
+                    },
+                    "expected_roi_percent": { "type": "number" },
+                    "vacancy_data": {
+                      "type": "object",
+                      "properties": {
+                        "vacancy_rate_percent": { "type": "number" },
+                        "average_time_on_market_days": { "type": "number" }
+                      },
+                      "required": [
+                        "vacancy_rate_percent",
+                        "average_time_on_market_days"
+                      ]
+                    },
+                    "break_even_rent": { "type": "number" }
+                  },
+                  "required": [
+                    "current_asking_rents",
+                    "rental_range",
+                    "rental_yield",
+                    "maintenance_fees",
+                    "expected_roi_percent",
+                    "vacancy_data",
+                    "break_even_rent"
+                  ]
+                },
+                "regulations_and_sentiment": {
+                  "type": "object",
+                  "properties": {
+                    "minimum_lease_period_months": { "type": "number" },
+                    "tax_implications": { "type": "string" },
+                    "foreigner_policy_impact": { "type": "string" },
+                    "market_sentiment": { "type": "string" }
+                  },
+                  "required": [
+                    "minimum_lease_period_months",
+                    "tax_implications",
+                    "foreigner_policy_impact",
+                    "market_sentiment"
+                  ]
+                },
+                "rental_comparables": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "project_name": { "type": "string" },
+                      "top_year": { "type": "number" },
+                      "tenure": { "type": "string" },
+                      "unit_mix": { "type": "string" },
+                      "average_rent_per_month": { "type": "number" },
+                      "average_rent_psf": { "type": "number" },
+                      "rental_yield_percent": { "type": "number" },
+                      "tenant_profile": { "type": "string" }
+                    },
+                    "required": [
+                      "project_name",
+                      "average_rent_per_month",
+                      "average_rent_psf",
+                      "top_year",
+                      "tenure",
+                      "unit_mix",
+                      "rental_yield_percent",
+                      "tenant_profile"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "unit_type",
+                "historical_data",
+                "current_market_data",
+                "regulations_and_sentiment",
+                "rental_comparables"
+              ]
+            }
+          }
+        },
+        "required": ["rental_market_analysis"]
+      }
+    }
+  }
+}

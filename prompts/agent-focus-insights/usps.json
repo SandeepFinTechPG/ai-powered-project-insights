@@ -1,0 +1,88 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide a detailed list of **Unique Selling Propositions (USPs)** that agents can use for marketing and advisory purposes. Include:\n\n- Key differentiators of the project compared to nearby developments\n- Unique architectural or design features\n- Location advantages (connectivity, nearby amenities, schools, parks)\n- Facilities and lifestyle offerings that stand out\n- Target buyer/tenant segments attracted by these USPs\n- Pricing advantages or value propositions\n- Any awards, recognitions, or certifications\n\nUse sources such as developer brochures, URA, EdgeProp, PropertyGuru, real estate forums, and agent interviews. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "unique_selling_propositions": {
+            "type": "object",
+            "properties": {
+              "key_differentiators": {
+                "type": "array",
+                "description": "What makes this development stand out compared to nearby projects.",
+                "items": { "type": "string" }
+              },
+              "architectural_design_features": {
+                "type": "array",
+                "description": "Unique architectural or design elements of the building or unit layout.",
+                "items": { "type": "string" }
+              },
+              "location_advantages": {
+                "type": "array",
+                "description": "Geographical or connectivity-related benefits (e.g. MRT access, schools nearby, city proximity).",
+                "items": { "type": "string" }
+              },
+              "facilities_and_lifestyle": {
+                "type": "array",
+                "description": "Facilities, community features, or lifestyle offerings that go beyond standard expectations.",
+                "items": { "type": "string" }
+              },
+              "target_segments": {
+                "type": "array",
+                "description": "Specific buyer or tenant groups attracted by these USPs.",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "young professionals",
+                    "families with children",
+                    "retirees",
+                    "expatriates",
+                    "HDB upgraders",
+                    "investors",
+                    "students",
+                    "multi-generational families",
+                    "foreign buyers"
+                  ]
+                }
+              },
+              "pricing_and_value_proposition": {
+                "type": "array",
+                "description": "How the development delivers value in terms of pricing, rental yield, or price growth potential.",
+                "items": { "type": "string" }
+              },
+              "awards_or_certifications": {
+                "type": "array",
+                "description": "Awards, sustainability certifications, or developer accolades relevant to the project.",
+                "items": { "type": "string" }
+              }
+            },
+            "required": [
+              "key_differentiators",
+              "location_advantages",
+              "facilities_and_lifestyle",
+              "target_segments"
+            ]
+          }
+        },
+        "required": ["unique_selling_propositions"]
+      }
+    }
+  }
+}

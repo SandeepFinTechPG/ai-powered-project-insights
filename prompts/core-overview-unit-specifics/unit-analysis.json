@@ -1,0 +1,153 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, find the following:\n- Unit types (e.g. 1BR to 5BR, dual-key, penthouse. If you don't find details for any of the unit types, don't add it in the final output) and count\n- Size ranges (min, max in sqft), \n- maintenance charges for each unit type,\n- floor plans (types of floor plans available for each unit type, \n- Layout efficiency or space utilization\n- Common layout designs (e.g., dumbbell, dual-key)\n- Orientation (facing options and view types).\nUse URA, EdgeProp, PropertyGuru, developer website, developer brochures and other similar reliable sources. Make sure that if any data is unavailable, use null. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "unit_specifics": {
+            "type": "object",
+            "properties": {
+              "unit_types": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., '1BR', '2BR', 'Penthouse' , etc."
+                    },
+                    "count": {
+                      "type": "number",
+                      "description": "Number of units of this type"
+                    },
+                    "size_range_sqft": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number",
+                          "description": "Minimum size in sqft"
+                        },
+                        "max": {
+                          "type": "number",
+                          "description": "Maximum size in sqft"
+                        }
+                      },
+                      "required": ["min", "max"]
+                    },
+                    "maintenance_fee": {
+                      "type": "object",
+                      "description": "Maintenance charges per month for this unit type",
+                      "properties": {
+                        "amount_sgd": {
+                          "type": "number",
+                          "description": "Fee in SGD"
+                        },
+                        "frequency": {
+                          "type": "string",
+                          "enum": ["monthly", "quarterly", "annually"],
+                          "description": "Billing cycle"
+                        }
+                      },
+                      "required": ["amount_sgd", "frequency"]
+                    },
+                    "floor_plans": {
+                      "type": "array",
+                      "description": "List of floor plans/ types available for this unit type",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "description": "Type of the floor plan (e.g., '2D', '3D', 'B2', etc.)"
+                          },
+                          "area_sqft": {
+                            "type": "object",
+                            "properties": {
+                              "min": {
+                                "type": "number",
+                                "description": "Minimum area in sqft"
+                              },
+                              "max": {
+                                "type": "number",
+                                "description": "Maximum area in sqft"
+                              }
+                            },
+                            "required": ["min", "max"]
+                          },
+                          "no_of_bedrooms": {
+                            "type": "string",
+                            "description": "Number of bedrooms in the floor plan"
+                          },
+                          "no_of_bathrooms": {
+                            "type": "string",
+                            "description": "Number of bathrooms in the floor plan"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": ["type", "count", "size_range_sqft", "maintenance_fee", "floor_plans"]
+                }
+              },
+              "layout_efficiency": {
+                "type": "string",
+                "description": "`TBC` or `Estimate` for space utilization efficiency"
+              },
+              "typical_layouts": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "description": "`dumbbell`, `dual-key`, etc."
+                }
+              },
+              "orientation": {
+                "type": "object",
+                "properties": {
+                  "facing_options": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "`North`, `South`, etc."
+                    }
+                  },
+                  "view_types": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "`Sea view`, `City view`, etc."
+                    }
+                  }
+                },
+                "required": ["facing_options", "view_types"]
+              }
+            },
+            "required": [
+              "unit_types",
+              "layout_efficiency",
+              "typical_layouts",
+              "orientation"
+            ]
+          }
+        },
+        "required": ["unit_specifics"]
+      }
+    }
+  }
+}

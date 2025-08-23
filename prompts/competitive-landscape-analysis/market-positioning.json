@@ -1,0 +1,181 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide a detailed **Market Positioning** analysis. Use sources such as URA, EdgeProp, PropertyGuru, developer brochures, agent interviews, and market reports.\n\nInclude:\n- Overall market positioning (luxury, mid-tier, affordable, niche)\n- Price positioning relative to direct competitors\n- Target buyer/tenant segments\n- Unique selling points (USPs) and differentiators\n- Competitive advantages and weaknesses\n- Market perception among buyers and agents\n- Recent sales and rental momentum\n- Price trend comparison with market and competitors\n- Developer marketing strategy if available. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "market_positioning": {
+            "type": "object",
+            "properties": {
+              "overall_positioning": {
+                "type": "object",
+                "properties": {
+                  "tier": {
+                    "type": "string",
+                    "description": "e.g., luxury, mid-tier, affordable"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "Brief description of the market tier"
+                  },
+                  "perceived_position": {
+                    "type": "string",
+                    "description": "How the market perceives the property within its tier"
+                  }
+                },
+                "required": ["tier", "description", "perceived_position"]
+              },
+              "price_analysis": {
+                "type": "object",
+                "properties": {
+                  "resale_psf_range": {
+                    "type": "string",
+                    "description": "e.g., $1,500 - $2,000 psf"
+                  },
+                  "comparison": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "List of direct competitors with their PSF prices"
+                    }
+                  },
+                  "price_trend": {
+                    "type": "string",
+                    "description": "Description of the price trend over time"
+                  }
+                },
+                "required": ["resale_psf_range", "comparison", "price_trend"]
+              },
+              "target_segments": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "value_proposition": {
+                "type": "object",
+                "properties": {
+                  "unique_selling_points": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "List of unique selling points that differentiate the property"
+                    }
+                  },
+                  "competitive_advantages": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "List of competitive advantages the property has over others"
+                    }
+                  },
+                  "weaknesses_or_challenges": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "List of weaknesses or challenges faced by the property"
+                    }
+                  }
+                },
+                "required": [
+                  "unique_selling_points",
+                  "competitive_advantages",
+                  "weaknesses_or_challenges"
+                ]
+              },
+              "market_feedback": {
+                "type": "object",
+                "properties": {
+                  "overall_sentiment": {
+                    "type": "string",
+                    "description": "Overall sentiment from the market regarding the property"
+                  },
+                  "sales_and_rental_momentum": {
+                    "type": "object",
+                    "properties": {
+                      "resale_activity": {
+                        "type": "string",
+                        "description": "Description of resale activity in the market"
+                      },
+                      "rental_yield": {
+                        "type": "string",
+                        "description": "Expected rental yield for the property"
+                      },
+                      "absorption_rate": {
+                        "type": "string",
+                        "description": "Absorption rate of the property in the market"
+                      },
+                      "supply_status": {
+                        "type": "string",
+                        "description": "Current supply status of the property"
+                      }
+                    }
+                  },
+                  "market_perception": {
+                    "type": "string",
+                    "description": "How the market perceives the property"
+                  }
+                }
+              },
+              "marketing_strategy": {
+                "type": "object",
+                "properties": {
+                  "focus_areas": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "Key focus areas for marketing the property"
+                    }
+                  },
+                  "tactics": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "Specific messaging tactics used in marketing"
+                    }
+                  },
+                  "target_segments": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "Target segments for the marketing strategy"
+                    }
+                  }
+                },
+                "required": ["focus_areas", "tactics", "target_segments"]
+              }
+            },
+            "required": [
+              "overall_positioning",
+              "price_positioning_vs_competitors",
+              "target_segments",
+              "unique_selling_points",
+              "competitive_advantages",
+              "weaknesses_or_challenges",
+              "market_feedback",
+              "sales_and_rental_momentum",
+              "price_trend_comparison",
+              "marketing_strategy"
+            ]
+          }
+        },
+        "required": ["market_positioning"]
+      }
+    }
+  }
+}

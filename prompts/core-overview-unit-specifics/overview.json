@@ -1,0 +1,219 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a **Singapore Real Estate** research assistant. Current date is: {{ $now.format('yyyy-MM-dd') }}. **STRICTLY use the location of the project as SINGAPORE**"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in **Singapore**: Find the developer info, project, tenure (leasehold or freehold), launch date, top year and month, completion date, Number of units, blocks (with names), parking spots, storeys, site area (sqft) and plot ratio, address of the project (along with administrative_levels), District and Planning Area, Total Percentage of Units Sold, Mode of land acquisition (GLS, En Bloc), price paid, and year. Also include parking situation summary: cover resident rules, visitor rules, season parking policy, enforcement issues (clamping, fines), congestion, carpark type, EV lots, and any feedback from real estate forums based on which fill the parking_space object. Use URA, EdgeProp, PropertyGuru, developer brochures and similar reliable sources for information. Make sure that if any data is unavailable, use null. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "development_overview": {
+            "type": "object",
+            "properties": {
+              "developer_details": {
+                "type": "object",
+                "description": "Details about the developer of the property",
+                "properties": {
+                  "id": { "type": "number" },
+                  "name": { "type": "string" },
+                  "description": { "type": "string" },
+                  "established_year": { "type": ["number", "null"] },
+                  "project_count": { "type": "number" },
+                  "property_type": { "type": "string" },
+                  "website_url": { "type": "string" },
+                  "email": { "type": ["string", "null"] },
+                  "address": {
+                    "type": "object",
+                    "description": "Address of the developer's office",
+                    "properties": {
+                      "id": { "type": "number" },
+                      "street_no": { "type": "string" },
+                      "street_name": { "type": "string" },
+                      "localised_street_name": { "type": ["string", "null"] },
+                      "postal_code": { "type": "string" },
+                      "country": { "type": "string" },
+                      "administrative_levels": {
+                        "type": "object",
+                        "properties": {
+                          "level1": {
+                            "type": ["object", "null"],
+                            "properties": {
+                              "code": { "type": "string" },
+                              "name": { "type": "string" }
+                            },
+                            "required": ["code", "name"]
+                          },
+                          "level2": {
+                            "type": ["object", "null"],
+                            "properties": {
+                              "code": { "type": "string" },
+                              "name": { "type": "string" }
+                            },
+                            "required": ["code", "name"]
+                          },
+                          "level3": {
+                            "type": ["object", "null"],
+                            "properties": {
+                              "code": { "type": "string" },
+                              "name": { "type": "string" }
+                            },
+                            "required": ["code", "name"]
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "street_no",
+                      "street_name",
+                      "postal_code",
+                      "country",
+                      "administrative_levels"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "description",
+                  "project_count",
+                  "property_type",
+                  "website_url",
+                  "address"
+                ]
+              },
+              "project_details": {
+                "type": "object",
+                "properties": {
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "id": { "type": "number" },
+                      "street_no": { "type": "string" },
+                      "street_name": { "type": "string" },
+                      "localised_street_name": { "type": ["string", "null"] },
+                      "postal_code": { "type": "string" },
+                      "country": { "type": "string" },
+                      "administrative_levels": {
+                        "type": "object",
+                        "properties": {
+                          "level1": {
+                            "type": ["object", "null"],
+                            "properties": {
+                              "code": { "type": "string" },
+                              "name": { "type": "string" }
+                            },
+                            "required": ["code", "name"]
+                          },
+                          "level2": {
+                            "type": ["object", "null"],
+                            "properties": {
+                              "code": { "type": "string" },
+                              "name": { "type": "string" }
+                            },
+                            "required": ["code", "name"]
+                          },
+                          "level3": {
+                            "type": ["object", "null"],
+                            "properties": {
+                              "code": { "type": "string" },
+                              "name": { "type": "string" }
+                            },
+                            "required": ["code", "name"]
+                          }
+                        }
+                      },
+                      "latitude": { "type": "number", "description": "Latitude of the project address" },
+                      "longitude": { "type": "number", "description": "Longitude of the project address" }
+                    },
+                    "required": [
+                      "id",
+                      "street_no",
+                      "street_name",
+                      "postal_code",
+                      "country",
+                      "administrative_levels",
+                      "latitude",
+                      "longitude"
+                    ]
+                  },
+                  "tenure": { "type": "string" },
+                  "launch_date": { "type": "string" },
+                  "completion_date": { "type": "string" },
+                  "top_date": { "type": "string" },
+                  "no_of_units": { "type": "number" },
+                  "no_of_blocks": { "type": "number" },
+                  "blocks": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "no_of_storeys": { "type": "number" },
+                  "total_project_land_area_sqm": { "type": "number", "description": "Total Land Area of the whole project in sqm. NOTE: Do conversion if required." },
+                  "gross_project_floor_area_sqm": { "type": "number", "description": "Gross Floor Area of the whole project in sqm. NOTE: Do conversion if required." },
+                  "plot_ratio": { "type": "number", "description": "indicate the maximum permissible development intensity for a given land parcel, dictating the potential building height and density" },
+                  "district": { "type": "string" },
+                  "planning_area": { "type": "string" },
+                  "total_percentage_sold": { "type": "number", "description": "Percentage of units sold in the project" },
+                  "land_acquisition": {
+                    "type": "object",
+                    "properties": {
+                      "mode": { "type": "string" },
+                      "price": { "type": "string" },
+                      "year": { "type": "string" }
+                    },
+                    "required": ["mode", "price", "year"]
+                  },
+                  "parking_space": {
+                    "type": "object",
+                    "description": "Parking Slots available in the project. NOTE: Incase the project has parking somewhere else (mixed development or White Sites. E.g. City Square Residences have parking lots available for it's residents in the City Square Mall), use that data instead of null.",
+                    "properties": {
+                      "total_parking_lots": { "type": "number", "description": "STRICTLY give total parking lots available in the project." },
+                      "total_parking_basement_lots": { "type": "number", "description": "STRICTLY give total parking lots available in the basement of the project" },
+                      "total_parking_mechanical_lots": { "type": "number", "description": "STRICTLY give total mechanical parking lots available (utilize machinery to move and stack vehicles, maximizing parking space in a smaller footprint). If case the project doesn't have mechanical parking lots, use null" },
+                      "carpark_type": { "type": "string" },
+                      "total_parking_ev_charging_lots": { "type": "number", "description": "STRICTLY give total ev charging lots available in the project. If case the project doesn't have ev parking lots, use null" }
+                    },
+                    "required": ["total_lots"]
+                  }
+                },
+                "required": [
+                  "address",
+                  "tenure",
+                  "launch_date",
+                  "completion_date",
+                  "top_date",
+                  "no_of_units",
+                  "no_of_blocks",
+                  "blocks",
+                  "no_of_storeys",
+                  "site_area_sqft",
+                  "plot_ratio",
+                  "district",
+                  "planning_area",
+                  "land_acquisition",
+                  "total_percentage_sold"
+                ]
+              }
+            },
+            "required": ["developer_details", "project_details"]
+          }
+        },
+        "required": ["development_overview"]
+      }
+    }
+  }
+}

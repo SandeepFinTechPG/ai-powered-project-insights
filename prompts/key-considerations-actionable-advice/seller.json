@@ -1,0 +1,71 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide detailed **Key Considerations and Actionable Advice for Sellers** considering this project. Include:\n\n- Optimal timing to sell (market cycles, demand trends)\n- Pricing strategies and negotiation tips\n- Marketing approaches to maximize sale value\n- Common challenges sellers face and how to overcome them\n- Legal and financial considerations (e.g., taxes, stamp duties)\n- Advice on preparing the property for sale (staging, repairs)\n- Recommended seller profiles who would benefit most\n\nUse data from market reports, expert opinions, agent interviews, and seller feedback. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "key_considerations_actionable_advice_sellers": {
+            "type": "object",
+            "properties": {
+              "optimal_timing_to_sell": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "pricing_strategies_and_negotiation": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "marketing_approaches": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "common_challenges_and_solutions": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "legal_and_financial_considerations": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "preparing_property_for_sale": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "recommended_seller_profiles": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": [
+              "optimal_timing_to_sell",
+              "pricing_strategies_and_negotiation",
+              "marketing_approaches",
+              "common_challenges_and_solutions",
+              "legal_and_financial_considerations",
+              "preparing_property_for_sale",
+              "recommended_seller_profiles"
+            ]
+          }
+        },
+        "required": ["key_considerations_actionable_advice_sellers"]
+      }
+    }
+  }
+}

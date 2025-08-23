@@ -1,0 +1,93 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide detailed **Marketing Angles** that real estate agents can use to position and promote the property effectively. Include:\n\n- Emotional appeals (e.g., family-friendly, luxury lifestyle, convenience)\n- Functional benefits (e.g., proximity to MRT, schools, amenities)\n- Investment potential narratives (e.g., expected appreciation, rental yield)\n- Lifestyle themes (e.g., community vibe, green spaces, exclusive facilities)\n- Unique offers or promotions by developer or agents\n- Messaging tips for different target segments (families, singles, investors, expats)\n\nUse data from developer materials, market reports, agent forums, and marketing collateral. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "marketing_angles": {
+            "type": "object",
+            "properties": {
+              "emotional_appeals": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Emotional drivers and themes appealing to buyers."
+              },
+              "functional_benefits": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Tangible benefits like location, transport, schools."
+              },
+              "investment_potential_narratives": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Key points on expected capital growth, rental yield, demand."
+              },
+              "lifestyle_themes": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Community vibe, green spaces, social and recreational facilities."
+              },
+              "unique_offers_promotions": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Current promotions or special offers from developer or agents."
+              },
+              "messaging_tips_for_segments": {
+                "type": "object",
+                "description": "Recommended messaging for different buyer/tenant segments.",
+                "properties": {
+                  "families": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "singles": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "investors": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "expatriates": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  }
+                }
+              },
+              "functional_extras": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Additional functional features adding value."
+              }
+            },
+            "required": [
+              "emotional_appeals",
+              "functional_benefits",
+              "investment_potential_narratives",
+              "lifestyle_themes",
+              "messaging_tips_for_segments"
+            ]
+          }
+        },
+        "required": ["marketing_angles"]
+      }
+    }
+  }
+}

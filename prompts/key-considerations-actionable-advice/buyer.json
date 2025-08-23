@@ -1,0 +1,71 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide detailed **Key Considerations and Actionable Advice for Buyers** considering this project. Include:\n\n- Important factors buyers should evaluate (pricing, financing, location, future developments)\n- Potential risks or pitfalls to watch out for\n- Tips for negotiating price or terms\n- Timing considerations (market cycles, project completion, upcoming infrastructure)\n- Recommendations for financing and legal due diligence\n- Advice on resale and rental potential\n- Suggested buyer profiles who would benefit most\n\nUse data from market reports, expert opinions, agent interviews, and buyer feedback. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "key_considerations_actionable_advice_buyers": {
+            "type": "object",
+            "properties": {
+              "pricing_and_financing": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "location_and_connectivity": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "risks_and_pitfalls": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "timing_considerations": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "legal_and_due_diligence": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "resale_and_rental_potential": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "ideal_buyer_profiles": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": [
+              "pricing_and_financing",
+              "location_and_connectivity",
+              "risks_and_pitfalls",
+              "timing_considerations",
+              "legal_and_due_diligence",
+              "resale_and_rental_potential",
+              "ideal_buyer_profiles"
+            ]
+          }
+        },
+        "required": ["key_considerations_actionable_advice_buyers"]
+      }
+    }
+  }
+}

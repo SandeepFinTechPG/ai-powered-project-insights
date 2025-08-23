@@ -1,0 +1,366 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, provide a detailed report on the **MCST & Management Quality** of the development.\n\nBreak the data into the following sections:\n\n**1. MCST Information:**\n- MCST registration number\n- MCST name or managing agent name\n- Year of formation\n- Whether MCST is developer-appointed or resident-elected\n- MCST contact details (email, phone, office hours)\n\n**2. Managing Agent Profile:**\n- Name of managing company\n- Years in charge of the project\n- Accreditation (e.g., BCA, ISO)\n- On-site staffing (guards, cleaners, managers)\n- Management fee structure (if available)\n\n**3. Financial Health & Transparency:**\n- Maintenance fee per unit type or per share value\n- Sinking fund status\n- Budget transparency\n- Issues with arrears or overdue payments\n\n**4. Operational Performance:**\n- Cleanliness and landscaping\n- Lift uptime and maintenance quality\n- Security service quality and professionalism\n- Complaint resolution speed\n- Use of digital platforms (booking systems, feedback portals)\n\n**5. Resident Sentiment & Track Record:**\n- Positive feedback themes (e.g., cleanliness, responsiveness)\n- Common complaints (e.g., slow repairs, rude staff)\n- Recent disputes or controversies (if any)\n- Overall sentiment: “Good”, “Mixed”, or “Poor”\n- Online or forum rating out of 5 (if available). Use sources such as URA, BCA, PropertyGuru, URA, Reddit, forums, AGM disclosures, developer brochures, and resident reviews. Make sure that if any data is unavailable, use null. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "mcst_and_management_quality": {
+            "type": "object",
+            "properties": {
+              "mcst_info": {
+                "type": "object",
+                "properties": {
+                  "mcst_number": {
+                    "type": "string",
+                    "description": "Unique MCST (Management Corporation Strata Title) registration number."
+                  },
+                  "mcst_name": {
+                    "type": "string",
+                    "description": "Official name of the MCST."
+                  },
+                  "formation_year": {
+                    "type": "number",
+                    "description": "Year in which the MCST was formed."
+                  },
+                  "appointed_by": {
+                    "type": "string",
+                    "description": "Entity or authority that appointed the MCST, e.g., 'Developers' or 'Strata Title Owners'."
+                  },
+                  "contact": {
+                    "type": "object",
+                    "description": "Contact details for the MCST office or managing agent.",
+                    "properties": {
+                      "email": {
+                        "type": "string",
+                        "description": "Official email address for MCST inquiries."
+                      },
+                      "phone": {
+                        "type": "string",
+                        "description": "Phone number for MCST office or managing agent."
+                      },
+                      "office_hours": {
+                        "type": "string",
+                        "description": "Office hours during which MCST contact is available."
+                      },
+                      "address": {
+                        "type": "string",
+                        "description": "Physical address of the MCST office or managing agent."
+                      }
+                    }
+                  }
+                },
+                "required": ["mcst_number", "mcst_name", "formation_year"]
+              },
+              "management_company": {
+                "type": "object",
+                "properties": {
+                  "company_name": {
+                    "type": "string",
+                    "description": "Name of the property management company."
+                  },
+                  "years_in_charge": {
+                    "type": "number",
+                    "description": "Number of years the company has been managing the property."
+                  },
+                  "accreditation": {
+                    "type": "string",
+                    "description": "Any professional accreditation or certification the company holds (e.g., BCA Licensed, ISO Certified)."
+                  },
+                  "onsite_staff": {
+                    "type": "object",
+                    "description": "Details about on-site staffing at the property managed by the company.",
+                    "properties": {
+                      "managers": {
+                        "type": "number",
+                        "description": "Number of on-site property managers."
+                      },
+                      "guards": {
+                        "type": "number",
+                        "description": "Number of security guards."
+                      },
+                      "cleaners": {
+                        "type": "number",
+                        "description": "Number of cleaning staff."
+                      },
+                      "maintenance_staff": {
+                        "type": "number",
+                        "description": "Number of maintenance personnel or technicians."
+                      }
+                    }
+                  },
+                  "staff_count": {
+                    "type": "number",
+                    "description": "Approximate total number of staff employed by the management company for this property or overall."
+                  },
+                  "fee_structure_description": {
+                    "type": "string",
+                    "description": "Detailed description of how the management fees are structured, including fixed fees, variable fees, and any additional charges."
+                  },
+                  "contact_information": {
+                    "type": "object",
+                    "description": "Contact details for the management company.",
+                    "properties": {
+                      "phone": { "type": "string" },
+                      "email": { "type": "string" },
+                      "address": { "type": "string" }
+                    }
+                  }
+                },
+                "required": ["company_name", "years_in_charge"]
+              },
+              "financials": {
+                "type": "object",
+                "properties": {
+                  "maintenance_fee_monthly": {
+                    "type": "object",
+                    "properties": {
+                      "unit_type_fees": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "unit_type": { "type": "string", "description": "e.g., 1-bedroom, 2-bedroom, penthouse" },
+                            "monthly_fee": { "type": "number" }
+                          },
+                          "required": ["unit_type", "monthly_fee"]
+                        }
+                      }
+                    }
+                  },
+                  "sinking_fund_status": {
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "type": "string",
+                        "enum": [
+                          "well-funded",
+                          "moderate",
+                          "underfunded",
+                          "critical",
+                          "unknown"
+                        ],
+                        "description": "Overall assessment of the sinking fund’s sufficiency based on projected capital expenditure."
+                      },
+                      "available_balance": {
+                        "type": "number",
+                        "description": "Current amount (in SGD) available in the sinking fund."
+                      },
+                      "recommended_balance": {
+                        "type": "number",
+                        "description": "Estimated recommended amount (in SGD) that should be available in the fund for healthy reserves."
+                      },
+                      "coverage_ratio": {
+                        "type": "number",
+                        "description": "Ratio of available vs recommended sinking fund amount, expressed as a percentage (e.g., 80 means 80%)."
+                      },
+                      "last_audit_date": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "The date when the fund was last audited or reviewed."
+                      },
+                      "details": {
+                        "type": "string",
+                        "description": "Narrative description or insights from the MCST or auditor regarding the health of the sinking fund."
+                      }
+                    },
+                    "required": [
+                      "status",
+                      "available_balance",
+                      "recommended_balance"
+                    ]
+                  },
+                  "budget_transparency": {
+                    "type": "object",
+                    "properties": {
+                      "is_transparent": {
+                        "type": "boolean",
+                        "description": "Indicates whether the project's financial budgeting practices are transparent to stakeholders, including homeowners and investors."
+                      },
+                      "transparency_score": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 100,
+                        "description": "A score indicating the level of budget transparency, where 0 is opaque and 100 is fully transparent."
+                      },
+                      "reporting_frequency": {
+                        "type": "string",
+                        "enum": [
+                          "monthly",
+                          "quarterly",
+                          "bi-annually",
+                          "annually",
+                          "unknown"
+                        ],
+                        "description": "How often financial statements and budget reports are shared with stakeholders."
+                      },
+                      "report_accessibility": {
+                        "type": "string",
+                        "enum": [
+                          "public",
+                          "owners-only",
+                          "upon-request",
+                          "not-disclosed"
+                        ],
+                        "description": "How accessible the financial reports are to the general public or property owners."
+                      },
+                      "last_report_date": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "The date when the most recent financial report was published or made available."
+                      }
+                    },
+                    "required": [
+                      "is_transparent",
+                      "reporting_frequency",
+                      "report_accessibility"
+                    ]
+                  },
+                  "arrears_issues": {
+                    "type": "object",
+                    "properties": {
+                      "has_arrears": {
+                        "type": "boolean",
+                        "description": "Indicates whether the development is currently experiencing issues with arrears, i.e., unpaid maintenance or sinking fund contributions by unit owners."
+                      },
+                      "percentage_of_units_in_arrears": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 100,
+                        "description": "The percentage of units currently in arrears relative to the total number of units."
+                      },
+                      "total_arrears_amount": {
+                        "type": "number",
+                        "description": "Total amount (in SGD) of outstanding arrears owed by all unit owners combined."
+                      },
+                      "trend": {
+                        "type": "string",
+                        "enum": [
+                          "increasing",
+                          "decreasing",
+                          "stable",
+                          "unknown"
+                        ],
+                        "description": "The recent trend in arrears — whether it’s getting better or worse over time."
+                      },
+                      "last_updated": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "The date when arrears data was last updated."
+                      }
+                    },
+                    "required": ["has_arrears"]
+                  }
+                }
+              },
+              "operations": {
+                "type": "object",
+                "properties": {
+                  "cleanliness_quality": {
+                    "type": "string",
+                    "description": "Assessment of overall cleanliness of common areas (e.g., lobbies, corridors, facilities).",
+                    "enum": ["poor", "fair", "good", "very good", "excellent"]
+                  },
+                  "lift_maintenance_reliability": {
+                    "type": "string",
+                    "description": "Reliability and upkeep quality of lifts/elevators in the development.",
+                    "enum": ["poor", "fair", "good", "very good", "excellent"]
+                  },
+                  "security_quality": {
+                    "type": "string",
+                    "description": "Effectiveness of security measures including guards, cameras, and access control.",
+                    "enum": ["poor", "fair", "good", "very good", "excellent"]
+                  },
+                  "issue_response_speed": {
+                    "type": "string",
+                    "description": "Average speed at which reported issues or maintenance requests are addressed.",
+                    "enum": [
+                      "very slow",
+                      "slow",
+                      "average",
+                      "fast",
+                      "very fast"
+                    ]
+                  },
+                  "tech_adoption": {
+                    "type": "string",
+                    "description": "Level of adoption of technology for operations and resident convenience (e.g., app-based reporting, smart access).",
+                    "enum": ["none", "low", "moderate", "high", "very high"]
+                  }
+                },
+                "required": [
+                  "cleanliness_quality",
+                  "lift_maintenance_reliability",
+                  "security_quality",
+                  "issue_response_speed",
+                  "tech_adoption"
+                ]
+              },
+              "resident_sentiment": {
+                "type": "object",
+                "properties": {
+                  "positive_feedback": {
+                    "type": "array",
+                    "description": "List of common positive remarks or praises expressed by residents.",
+                    "items": { "type": "string" }
+                  },
+                  "common_complaints": {
+                    "type": "array",
+                    "description": "List of frequent complaints or issues raised by residents.",
+                    "items": { "type": "string" }
+                  },
+                  "recent_disputes_or_issues": {
+                    "type": "string",
+                    "description": "Summary of any notable disputes or issues among residents or with management in recent times."
+                  },
+                  "overall_sentiment": {
+                    "type": "string",
+                    "description": "General sentiment expressed by residents (e.g., 'positive', 'neutral', 'negative').",
+                    "enum": [
+                      "positive",
+                      "neutral",
+                      "negative",
+                      "mixed",
+                      "unknown"
+                    ]
+                  },
+                  "review_rating_out_of_5": {
+                    "type": "number",
+                    "description": "Average rating given by residents, on a scale of 0 to 5.",
+                    "minimum": 0,
+                    "maximum": 5
+                  }
+                },
+                "required": ["overall_sentiment", "review_rating_out_of_5"]
+              }
+            },
+            "required": [
+              "mcst_info",
+              "management_company",
+              "financials",
+              "operations",
+              "resident_sentiment"
+            ]
+          }
+        },
+        "required": ["mcst_and_management_quality"]
+      }
+    }
+  }
+}

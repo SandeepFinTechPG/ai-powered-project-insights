@@ -1,0 +1,243 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}"
+    },
+    {
+      "role": "user",
+      "content": "For {{ $json.propertyName }} in Singapore, find the following: \n-Supermarkets & Grocery Stores, \n \n-Convenience Stores, \n-Pharmacies, \n-Medical Facilities, \n-Childcare Enrichments, \n-Community Centers, \n-Green Spaces, \n-banks & atms, \n-post office logistics, \n- places of worship.\n\nUse OneMap.sg, LTA Datamall, URA, Google Maps and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format."
+    }
+  ],
+  "web_search_options": {
+    "search_context_size": "high",
+    "user_location": {
+      "country": "SG"
+    }
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "surrounding_amenities": {
+            "type": "object",
+            "description": "Functional amenities around the property for daily living, childcare, medical, and essential services",
+            "properties": {
+              "supermarkets_groceries": {
+                "type": "array",
+                "description": "Nearby supermarkets like NTUC FairPrice, Sheng Siong, Giant, etc.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "brand": {
+                      "type": "string",
+                      "description": "e.g., 'NTUC FairPrice'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "brand", "distance_km", "walk_time_min"]
+                }
+              },
+              "convenience_stores": {
+                "type": "array",
+                "description": "Nearby 24/7 stores like 7-Eleven, Cheers",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "brand": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "brand", "distance_km", "walk_time_min"]
+                }
+              },
+              "pharmacies": {
+                "type": "array",
+                "description": "Nearby pharmacies like Guardian, Watsons, Unity",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "brand": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "brand", "distance_km", "walk_time_min"]
+                }
+              },
+              "medical_facilities": {
+                "type": "array",
+                "description": "Clinics, dental clinics, TCMs, and hospitals nearby",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'GP Clinic', 'Dental Clinic', 'TCM', 'Hospital'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km", "walk_time_min"]
+                }
+              },
+              "childcare_enrichment": {
+                "type": "array",
+                "description": "Nearby childcare centers and tuition/enrichment centres",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'Childcare', 'Enrichment', 'Kindergarten'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km", "walk_time_min"]
+                }
+              },
+              "community_centres": {
+                "type": "array",
+                "description": "Nearby Community Clubs/Centres (e.g., Our Tampines Hub)",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "distance_km", "walk_time_min"]
+                }
+              },
+              "green_spaces": {
+                "type": "array",
+                "description": "Nearby small parks or green patches, not large enough to be under 'recreational'",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "distance_km", "walk_time_min"]
+                }
+              },
+              "banks_atms": {
+                "type": "array",
+                "description": "Nearby banks and ATMs",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'Bank Branch', 'ATM'"
+                    },
+                    "bank": {
+                      "type": "string",
+                      "description": "e.g., 'DBS', 'UOB', 'OCBC', 'POSB'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": [
+                    "name",
+                    "type",
+                    "bank",
+                    "distance_km",
+                    "walk_time_min"
+                  ]
+                }
+              },
+              "post_office_logistics": {
+                "type": "array",
+                "description": "Nearby postal or parcel drop points",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'SingPost', 'POPStation', 'J&T Drop-off'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": ["name", "type", "distance_km", "walk_time_min"]
+                }
+              },
+              "places_of_worship": {
+                "type": "array",
+                "description": "Nearby churches, temples, mosques, gurdwaras",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "religion": {
+                      "type": "string",
+                      "description": "e.g., 'Christianity', 'Buddhism', 'Islam', 'Hinduism'"
+                    },
+                    "type": {
+                      "type": "string",
+                      "description": "e.g., 'Church', 'Mosque', 'Temple'"
+                    },
+                    "distance_km": { "type": "number" },
+                    "walk_time_min": { "type": "number" },
+                    "latitude": { "type": "number" },
+                    "longitude": { "type": "number" }
+                  },
+                  "required": [
+                    "name",
+                    "religion",
+                    "type",
+                    "distance_km",
+                    "walk_time_min"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "supermarkets_groceries",
+              "convenience_stores",
+              "pharmacies",
+              "medical_facilities",
+              "childcare_enrichment",
+              "community_centres",
+              "green_spaces",
+              "banks_atms",
+              "post_office_logistics",
+              "places_of_worship"
+            ]
+          }
+        },
+        "required": ["surrounding_amenities"]
+      }
+    }
+  }
+}

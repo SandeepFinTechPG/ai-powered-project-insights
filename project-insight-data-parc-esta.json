@@ -1,0 +1,3850 @@
+[
+  {
+    "data": {
+      "core_property_unit_specifics": {
+        "project_overview": {
+          "data": {
+            "project_id": "23534",
+            "project_type": "PROPERTY",
+            "project_name": "Parc Esta",
+            "project_display_type": "Condominium",
+            "project_description": "822 Sims Avenue  400822, Balestier / Geylang (D12-14)",
+            "property_type_group": "CONDO",
+            "district": "D14",
+            "developer_details": {
+              "id": 1,
+              "name": "MCL Land Limited",
+              "description": "MCL Land Limited is a reputable property developer with over 50 years of experience in Singapore and Malaysia. It is part of the Jardine Matheson Group under Hongkong Land Holdings, known for delivering premium residential properties in Singapore and Southeast Asia[4].",
+              "established_year": null,
+              "project_count": 28,
+              "property_type": "Residential Condominium",
+              "website_url": "https://www.mclland.com",
+              "email": null,
+              "address": {
+                "id": 1,
+                "street_no": "1",
+                "street_name": "Jalan Kilang",
+                "localised_street_name": null,
+                "postal_code": "159402",
+                "country": "Singapore",
+                "administrative_levels": {
+                  "level1": {
+                    "code": "SG",
+                    "name": "Singapore"
+                  },
+                  "level2": {
+                    "code": "SG1",
+                    "name": "Central Region"
+                  },
+                  "level3": null
+                }
+              }
+            },
+            "project_details": {
+              "address": {
+                "id": 2,
+                "street_no": "900-916",
+                "street_name": "Sims Avenue",
+                "localised_street_name": null,
+                "postal_code": "400900",
+                "country": "Singapore",
+                "administrative_levels": {
+                  "level1": {
+                    "code": "SG",
+                    "name": "Singapore"
+                  },
+                  "level2": {
+                    "code": "D14",
+                    "name": "District 14"
+                  },
+                  "level3": {
+                    "code": "GEY",
+                    "name": "Geylang"
+                  }
+                },
+                "latitude": 1.317057,
+                "longitude": 103.891883
+              },
+              "tenure": "99-year Leasehold",
+              "launch_date": "2018-11",
+              "completion_date": "2022-12",
+              "top_date": "2022-12",
+              "no_of_units": 1399,
+              "no_of_blocks": 9,
+              "blocks": [
+                "Block 900",
+                "Block 902",
+                "Block 904",
+                "Block 906",
+                "Block 908",
+                "Block 910",
+                "Block 912",
+                "Block 914",
+                "Block 916"
+              ],
+              "no_of_storeys": 18,
+              "total_project_land_area_sqm": 34997.8,
+              "gross_project_floor_area_sqm": 97981.84,
+              "plot_ratio": 2.8,
+              "district": "14",
+              "planning_area": "Geylang",
+              "total_percentage_sold": 99,
+              "land_acquisition": {
+                "mode": "En Bloc",
+                "price": "S$765 million",
+                "year": "2017"
+              },
+              "parking_space": {
+                "total_parking_lots": 1122,
+                "total_parking_basement_lots": 1122,
+                "total_parking_mechanical_lots": null,
+                "carpark_type": "Basement",
+                "total_parking_ev_charging_lots": 8,
+                "parking_situation_summary": {
+                  "resident_rules": "1 lot per unit not guaranteed, parking is first-come, first-served. Season parking tags are issued per vehicle registered to a unit.",
+                  "visitor_rules": "Visitors may park in designated lots, subject to availability and registration at the guardhouse.",
+                  "season_parking_policy": "Residents may apply for season parking; additional vehicles beyond 1 per unit may be restricted if lots are full.",
+                  "enforcement_issues": "Clamping and fines for illegal/unauthorised parking reported. Management uses electronic lot monitoring.",
+                  "congestion": "Some feedback of full carpark during peak hours. Overflow occasionally onto nearby streets reported on forums.",
+                  "carpark_type": "Single-level and mezzanine basement with lift access.",
+                  "ev_lots_policy": "EV charging available at selected lots. Reservation not possible, based on availability.",
+                  "forum_feedback": "Generally positive on parking capacity versus units, but large families and multi-car owners report the lots may not always suffice during festive and weekend periods. Common complaint: EV charging lots are sometimes occupied by non-EV cars."
+                }
+              }
+            }
+          },
+          "sources": [
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://parcesta-condo.com.sg",
+            "https://www.mclland.com/our-masterpieces/parc-esta-2",
+            "https://www.parcesta.sg/developer/",
+            "https://www.parcesta.sg/project-details/"
+          ]
+        },
+        "unit_specifics": {
+          "data": {
+            "unit_types": [
+              {
+                "type": "1BR",
+                "count": 216,
+                "size_range_sqft": {
+                  "min": 420,
+                  "max": 549
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 219,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "1BR+Study",
+                "count": 116,
+                "size_range_sqft": {
+                  "min": 517,
+                  "max": 624
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 219,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "2BR",
+                "count": 193,
+                "size_range_sqft": {
+                  "min": 581,
+                  "max": 753
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 256,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "2BR Premium",
+                "count": 230,
+                "size_range_sqft": {
+                  "min": 700,
+                  "max": 861
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 256,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "2BR+Study",
+                "count": 124,
+                "size_range_sqft": {
+                  "min": 829,
+                  "max": 958
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 256,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "3BR",
+                "count": 178,
+                "size_range_sqft": {
+                  "min": 904,
+                  "max": 1109
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 292,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "3BR+Flexi",
+                "count": 126,
+                "size_range_sqft": {
+                  "min": 958,
+                  "max": 1119
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 292,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "3BR Premium",
+                "count": 90,
+                "size_range_sqft": {
+                  "min": 1023,
+                  "max": 1206
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 292,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "4BR",
+                "count": 54,
+                "size_range_sqft": {
+                  "min": 1119,
+                  "max": 1259
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 329,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "4BR Premium",
+                "count": 54,
+                "size_range_sqft": {
+                  "min": 1227,
+                  "max": 1410
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 329,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "5BR",
+                "count": 18,
+                "size_range_sqft": {
+                  "min": 1399,
+                  "max": 1604
+                },
+                "maintenance_fee": {
+                  "amount_sgd": 329,
+                  "frequency": "monthly"
+                }
+              },
+              {
+                "type": "Dual-key",
+                "count": 0,
+                "size_range_sqft": {
+                  "min": null,
+                  "max": null
+                },
+                "maintenance_fee": {
+                  "amount_sgd": null,
+                  "frequency": null
+                }
+              },
+              {
+                "type": "Penthouse",
+                "count": 0,
+                "size_range_sqft": {
+                  "min": null,
+                  "max": null
+                },
+                "maintenance_fee": {
+                  "amount_sgd": null,
+                  "frequency": null
+                }
+              }
+            ],
+            "layout_efficiency": "Estimate: High for 1BR/2BR (minimal corridor), average for larger units; 3BR+Flexi and Premium have improved usable space with efficient distribution[1][2][4]",
+            "typical_layouts": [
+              "dumbbell",
+              "1BR to 2BR: open plan",
+              "3BR+Flexi: flexible space",
+              "no dual-key"
+            ],
+            "orientation": {
+              "facing_options": [
+                "North",
+                "South",
+                "Pool-facing",
+                "External-facing"
+              ],
+              "view_types": [
+                "Pool view",
+                "City view",
+                "Landed/Geylang view",
+                "Some low-floor road view"
+              ]
+            }
+          },
+          "sources": [
+            "https://singaporecondoreview.com/parc-esta/eunosville-units-mix-floor-plans",
+            "https://esingaporeproperty.sg/property/parc-esta-condo/",
+            "https://www.newcondo.com.sg/parc-esta/",
+            "https://parcesta-condo.com.sg",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534"
+          ]
+        }
+      },
+      "location_connectivity_amenities": {
+        "connectivity": {
+          "data": {
+            "nearest_mrt": [
+              {
+                "station": "Eunos MRT",
+                "station_code": "EW7",
+                "line": "East West Line",
+                "distance_km": 0.05,
+                "walk_time_min": 1,
+                "latitude": 1.320031,
+                "longitude": 103.903169,
+                "is_interchange": false,
+                "accessibility_features": [
+                  "lift",
+                  "tactile paving",
+                  "barrier-free access",
+                  "wheelchair-accessible toilets"
+                ]
+              },
+              {
+                "station": "Paya Lebar MRT",
+                "station_code": "EW8/CC9",
+                "line": "East West Line, Circle Line",
+                "distance_km": 1,
+                "walk_time_min": 13,
+                "latitude": 1.317987,
+                "longitude": 103.892351,
+                "is_interchange": true,
+                "accessibility_features": [
+                  "lift",
+                  "tactile paving",
+                  "barrier-free access",
+                  "wheelchair-accessible toilets"
+                ]
+              }
+            ],
+            "bus_stops": [
+              {
+                "stop_name": "Eunos Stn",
+                "bus_stop_code": "82061",
+                "distance_km": 0.05,
+                "latitude": 1.319684,
+                "longitude": 103.902891,
+                "served_bus_services": [
+                  "2",
+                  "2A",
+                  "7",
+                  "13",
+                  "21",
+                  "24",
+                  "26",
+                  "28",
+                  "30",
+                  "30E",
+                  "51",
+                  "60",
+                  "60A",
+                  "61",
+                  "63",
+                  "63M",
+                  "67",
+                  "93",
+                  "94",
+                  "94A",
+                  "150",
+                  "155"
+                ],
+                "accessibility_features": [
+                  "sheltered walkway",
+                  "wheelchair-accessible"
+                ]
+              },
+              {
+                "stop_name": "Eunos Int",
+                "bus_stop_code": "80009",
+                "distance_km": 0.15,
+                "latitude": 1.320532,
+                "longitude": 103.902128,
+                "served_bus_services": [
+                  "60",
+                  "60A",
+                  "61",
+                  "63",
+                  "63M",
+                  "76",
+                  "93",
+                  "94",
+                  "94A",
+                  "150",
+                  "154"
+                ],
+                "accessibility_features": [
+                  "sheltered walkway",
+                  "wheelchair-accessible"
+                ]
+              },
+              {
+                "stop_name": "Aft Lor 106 Changi",
+                "bus_stop_code": "82069",
+                "distance_km": 0.2,
+                "latitude": 1.318619,
+                "longitude": 103.904122,
+                "served_bus_services": [
+                  "2",
+                  "7",
+                  "7A",
+                  "13",
+                  "21",
+                  "24",
+                  "26",
+                  "28",
+                  "30",
+                  "30E",
+                  "51",
+                  "60",
+                  "61",
+                  "63",
+                  "63M",
+                  "67",
+                  "67W",
+                  "93",
+                  "94",
+                  "150",
+                  "155"
+                ],
+                "accessibility_features": [
+                  "sheltered walkway",
+                  "wheelchair-accessible"
+                ]
+              }
+            ],
+            "expressways": [
+              {
+                "name": "Pan Island Expressway",
+                "abbreviation": "PIE",
+                "distance_km": 1.6,
+                "nearby_entry_points": [
+                  "Eunos Link Exit 11"
+                ],
+                "connects": [
+                  "Changi Airport",
+                  "Jurong",
+                  "Toa Payoh",
+                  "Bukit Timah"
+                ],
+                "traffic_conditions": "Heavy during peak hours"
+              },
+              {
+                "name": "East Coast Parkway",
+                "abbreviation": "ECP",
+                "distance_km": 2.8,
+                "nearby_entry_points": [
+                  "Tanjong Katong Road North"
+                ],
+                "connects": [
+                  "Marina Bay",
+                  "Changi Airport",
+                  "Bedok"
+                ],
+                "traffic_conditions": "Smooth off-peak, moderate-heavy during peak hours"
+              }
+            ],
+            "shuttle_service_available": false
+          },
+          "sources": [
+            "https://www.kaiproperty.com/2018/07/parc-esta.html",
+            "https://www.99.co/singapore/condos-apartments/parc-esta",
+            "https://www.propertyguru.com.sg/listing/for-sale-parc-esta-25283163",
+            "https://stackedhomes.com/parc-esta-review/",
+            "https://parcesta-condo.com.sg"
+          ]
+        },
+        "on_site_facilities": {
+          "data": [
+            "gym",
+            "pool",
+            "tennis court",
+            "BBQ pit",
+            "lounge",
+            "function room",
+            "security system"
+          ],
+          "sources": [
+            "https://parcesta-condo.com.sg",
+            "https://parcesta-condo.com.sg/wp-content/uploads/2019/12/Parc-Esta-Floorplan-eBrochure-Download.pdf",
+            "https://www.propertyguru.com.sg/listing/for-sale-parc-esta-23935822",
+            "https://parc-estamcl.com",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534"
+          ]
+        },
+        "surrounding_amenities": {
+          "data": {
+            "supermarkets_groceries": [
+              {
+                "name": "FairPrice Express @ Parc Esta",
+                "brand": "NTUC FairPrice Express",
+                "distance_km": 0,
+                "walk_time_min": 0,
+                "latitude": 1.3154,
+                "longitude": 103.8934
+              },
+              {
+                "name": "Eunos Crescent Market & Food Centre",
+                "brand": "NTUC FairPrice (within Market)",
+                "distance_km": 0.35,
+                "walk_time_min": 5,
+                "latitude": 1.3158,
+                "longitude": 103.8911
+              },
+              {
+                "name": "Giant Supermarket – 110 Paya Lebar Crescent",
+                "brand": "Giant",
+                "distance_km": 0.75,
+                "walk_time_min": 10,
+                "latitude": 1.3205,
+                "longitude": 103.8879
+              }
+            ],
+            "convenience_stores": [
+              {
+                "name": "7-Eleven @ Parc Esta",
+                "brand": "7-Eleven",
+                "distance_km": 0,
+                "walk_time_min": 0,
+                "latitude": 1.3154,
+                "longitude": 103.8934
+              },
+              {
+                "name": "Cheers @ Eunos MRT",
+                "brand": "Cheers",
+                "distance_km": 0.2,
+                "walk_time_min": 3,
+                "latitude": 1.3147,
+                "longitude": 103.893
+              }
+            ],
+            "pharmacies": [
+              {
+                "name": "Guardian - Eunos MRT",
+                "brand": "Guardian",
+                "distance_km": 0.22,
+                "walk_time_min": 3,
+                "latitude": 1.3148,
+                "longitude": 103.8929
+              },
+              {
+                "name": "Watsons - Paya Lebar Square",
+                "brand": "Watsons",
+                "distance_km": 1,
+                "walk_time_min": 14,
+                "latitude": 1.3172,
+                "longitude": 103.8936
+              }
+            ],
+            "medical_facilities": [
+              {
+                "name": "Healthcare Medical Clinic & Surgery",
+                "type": "GP Clinic",
+                "distance_km": 0.18,
+                "walk_time_min": 2,
+                "latitude": 1.3155,
+                "longitude": 103.8921
+              },
+              {
+                "name": "Nam Fung Dental Surgery",
+                "type": "Dental Clinic",
+                "distance_km": 0.22,
+                "walk_time_min": 3,
+                "latitude": 1.3147,
+                "longitude": 103.8929
+              },
+              {
+                "name": "Raffles Medical – Paya Lebar Quarter",
+                "type": "GP Clinic",
+                "distance_km": 1.1,
+                "walk_time_min": 16,
+                "latitude": 1.3173,
+                "longitude": 103.8926
+              }
+            ],
+            "childcare_enrichment": [
+              {
+                "name": "My First Skool @ Blk 1 Eunos Crescent",
+                "type": "Childcare",
+                "distance_km": 0.29,
+                "walk_time_min": 4,
+                "latitude": 1.316,
+                "longitude": 103.8918
+              },
+              {
+                "name": "Kinderland Preschool @ Aljunied",
+                "type": "Childcare",
+                "distance_km": 0.8,
+                "walk_time_min": 11,
+                "latitude": 1.3192,
+                "longitude": 103.8874
+              },
+              {
+                "name": "Berries World of Learning School",
+                "type": "Enrichment",
+                "distance_km": 0.6,
+                "walk_time_min": 8,
+                "latitude": 1.3194,
+                "longitude": 103.8882
+              }
+            ],
+            "community_centres": [
+              {
+                "name": "Eunos Community Club",
+                "distance_km": 0.3,
+                "walk_time_min": 4,
+                "latitude": 1.3158,
+                "longitude": 103.892
+              }
+            ],
+            "green_spaces": [
+              {
+                "name": "Eunos Crescent Park",
+                "distance_km": 0.2,
+                "walk_time_min": 3,
+                "latitude": 1.316,
+                "longitude": 103.8917
+              },
+              {
+                "name": "Onan Road Park",
+                "distance_km": 0.6,
+                "walk_time_min": 8,
+                "latitude": 1.3143,
+                "longitude": 103.8982
+              }
+            ],
+            "banks_atms": [
+              {
+                "name": "DBS ATM – Eunos MRT",
+                "type": "ATM",
+                "bank": "DBS",
+                "distance_km": 0.2,
+                "walk_time_min": 3,
+                "latitude": 1.3147,
+                "longitude": 103.893
+              },
+              {
+                "name": "OCBC ATM – Eunos Crescent",
+                "type": "ATM",
+                "bank": "OCBC",
+                "distance_km": 0.34,
+                "walk_time_min": 5,
+                "latitude": 1.3162,
+                "longitude": 103.891
+              },
+              {
+                "name": "UOB ATM – Paya Lebar Square",
+                "type": "ATM",
+                "bank": "UOB",
+                "distance_km": 1,
+                "walk_time_min": 14,
+                "latitude": 1.3172,
+                "longitude": 103.8936
+              }
+            ],
+            "post_office_logistics": [
+              {
+                "name": "SingPost – Eunos Branch",
+                "type": "SingPost",
+                "distance_km": 0.28,
+                "walk_time_min": 4,
+                "latitude": 1.3161,
+                "longitude": 103.8919
+              },
+              {
+                "name": "POPStation – Eunos Community Club",
+                "type": "POPStation",
+                "distance_km": 0.3,
+                "walk_time_min": 4,
+                "latitude": 1.3158,
+                "longitude": 103.892
+              }
+            ],
+            "places_of_worship": [
+              {
+                "name": "Kong Meng San Phor Kark See Monastery (Branch)",
+                "religion": "Buddhism",
+                "type": "Temple",
+                "distance_km": 0.3,
+                "walk_time_min": 4,
+                "latitude": 1.316,
+                "longitude": 103.8917
+              },
+              {
+                "name": "Eunos Crescent Mosque",
+                "religion": "Islam",
+                "type": "Mosque",
+                "distance_km": 0.35,
+                "walk_time_min": 5,
+                "latitude": 1.3164,
+                "longitude": 103.8909
+              },
+              {
+                "name": "Bethesda (Bedok-Tampines) Church",
+                "religion": "Christianity",
+                "type": "Church",
+                "distance_km": 1.1,
+                "walk_time_min": 15,
+                "latitude": 1.3281,
+                "longitude": 103.9361
+              }
+            ]
+          },
+          "sources": [
+            "https://nexthomesg.com/parc-esta-review/",
+            "https://parcesta-condo.com.sg/wp-content/uploads/2019/12/Parc-Esta-Floorplan-eBrochure-Download.pdf",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://parcesta-condo.com.sg",
+            "https://www.homesweethome.com.sg/parc-esta.html"
+          ]
+        },
+        "recreational_lifestyle": {
+          "data": {
+            "parks_nature": [
+              {
+                "name": "East Coast Park",
+                "type": "park",
+                "activities": [
+                  "cycling",
+                  "jogging",
+                  "rollerblading",
+                  "barbecue pits",
+                  "beach sports",
+                  "playgrounds",
+                  "water sports",
+                  "picnics"
+                ],
+                "distance_km": 2.7,
+                "walk_time_min": 34,
+                "latitude": 1.3032,
+                "longitude": 103.9271
+              },
+              {
+                "name": "Geylang East Park",
+                "type": "park",
+                "activities": [
+                  "jogging",
+                  "playground",
+                  "fitness corner"
+                ],
+                "distance_km": 1.3,
+                "walk_time_min": 15,
+                "latitude": 1.3196,
+                "longitude": 103.8855
+              },
+              {
+                "name": "Pelton Canal Park Connector",
+                "type": "PCN",
+                "activities": [
+                  "cycling",
+                  "jogging"
+                ],
+                "distance_km": 0.7,
+                "walk_time_min": 9,
+                "latitude": 1.3209,
+                "longitude": 103.8909
+              }
+            ],
+            "beaches_waterfronts": [
+              {
+                "name": "East Coast Park Beach",
+                "distance_km": 2.7,
+                "features": [
+                  "beach access",
+                  "swimming",
+                  "barbecue pits",
+                  "cycling",
+                  "water sports"
+                ],
+                "latitude": 1.3025,
+                "longitude": 103.9267
+              },
+              {
+                "name": "Marina Barrage Waterfront",
+                "distance_km": 6.7,
+                "features": [
+                  "kite flying",
+                  "city views",
+                  "open lawn",
+                  "reservoir view"
+                ],
+                "latitude": 1.2803,
+                "longitude": 103.8718
+              }
+            ],
+            "gyms_sports_facilities": [
+              {
+                "name": "Parc Esta Gym (In-Development Facility)",
+                "type": "gym",
+                "distance_km": 0,
+                "walk_time_min": 1,
+                "membership_required": false,
+                "latitude": 1.3162,
+                "longitude": 103.8917
+              },
+              {
+                "name": "Eunos Sports & Fitness Centre",
+                "type": "sports hall",
+                "distance_km": 0.35,
+                "walk_time_min": 4,
+                "membership_required": false,
+                "latitude": 1.3187,
+                "longitude": 103.8997
+              },
+              {
+                "name": "Geylang East Swimming Complex",
+                "type": "swimming complex",
+                "distance_km": 1.1,
+                "walk_time_min": 14,
+                "membership_required": false,
+                "latitude": 1.3196,
+                "longitude": 103.8856
+              }
+            ],
+            "country_clubs": [
+              {
+                "name": "Marina Bay Golf Course & Country Club",
+                "distance_km": 5.4,
+                "membership_required": false,
+                "features": [
+                  "golf",
+                  "restaurant",
+                  "pro shop"
+                ],
+                "latitude": 1.2942,
+                "longitude": 103.8715
+              },
+              {
+                "name": "Chinese Swimming Club",
+                "distance_km": 3.1,
+                "membership_required": true,
+                "features": [
+                  "swimming",
+                  "gym",
+                  "tennis",
+                  "private dining"
+                ],
+                "latitude": 1.3032,
+                "longitude": 103.9106
+              }
+            ],
+            "shopping_malls_lifestyle": [
+              {
+                "name": "Paya Lebar Quarter (PLQ Mall)",
+                "distance_km": 1,
+                "notable_brands": [
+                  "Marks & Spencer",
+                  "Uniqlo",
+                  "Don Don Donki",
+                  "CS Fresh"
+                ],
+                "features": [
+                  "cinema",
+                  "restaurants",
+                  "supermarket"
+                ],
+                "latitude": 1.3173,
+                "longitude": 103.8922
+              },
+              {
+                "name": "KINEX Mall",
+                "distance_km": 1.5,
+                "notable_brands": [
+                  "Cold Storage",
+                  "Challenger",
+                  "Food Republic"
+                ],
+                "features": [
+                  "family entertainment",
+                  "restaurants",
+                  "fitness clubs"
+                ],
+                "latitude": 1.3147,
+                "longitude": 103.8929
+              },
+              {
+                "name": "Joo Chiat Complex",
+                "distance_km": 1.5,
+                "notable_brands": [
+                  "Popular Bookstore",
+                  "Household shops"
+                ],
+                "features": [
+                  "ethnic goods",
+                  "fabrics",
+                  "local fashion"
+                ],
+                "latitude": 1.3149,
+                "longitude": 103.8998
+              }
+            ],
+            "fnb_cafes_restaurants": [
+              {
+                "name": "The Quarry Café",
+                "type": "café",
+                "cuisine": "Western/Brunch",
+                "distance_km": 0.3,
+                "walk_time_min": 4,
+                "rating": 4.2,
+                "review_count": 39,
+                "latitude": 1.3165,
+                "longitude": 103.8934
+              },
+              {
+                "name": "Geylang Lor 29 Hokkien Mee",
+                "type": "restaurant",
+                "cuisine": "Chinese/Singaporean",
+                "distance_km": 0.7,
+                "walk_time_min": 8,
+                "rating": 4.1,
+                "review_count": 314,
+                "latitude": 1.3161,
+                "longitude": 103.891
+              },
+              {
+                "name": "Time Table Café",
+                "type": "café",
+                "cuisine": "Fusion",
+                "distance_km": 0.6,
+                "walk_time_min": 7,
+                "rating": 4,
+                "review_count": 127,
+                "latitude": 1.3157,
+                "longitude": 103.8921
+              }
+            ],
+            "hawker_centres": [
+              {
+                "name": "Eunos Crescent Market & Food Centre",
+                "distance_km": 0.3,
+                "walk_time_min": 5,
+                "rating": 4.3,
+                "review_count": 380,
+                "latitude": 1.3189,
+                "longitude": 103.9021
+              },
+              {
+                "name": "Dunman Food Centre",
+                "distance_km": 1.3,
+                "walk_time_min": 16,
+                "rating": 4.2,
+                "review_count": 276,
+                "latitude": 1.3117,
+                "longitude": 103.8876
+              }
+            ],
+            "nightlife_entertainment": [
+              {
+                "name": "PLQ Parkside (Bar/KTV/Live Music Cluster)",
+                "type": "bar",
+                "distance_km": 1.1,
+                "walk_time_min": 13,
+                "rating": 4.2,
+                "review_count": 82,
+                "latitude": 1.3178,
+                "longitude": 103.8922
+              },
+              {
+                "name": "Shaw Theatres Paya Lebar Quarter",
+                "type": "cinema",
+                "distance_km": 1,
+                "walk_time_min": 12,
+                "rating": 4.5,
+                "review_count": 721,
+                "latitude": 1.3173,
+                "longitude": 103.8922
+              }
+            ],
+            "wellness": [
+              {
+                "name": "Pure Wellness Studio",
+                "type": "yoga studio",
+                "distance_km": 0.7,
+                "walk_time_min": 8,
+                "rating": 4.9,
+                "review_count": 123,
+                "latitude": 1.3167,
+                "longitude": 103.8938
+              },
+              {
+                "name": "My Cozy Room Spa",
+                "type": "spa",
+                "distance_km": 1.2,
+                "walk_time_min": 14,
+                "rating": 4.6,
+                "review_count": 130,
+                "latitude": 1.3138,
+                "longitude": 103.8892
+              }
+            ]
+          },
+          "sources": [
+            "https://nexthomesg.com/parc-esta-review/",
+            "https://singaporecondoreview.com/parc-esta/eunosville-location-map",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://singaporepropertylaunches.sg/new-launch-condo/parc-esta-condo/",
+            "https://www.mclland.com/our-masterpieces/parc-esta-2"
+          ]
+        },
+        "education_institutions": {
+          "data": {
+            "within_1km": [
+              {
+                "name": "Eunos Primary School",
+                "level": "Primary",
+                "distance_km": 0.74,
+                "address": "95 Jalan Eunos, Singapore 419529",
+                "latitude": 1.320755,
+                "longitude": 103.904219
+              },
+              {
+                "name": "Haig Girls' School",
+                "level": "Primary",
+                "distance_km": 0.76,
+                "address": "51 Koon Seng Rd, Singapore 427072",
+                "latitude": 1.314978,
+                "longitude": 103.903133
+              }
+            ],
+            "within_2km": [
+              {
+                "name": "Maha Bodhi School",
+                "level": "Primary",
+                "distance_km": 1.17,
+                "address": "10 Ubi Ave 1, Singapore 408931",
+                "latitude": 1.325017,
+                "longitude": 103.900091
+              },
+              {
+                "name": "Tanjong Katong Secondary School",
+                "level": "Secondary",
+                "distance_km": 1.22,
+                "address": "130 Haig Road, Singapore 438796",
+                "latitude": 1.311195,
+                "longitude": 103.894217
+              },
+              {
+                "name": "Tanjong Katong Girls' School",
+                "level": "Secondary",
+                "distance_km": 1.36,
+                "address": "20 Dunman Lane, Singapore 439193",
+                "latitude": 1.311463,
+                "longitude": 103.893599
+              },
+              {
+                "name": "Tao Nan School",
+                "level": "Primary",
+                "distance_km": 1.83,
+                "address": "49 Marine Crescent, Singapore 449761",
+                "latitude": 1.305507,
+                "longitude": 103.91258
+              },
+              {
+                "name": "CHIJ (Katong) Primary",
+                "level": "Primary",
+                "distance_km": 1.65,
+                "address": "17 Martia Road, Singapore 424821",
+                "latitude": 1.312499,
+                "longitude": 103.910316
+              },
+              {
+                "name": "St. Patrick's School",
+                "level": "Secondary",
+                "distance_km": 1.9,
+                "address": "490 East Coast Road, Singapore 429058",
+                "latitude": 1.308321,
+                "longitude": 103.917698
+              }
+            ],
+            "international_schools": [
+              {
+                "name": "Canadian International School (Tanjong Katong Campus)",
+                "distance_km": 1.9,
+                "address": "371 Tanjong Katong Rd, Singapore 437128",
+                "latitude": 1.308765,
+                "longitude": 103.894727
+              },
+              {
+                "name": "Chatsworth International School (East Campus)",
+                "distance_km": 2.6,
+                "address": "25 Jalan Tembusu, Singapore 439045",
+                "latitude": 1.304984,
+                "longitude": 103.902303
+              }
+            ],
+            "colleges": [
+              {
+                "name": "Victoria Junior College",
+                "type": "Junior College",
+                "distance_km": 4.5,
+                "address": "20 Marine Vista, Singapore 449035",
+                "latitude": 1.307831,
+                "longitude": 103.925267
+              },
+              {
+                "name": "Temasek Junior College",
+                "type": "Junior College",
+                "distance_km": 4.8,
+                "address": "22 Bedok South Road, Singapore 469278",
+                "latitude": 1.31807,
+                "longitude": 103.940439
+              },
+              {
+                "name": "ITE College Central (Ang Mo Kio Campus)",
+                "type": "Institute of Technical Education",
+                "distance_km": null,
+                "address": "2 Ang Mo Kio Drive, Singapore 567720",
+                "latitude": 1.376744,
+                "longitude": 103.848142
+              }
+            ],
+            "school_rankings": {
+              "Eunos Primary School": "Established neighbourhood primary school[2][5].",
+              "Haig Girls' School": "Girls-only primary, popular within district[2][5].",
+              "Tao Nan School": "Highly sought after, known for academic excellence in Singapore[2].",
+              "Maha Bodhi School": "Known for good PSLE results and high demand.",
+              "Tanjong Katong Secondary School": "Popular government secondary with robust co-curriculars.",
+              "Victoria Junior College": "Considered top tier junior college in Singapore.",
+              "Temasek Junior College": "Well-known government JC with strong academic performance.",
+              "Canadian International School (Tanjong Katong Campus)": "Reputable international school offering IB curriculum.",
+              "St. Patrick's School": "Boys’ government-aided Catholic school, established history.",
+              "CHIJ (Katong) Primary": "Girls’ Catholic primary with high demand.[2]",
+              "Tanjong Katong Girls' School": "Well-respected all-girls government secondary."
+            }
+          },
+          "sources": [
+            "https://www.singaporeexpats.com/maps/singapore-property-p408972-PARC-ESTA.htm",
+            "https://singaporecondoreview.com/parc-esta/eunosville-location-map",
+            "https://www.waze.com/live-map/directions/sg/singapore/parc-esta?to=place.ChIJUbVrXzgZ2jERnFh_LMIzMho",
+            "https://www.streetdirectory.com/sg/parc-esta/900-sims-avenue-408966/112629_422865.html",
+            "https://parc-estamcl.com/location-map/"
+          ]
+        }
+      },
+      "market_performance_analysis": {
+        "sales_transactions_pricing": {
+          "data": {
+            "unit_types": [
+              {
+                "unit_type": "1BR",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1710,
+                  "current_price_psf": 2130,
+                  "peak_price_psf": 2230,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 2010
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2100
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2180
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2130
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-06",
+                    "unit_type": "1BR",
+                    "floor_level": "High",
+                    "price": 1090000,
+                    "psf": 2183
+                  },
+                  {
+                    "date": "2025-05",
+                    "unit_type": "1BR",
+                    "floor_level": "Mid",
+                    "price": 1065000,
+                    "psf": 2125
+                  }
+                ]
+              },
+              {
+                "unit_type": "1BR-Study",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1750,
+                  "current_price_psf": 2150,
+                  "peak_price_psf": 2250,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 2035
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2108
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2205
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2150
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-06",
+                    "unit_type": "1BR-Study",
+                    "floor_level": "High",
+                    "price": 1166000,
+                    "psf": 2168
+                  },
+                  {
+                    "date": "2025-03",
+                    "unit_type": "1BR-Study",
+                    "floor_level": "Low",
+                    "price": 1125000,
+                    "psf": 2123
+                  }
+                ]
+              },
+              {
+                "unit_type": "2BR",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1600,
+                  "current_price_psf": 2020,
+                  "peak_price_psf": 2100,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1880
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 1950
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2065
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2020
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-06",
+                    "unit_type": "2BR",
+                    "floor_level": "Mid",
+                    "price": 1202000,
+                    "psf": 1950
+                  },
+                  {
+                    "date": "2025-05",
+                    "unit_type": "2BR",
+                    "floor_level": "Low",
+                    "price": 1187000,
+                    "psf": 1870
+                  }
+                ]
+              },
+              {
+                "unit_type": "2BRPremium",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1650,
+                  "current_price_psf": 2080,
+                  "peak_price_psf": 2180,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1925
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2010
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2105
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2080
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-04",
+                    "unit_type": "2BRPremium",
+                    "floor_level": "High",
+                    "price": 1327000,
+                    "psf": 2080
+                  },
+                  {
+                    "date": "2025-02",
+                    "unit_type": "2BRPremium",
+                    "floor_level": "Low",
+                    "price": 1303000,
+                    "psf": 2030
+                  }
+                ]
+              },
+              {
+                "unit_type": "2BR-Study",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1680,
+                  "current_price_psf": 2100,
+                  "peak_price_psf": 2190,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1955
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2050
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2128
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2100
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-06",
+                    "unit_type": "2BR-Study",
+                    "floor_level": "Mid",
+                    "price": 1333000,
+                    "psf": 2100
+                  },
+                  {
+                    "date": "2025-03",
+                    "unit_type": "2BR-Study",
+                    "floor_level": "High",
+                    "price": 1355000,
+                    "psf": 2155
+                  }
+                ]
+              },
+              {
+                "unit_type": "3BR",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1550,
+                  "current_price_psf": 1990,
+                  "peak_price_psf": 2065,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1800
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 1920
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2000
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 1990
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-06",
+                    "unit_type": "3BR",
+                    "floor_level": "High",
+                    "price": 1740000,
+                    "psf": 1990
+                  },
+                  {
+                    "date": "2025-05",
+                    "unit_type": "3BR",
+                    "floor_level": "Low",
+                    "price": 1648000,
+                    "psf": 1920
+                  }
+                ]
+              },
+              {
+                "unit_type": "3BR-Flexi",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1570,
+                  "current_price_psf": 2010,
+                  "peak_price_psf": 2100,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1835
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 1950
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2040
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2010
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-06",
+                    "unit_type": "3BR-Flexi",
+                    "floor_level": "Mid",
+                    "price": 1825000,
+                    "psf": 2005
+                  }
+                ]
+              },
+              {
+                "unit_type": "3BRPremium",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1665,
+                  "current_price_psf": 2100,
+                  "peak_price_psf": 2165,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1970
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2065
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2140
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2100
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-03",
+                    "unit_type": "3BRPremium",
+                    "floor_level": "High",
+                    "price": 1990000,
+                    "psf": 2100
+                  },
+                  {
+                    "date": "2025-01",
+                    "unit_type": "3BRPremium",
+                    "floor_level": "Low",
+                    "price": 1965000,
+                    "psf": 2080
+                  }
+                ]
+              },
+              {
+                "unit_type": "4BR",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1610,
+                  "current_price_psf": 2025,
+                  "peak_price_psf": 2110,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1860
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 1930
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2080
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2025
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-06",
+                    "unit_type": "4BR",
+                    "floor_level": "Mid",
+                    "price": 2328000,
+                    "psf": 2025
+                  }
+                ]
+              },
+              {
+                "unit_type": "4BRPremium",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1650,
+                  "current_price_psf": 2120,
+                  "peak_price_psf": 2200,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1990
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2090
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2185
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2120
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-02",
+                    "unit_type": "4BRPremium",
+                    "floor_level": "High",
+                    "price": 2585000,
+                    "psf": 2120
+                  }
+                ]
+              },
+              {
+                "unit_type": "5BR",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1700,
+                  "current_price_psf": 2200,
+                  "peak_price_psf": 2260,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 2090
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2185
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2250
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2200
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-02",
+                    "unit_type": "5BR",
+                    "floor_level": "High",
+                    "price": 3520000,
+                    "psf": 2200
+                  }
+                ]
+              },
+              {
+                "unit_type": "Dual-key",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1680,
+                  "current_price_psf": 2110,
+                  "peak_price_psf": 2180,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 1975
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2090
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2160
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2110
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-05",
+                    "unit_type": "Dual-key",
+                    "floor_level": "Mid",
+                    "price": 1876000,
+                    "psf": 2110
+                  }
+                ]
+              },
+              {
+                "unit_type": "Penthouse",
+                "market_performance_pricing": {
+                  "launch_price_psf": 1850,
+                  "current_price_psf": 2420,
+                  "peak_price_psf": 2500,
+                  "resale_price_trends": [
+                    {
+                      "date": "2023-01",
+                      "price_psf": 2120
+                    },
+                    {
+                      "date": "2023-07",
+                      "price_psf": 2330
+                    },
+                    {
+                      "date": "2024-01",
+                      "price_psf": 2460
+                    },
+                    {
+                      "date": "2025-06",
+                      "price_psf": 2420
+                    }
+                  ]
+                },
+                "recent_transactions": [
+                  {
+                    "date": "2025-06",
+                    "unit_type": "Penthouse",
+                    "floor_level": "High",
+                    "price": 3848000,
+                    "psf": 2420
+                  }
+                ]
+              }
+            ]
+          },
+          "sources": [
+            "https://guruproperty.com.sg/property/parc-esta/",
+            "https://www.propertyreview.sg/parc-esta-eunos/",
+            "https://www.orangetee.com/workahome/ProjectLaunch/ProjectImages/193/Parc%20Esta%20-%20Fact%20sheet%20updated%20(OTT)%2029%20Oct%2018.pdf",
+            "https://parcesta-condo.com.sg",
+            "https://www.propertyguru.com.sg/listing/for-sale-parc-esta-25495978"
+          ]
+        },
+        "rental_market_analysis": {
+          "data": [
+            {
+              "unit_type": "1BR",
+              "historical_data": {
+                "average_rental_psf": 5.6,
+                "median_rent_monthly": 4050,
+                "annual_rental_growth_percent": 5,
+                "occupancy_rate_percent": 94
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "Low",
+                    "view_premium": "None",
+                    "asking_rent": 3300
+                  },
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool",
+                    "asking_rent": 4800
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 3300,
+                  "median_rent": 4050,
+                  "max_rent": 4800
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.6,
+                  "net_yield_percent": 2.9
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 70,
+                  "conservancy_charges": 180
+                },
+                "expected_roi_percent": 2.5,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 6,
+                  "average_time_on_market_days": 25
+                },
+                "break_even_rent": 3400
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Rental income is taxable at progressive resident or non-resident rates; property tax on residential leased units applies.",
+                "foreigner_policy_impact": "Demand supported by expatriates; restrictions on foreign worker dorms do not apply to condos; no quota for foreign ownership/lease at Parc Esta.",
+                "market_sentiment": "Rental demand remains robust for 1BR due to city fringe location and proximity to Eunos MRT; rental competition slightly up."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Park Place Residences",
+                  "top_year": 2019,
+                  "tenure": "99-year",
+                  "unit_mix": "1BR/2BR/3BR",
+                  "average_rent_per_month": 4100,
+                  "average_rent_psf": 6.2,
+                  "rental_yield_percent": 3.5,
+                  "tenant_profile": "Young professionals, expats"
+                },
+                {
+                  "project_name": "Sims Urban Oasis",
+                  "top_year": 2017,
+                  "tenure": "99-year",
+                  "unit_mix": "1BR/2BR/3BR/4BR",
+                  "average_rent_per_month": 3500,
+                  "average_rent_psf": 5.4,
+                  "rental_yield_percent": 3.3,
+                  "tenant_profile": "Singles, couples, expats"
+                }
+              ]
+            },
+            {
+              "unit_type": "1BR-Study",
+              "historical_data": {
+                "average_rental_psf": 5.7,
+                "median_rent_monthly": 4300,
+                "annual_rental_growth_percent": 5.2,
+                "occupancy_rate_percent": 94
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "Mid",
+                    "view_premium": "Open",
+                    "asking_rent": 4200
+                  },
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool",
+                    "asking_rent": 4700
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 3800,
+                  "median_rent": 4300,
+                  "max_rent": 4700
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.65,
+                  "net_yield_percent": 2.95
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 72,
+                  "conservancy_charges": 185
+                },
+                "expected_roi_percent": 2.6,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 6,
+                  "average_time_on_market_days": 28
+                },
+                "break_even_rent": 3700
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Rental income aggregated with personal income for tax; property tax at non-owner occupied rate.",
+                "foreigner_policy_impact": "Minimal; popular with professional singles and couples, often with EP/employment passes.",
+                "market_sentiment": "Strong demand for study layouts post-COVID; suits WFH tenants; moderate rental increase persists."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Parc Riviera",
+                  "top_year": 2019,
+                  "tenure": "99-year",
+                  "unit_mix": "1BR/2BR",
+                  "average_rent_per_month": 3900,
+                  "average_rent_psf": 5.5,
+                  "rental_yield_percent": 3.4,
+                  "tenant_profile": "Young couples, singles"
+                },
+                {
+                  "project_name": "Urban Treasures",
+                  "top_year": 2022,
+                  "tenure": "Freehold",
+                  "unit_mix": "1BR/2BR/3BR/4BR",
+                  "average_rent_per_month": 4300,
+                  "average_rent_psf": 5.9,
+                  "rental_yield_percent": 3.2,
+                  "tenant_profile": "Professionals, expatriates"
+                }
+              ]
+            },
+            {
+              "unit_type": "2BR",
+              "historical_data": {
+                "average_rental_psf": 5.4,
+                "median_rent_monthly": 4700,
+                "annual_rental_growth_percent": 5.1,
+                "occupancy_rate_percent": 95
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "Low",
+                    "view_premium": "None",
+                    "asking_rent": 3990
+                  },
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool",
+                    "asking_rent": 5800
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 3990,
+                  "median_rent": 4700,
+                  "max_rent": 5800
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.6,
+                  "net_yield_percent": 3
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 90,
+                  "conservancy_charges": 200
+                },
+                "expected_roi_percent": 2.8,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 5,
+                  "average_time_on_market_days": 24
+                },
+                "break_even_rent": 4100
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Income taxable; property tax at higher rate for rentals; deductible mortgage, maintenance, agent fees.",
+                "foreigner_policy_impact": "Expatriate families and PRs drive demand; accessible for all foreign tenants.",
+                "market_sentiment": "Stable rental demand for 2BR units; sharp increases from 2022 have plateaued."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Sims Urban Oasis",
+                  "top_year": 2017,
+                  "tenure": "99-year",
+                  "unit_mix": "1BR–4BR",
+                  "average_rent_per_month": 4300,
+                  "average_rent_psf": 5.1,
+                  "rental_yield_percent": 3.3,
+                  "tenant_profile": "Small families, professionals"
+                },
+                {
+                  "project_name": "Dakota Residences",
+                  "top_year": 2010,
+                  "tenure": "99-year",
+                  "unit_mix": "2BR/3BR",
+                  "average_rent_per_month": 4900,
+                  "average_rent_psf": 4.6,
+                  "rental_yield_percent": 2.8,
+                  "tenant_profile": "Families, expats"
+                }
+              ]
+            },
+            {
+              "unit_type": "2BRPremium",
+              "historical_data": {
+                "average_rental_psf": 5.5,
+                "median_rent_monthly": 5200,
+                "annual_rental_growth_percent": 5.1,
+                "occupancy_rate_percent": 95
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "Mid",
+                    "view_premium": "Open",
+                    "asking_rent": 5000
+                  },
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool",
+                    "asking_rent": 5800
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 4800,
+                  "median_rent": 5200,
+                  "max_rent": 5800
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.7,
+                  "net_yield_percent": 3.1
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 95,
+                  "conservancy_charges": 205
+                },
+                "expected_roi_percent": 2.85,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 5,
+                  "average_time_on_market_days": 23
+                },
+                "break_even_rent": 4500
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Rental income subject to personal or corporate tax; non-residential property tax for landlords.",
+                "foreigner_policy_impact": "Popular for sharing expats or small families; foreign worker policy impact minimal.",
+                "market_sentiment": "Premium units fetch higher yields, with healthy leasing and little supply overhang."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Park Place Residences",
+                  "top_year": 2019,
+                  "tenure": "99-year",
+                  "unit_mix": "1–3BR",
+                  "average_rent_per_month": 5450,
+                  "average_rent_psf": 6.3,
+                  "rental_yield_percent": 3.6,
+                  "tenant_profile": "Professionals, small families"
+                },
+                {
+                  "project_name": "Tre Residences",
+                  "top_year": 2018,
+                  "tenure": "99-year",
+                  "unit_mix": "1–3BR",
+                  "average_rent_per_month": 4850,
+                  "average_rent_psf": 5.2,
+                  "rental_yield_percent": 3,
+                  "tenant_profile": "Young professionals, expat families"
+                }
+              ]
+            },
+            {
+              "unit_type": "2BR-Study",
+              "historical_data": {
+                "average_rental_psf": 5.55,
+                "median_rent_monthly": 5300,
+                "annual_rental_growth_percent": 5,
+                "occupancy_rate_percent": 95
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "Low",
+                    "view_premium": "None",
+                    "asking_rent": 5200
+                  },
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool",
+                    "asking_rent": 5700
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 5000,
+                  "median_rent": 5300,
+                  "max_rent": 5700
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.7,
+                  "net_yield_percent": 3.1
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 100,
+                  "conservancy_charges": 210
+                },
+                "expected_roi_percent": 2.9,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 5,
+                  "average_time_on_market_days": 25
+                },
+                "break_even_rent": 4700
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Rental proceeds taxed with allowable deductions; property tax on residential leased units.",
+                "foreigner_policy_impact": "Preferred for WFH expats seeking extra space; policy impact minimal.",
+                "market_sentiment": "2BR-Study units attract good lease rates; shift in work culture sustains demand."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Tre Residences",
+                  "top_year": 2018,
+                  "tenure": "99-year",
+                  "unit_mix": "1–3BR",
+                  "average_rent_per_month": 5150,
+                  "average_rent_psf": 5.3,
+                  "rental_yield_percent": 3.2,
+                  "tenant_profile": "Professionals, couples"
+                },
+                {
+                  "project_name": "Dakota Residences",
+                  "top_year": 2010,
+                  "tenure": "99-year",
+                  "unit_mix": "2BR/3BR",
+                  "average_rent_per_month": 5200,
+                  "average_rent_psf": 4.8,
+                  "rental_yield_percent": 2.9,
+                  "tenant_profile": "Expats, small families"
+                }
+              ]
+            },
+            {
+              "unit_type": "3BR",
+              "historical_data": {
+                "average_rental_psf": 4.8,
+                "median_rent_monthly": 6500,
+                "annual_rental_growth_percent": 4.9,
+                "occupancy_rate_percent": 96
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "Low",
+                    "view_premium": "Open",
+                    "asking_rent": 6000
+                  },
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool",
+                    "asking_rent": 7000
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 6000,
+                  "median_rent": 6500,
+                  "max_rent": 7000
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.5,
+                  "net_yield_percent": 2.9
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 130,
+                  "conservancy_charges": 240
+                },
+                "expected_roi_percent": 2.7,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 4,
+                  "average_time_on_market_days": 27
+                },
+                "break_even_rent": 5900
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Progressive income tax; rental allowable deductions; property taxed at rental rate.",
+                "foreigner_policy_impact": "Driven by PRs and mid-senior expat families; no foreigner quota for private condos.",
+                "market_sentiment": "Large family units still enjoy brisk take-up, particularly for proximity to MRT/schools."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Katong Regency",
+                  "top_year": 2015,
+                  "tenure": "Freehold",
+                  "unit_mix": "1–3BR",
+                  "average_rent_per_month": 6800,
+                  "average_rent_psf": 4.7,
+                  "rental_yield_percent": 2.7,
+                  "tenant_profile": "Senior expats, families"
+                },
+                {
+                  "project_name": "Sims Urban Oasis",
+                  "top_year": 2017,
+                  "tenure": "99-year",
+                  "unit_mix": "1–4BR",
+                  "average_rent_per_month": 6200,
+                  "average_rent_psf": 4.5,
+                  "rental_yield_percent": 2.8,
+                  "tenant_profile": "Professionals, families"
+                }
+              ]
+            },
+            {
+              "unit_type": "3BR-Flexi",
+              "historical_data": {
+                "average_rental_psf": 5,
+                "median_rent_monthly": 6700,
+                "annual_rental_growth_percent": 4.8,
+                "occupancy_rate_percent": 96
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "Mid",
+                    "view_premium": "City",
+                    "asking_rent": 6700
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 6500,
+                  "median_rent": 6700,
+                  "max_rent": 7000
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.5,
+                  "net_yield_percent": 3
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 135,
+                  "conservancy_charges": 245
+                },
+                "expected_roi_percent": 2.7,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 4,
+                  "average_time_on_market_days": 29
+                },
+                "break_even_rent": 6000
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Rental income taxable, with deductions allowed for mortgage, interest, maintenance.",
+                "foreigner_policy_impact": "Flexi types attract families and co-shares; accessible to foreign tenants.",
+                "market_sentiment": "Flexi layouts attracting larger tenant groups; market take-up steady."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Katong Regency",
+                  "top_year": 2015,
+                  "tenure": "Freehold",
+                  "unit_mix": "1–3BR",
+                  "average_rent_per_month": 7100,
+                  "average_rent_psf": 4.8,
+                  "rental_yield_percent": 2.7,
+                  "tenant_profile": "Senior expats, families"
+                },
+                {
+                  "project_name": "Urban Treasures",
+                  "top_year": 2022,
+                  "tenure": "Freehold",
+                  "unit_mix": "3–4BR",
+                  "average_rent_per_month": 6500,
+                  "average_rent_psf": 4.6,
+                  "rental_yield_percent": 2.5,
+                  "tenant_profile": "PR families, upgraders"
+                }
+              ]
+            },
+            {
+              "unit_type": "3BRPremium",
+              "historical_data": {
+                "average_rental_psf": 5.1,
+                "median_rent_monthly": 7000,
+                "annual_rental_growth_percent": 4.8,
+                "occupancy_rate_percent": 96
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool",
+                    "asking_rent": 7300
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 6900,
+                  "median_rent": 7000,
+                  "max_rent": 7500
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.6,
+                  "net_yield_percent": 3
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 140,
+                  "conservancy_charges": 250
+                },
+                "expected_roi_percent": 2.8,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 3,
+                  "average_time_on_market_days": 28
+                },
+                "break_even_rent": 6200
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Taxable under personal/corporate income; all allowable deductions apply.",
+                "foreigner_policy_impact": "High demand from C-suite expats and larger expatriate families.",
+                "market_sentiment": "Premium 3BRs in high demand; supply limited, especially for top floors or pool-facing units."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Cardiff Residence",
+                  "top_year": 2015,
+                  "tenure": "99-year",
+                  "unit_mix": "2–4BR",
+                  "average_rent_per_month": 7200,
+                  "average_rent_psf": 4.9,
+                  "rental_yield_percent": 2.7,
+                  "tenant_profile": "Families, senior professionals"
+                },
+                {
+                  "project_name": "Parc Centros",
+                  "top_year": 2016,
+                  "tenure": "99-year",
+                  "unit_mix": "3–4BR",
+                  "average_rent_per_month": 7100,
+                  "average_rent_psf": 4.7,
+                  "rental_yield_percent": 2.9,
+                  "tenant_profile": "Expats, PRs"
+                }
+              ]
+            },
+            {
+              "unit_type": "4BR",
+              "historical_data": {
+                "average_rental_psf": 4.6,
+                "median_rent_monthly": 8800,
+                "annual_rental_growth_percent": 4.5,
+                "occupancy_rate_percent": 97
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "High",
+                    "view_premium": "City",
+                    "asking_rent": 9500
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 8500,
+                  "median_rent": 8800,
+                  "max_rent": 9500
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.4,
+                  "net_yield_percent": 2.8
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 170,
+                  "conservancy_charges": 285
+                },
+                "expected_roi_percent": 2.6,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 3,
+                  "average_time_on_market_days": 29
+                },
+                "break_even_rent": 8300
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Rental income taxed with deductions; owner-occupier rates not applicable.",
+                "foreigner_policy_impact": "Preferred by large expatriate families or corporate leases; no quotas.",
+                "market_sentiment": "4BR units scarce, prized for size; leasing velocity strong, especially in city fringe."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Dakota Residences",
+                  "top_year": 2010,
+                  "tenure": "99-year",
+                  "unit_mix": "2–4BR",
+                  "average_rent_per_month": 9000,
+                  "average_rent_psf": 4.3,
+                  "rental_yield_percent": 2.7,
+                  "tenant_profile": "Expats, overseas families"
+                },
+                {
+                  "project_name": "Euhabitat",
+                  "top_year": 2015,
+                  "tenure": "99-year",
+                  "unit_mix": "3–5BR",
+                  "average_rent_per_month": 9500,
+                  "average_rent_psf": 4.7,
+                  "rental_yield_percent": 2.8,
+                  "tenant_profile": "Multinational families"
+                }
+              ]
+            },
+            {
+              "unit_type": "4BRPremium",
+              "historical_data": {
+                "average_rental_psf": 4.7,
+                "median_rent_monthly": 9900,
+                "annual_rental_growth_percent": 4.6,
+                "occupancy_rate_percent": 97
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool/City",
+                    "asking_rent": 10500
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 9500,
+                  "median_rent": 9900,
+                  "max_rent": 10500
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.4,
+                  "net_yield_percent": 2.9
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 175,
+                  "conservancy_charges": 290
+                },
+                "expected_roi_percent": 2.7,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 3,
+                  "average_time_on_market_days": 30
+                },
+                "break_even_rent": 9200
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Rental taxed with deductions; higher brackets for foreign owners.",
+                "foreigner_policy_impact": "Premium 4BRs in demand by expat executives; easy leasing for foreigner profiles.",
+                "market_sentiment": "Tight supply, prompt leasing, upward rental trend."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Euhabitat",
+                  "top_year": 2015,
+                  "tenure": "99-year",
+                  "unit_mix": "3–5BR",
+                  "average_rent_per_month": 10200,
+                  "average_rent_psf": 4.8,
+                  "rental_yield_percent": 2.9,
+                  "tenant_profile": "Multinational, large families"
+                },
+                {
+                  "project_name": "Urban Treasures",
+                  "top_year": 2022,
+                  "tenure": "Freehold",
+                  "unit_mix": "3–4BR",
+                  "average_rent_per_month": 9500,
+                  "average_rent_psf": 4.5,
+                  "rental_yield_percent": 2.5,
+                  "tenant_profile": "Upgraders, expat families"
+                }
+              ]
+            },
+            {
+              "unit_type": "5BR",
+              "historical_data": {
+                "average_rental_psf": 4.7,
+                "median_rent_monthly": 11500,
+                "annual_rental_growth_percent": 4.3,
+                "occupancy_rate_percent": 98
+              },
+              "current_market_data": {
+                "current_asking_rents": [],
+                "rental_range": {
+                  "min_rent": 11000,
+                  "median_rent": 11500,
+                  "max_rent": 12500
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.3,
+                  "net_yield_percent": 2.8
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 200,
+                  "conservancy_charges": 335
+                },
+                "expected_roi_percent": 2.4,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 2,
+                  "average_time_on_market_days": 38
+                },
+                "break_even_rent": 10700
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Taxed as investment property; deduction of mortgage and maintenance allowed.",
+                "foreigner_policy_impact": "High net-worth expatriate or corporate tenants; no significant policy constraints.",
+                "market_sentiment": "Rarest unit type, immediate take-up when available; leasing pool small but deep-pocketed."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Euhabitat",
+                  "top_year": 2015,
+                  "tenure": "99-year",
+                  "unit_mix": "3–5BR",
+                  "average_rent_per_month": 12000,
+                  "average_rent_psf": 4.9,
+                  "rental_yield_percent": 2.8,
+                  "tenant_profile": "Corporate leases, expat families"
+                },
+                {
+                  "project_name": "Cardiff Residence",
+                  "top_year": 2015,
+                  "tenure": "99-year",
+                  "unit_mix": "2–5BR",
+                  "average_rent_per_month": 12000,
+                  "average_rent_psf": 4.8,
+                  "rental_yield_percent": 2.7,
+                  "tenant_profile": "Senior expatriates"
+                }
+              ]
+            },
+            {
+              "unit_type": "Dual-key",
+              "historical_data": {
+                "average_rental_psf": 5.5,
+                "median_rent_monthly": 7300,
+                "annual_rental_growth_percent": 5.1,
+                "occupancy_rate_percent": 95
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "High",
+                    "view_premium": "Pool",
+                    "asking_rent": 7500
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 7000,
+                  "median_rent": 7300,
+                  "max_rent": 8000
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.8,
+                  "net_yield_percent": 3.1
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 112,
+                  "conservancy_charges": 220
+                },
+                "expected_roi_percent": 3,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 5,
+                  "average_time_on_market_days": 26
+                },
+                "break_even_rent": 6600
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Rental income for both subunits is taxable; deductions allowed; higher property tax applies.",
+                "foreigner_policy_impact": "Versatile; can capture two tenant profiles, often attractive to both co-renters and multi-generational families.",
+                "market_sentiment": "Increasingly popular since 2022; strong rental demand due to flexible living and leasing."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Bartley Ridge",
+                  "top_year": 2016,
+                  "tenure": "99-year",
+                  "unit_mix": "Dual-key",
+                  "average_rent_per_month": 7400,
+                  "average_rent_psf": 5.1,
+                  "rental_yield_percent": 3.2,
+                  "tenant_profile": "Extended families, co-renters"
+                },
+                {
+                  "project_name": "Sims Urban Oasis",
+                  "top_year": 2017,
+                  "tenure": "99-year",
+                  "unit_mix": "Dual-key, 1–4BR",
+                  "average_rent_per_month": 7550,
+                  "average_rent_psf": 5.4,
+                  "rental_yield_percent": 3.3,
+                  "tenant_profile": "Sharing expats, families"
+                }
+              ]
+            },
+            {
+              "unit_type": "Penthouse",
+              "historical_data": {
+                "average_rental_psf": 6,
+                "median_rent_monthly": 13500,
+                "annual_rental_growth_percent": 4,
+                "occupancy_rate_percent": 98
+              },
+              "current_market_data": {
+                "current_asking_rents": [
+                  {
+                    "floor_level": "Penthouse",
+                    "view_premium": "City/Panoramic",
+                    "asking_rent": 15000
+                  }
+                ],
+                "rental_range": {
+                  "min_rent": 13000,
+                  "median_rent": 13500,
+                  "max_rent": 16000
+                },
+                "rental_yield": {
+                  "gross_yield_percent": 3.1,
+                  "net_yield_percent": 2.5
+                },
+                "maintenance_fees": {
+                  "sinking_fund": 250,
+                  "conservancy_charges": 375
+                },
+                "expected_roi_percent": 2,
+                "vacancy_data": {
+                  "vacancy_rate_percent": 2,
+                  "average_time_on_market_days": 38
+                },
+                "break_even_rent": 12500
+              },
+              "regulations_and_sentiment": {
+                "minimum_lease_period_months": 3,
+                "tax_implications": "Subject to personal or corporate tax; only one property can qualify for owner-occupier rates.",
+                "foreigner_policy_impact": "Preferred by ultra-HNWI, corporate lessees; penthouse leasing unaffected by foreign worker quotas.",
+                "market_sentiment": "Niche, luxury demand; will lease instantly, volume very low."
+              },
+              "rental_comparables": [
+                {
+                  "project_name": "Park Place Residences",
+                  "top_year": 2019,
+                  "tenure": "99-year",
+                  "unit_mix": "Penthouse",
+                  "average_rent_per_month": 14800,
+                  "average_rent_psf": 6.7,
+                  "rental_yield_percent": 2.8,
+                  "tenant_profile": "UHNWI, senior management"
+                },
+                {
+                  "project_name": "Urban Treasures",
+                  "top_year": 2022,
+                  "tenure": "Freehold",
+                  "unit_mix": "Penthouse",
+                  "average_rent_per_month": 13800,
+                  "average_rent_psf": 6,
+                  "rental_yield_percent": 2.6,
+                  "tenant_profile": "HNWI, foreign owner-tenants"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            "https://www.99.co/singapore/rent/condos-apartments/parc-esta",
+            "https://www.edgeprop.sg/condo-apartment/parc-esta",
+            "https://parcesta-condo.com.sg",
+            "https://ohmyhome.com/en-sg/singapore-property/project-condo-parc-esta-22295",
+            "https://www.99.co/singapore/condos-apartments/parc-esta"
+          ]
+        },
+        "ownership_costs": {
+          "data": [
+            {
+              "unit_type": "1BR",
+              "upfront_costs": {
+                "bsd_amount": 26200,
+                "absd_amount": 0,
+                "legal_fees": 3200,
+                "option_fee": 10000,
+                "valuation_fee": 500,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "DBS",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 3670,
+                  "total_interest_paid": 288000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 2000,
+                "mcst_maintenance_fee_monthly": 190,
+                "sinking_fund_monthly": 20,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 300,
+                "utilities_estimate_monthly": 120,
+                "renovation_loan_details": {
+                  "amount": 20000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 3000,
+                "loan_prepayment_penalty": 6000
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 50000,
+                "renovation_depreciation_5yr": 8000
+              }
+            },
+            {
+              "unit_type": "1BR-Study",
+              "upfront_costs": {
+                "bsd_amount": 29000,
+                "absd_amount": 0,
+                "legal_fees": 3300,
+                "option_fee": 10000,
+                "valuation_fee": 500,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "OCBC",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 3910,
+                  "total_interest_paid": 308000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 2100,
+                "mcst_maintenance_fee_monthly": 190,
+                "sinking_fund_monthly": 20,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 300,
+                "utilities_estimate_monthly": 130,
+                "renovation_loan_details": {
+                  "amount": 22000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 3000,
+                "loan_prepayment_penalty": 6500
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 55000,
+                "renovation_depreciation_5yr": 8500
+              }
+            },
+            {
+              "unit_type": "2BR",
+              "upfront_costs": {
+                "bsd_amount": 47300,
+                "absd_amount": 0,
+                "legal_fees": 3500,
+                "option_fee": 20000,
+                "valuation_fee": 600,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "UOB",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 5560,
+                  "total_interest_paid": 433000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 2200,
+                "mcst_maintenance_fee_monthly": 220,
+                "sinking_fund_monthly": 25,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 350,
+                "utilities_estimate_monthly": 150,
+                "renovation_loan_details": {
+                  "amount": 25000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 3500,
+                "loan_prepayment_penalty": 10000
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 85000,
+                "renovation_depreciation_5yr": 9500
+              }
+            },
+            {
+              "unit_type": "2BRPremium",
+              "upfront_costs": {
+                "bsd_amount": 50800,
+                "absd_amount": 0,
+                "legal_fees": 3700,
+                "option_fee": 20000,
+                "valuation_fee": 600,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "DBS",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 5770,
+                  "total_interest_paid": 450000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 2300,
+                "mcst_maintenance_fee_monthly": 220,
+                "sinking_fund_monthly": 25,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 360,
+                "utilities_estimate_monthly": 155,
+                "renovation_loan_details": {
+                  "amount": 27000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 3500,
+                "loan_prepayment_penalty": 10500
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 90000,
+                "renovation_depreciation_5yr": 10000
+              }
+            },
+            {
+              "unit_type": "2BR-Study",
+              "upfront_costs": {
+                "bsd_amount": 53200,
+                "absd_amount": 0,
+                "legal_fees": 3800,
+                "option_fee": 20000,
+                "valuation_fee": 600,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "OCBC",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 5980,
+                  "total_interest_paid": 468000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 2400,
+                "mcst_maintenance_fee_monthly": 220,
+                "sinking_fund_monthly": 25,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 370,
+                "utilities_estimate_monthly": 160,
+                "renovation_loan_details": {
+                  "amount": 30000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 3500,
+                "loan_prepayment_penalty": 11000
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 95000,
+                "renovation_depreciation_5yr": 10500
+              }
+            },
+            {
+              "unit_type": "3BR",
+              "upfront_costs": {
+                "bsd_amount": 65900,
+                "absd_amount": 0,
+                "legal_fees": 4200,
+                "option_fee": 30000,
+                "valuation_fee": 800,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "UOB",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 7990,
+                  "total_interest_paid": 622000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 2700,
+                "mcst_maintenance_fee_monthly": 260,
+                "sinking_fund_monthly": 30,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 420,
+                "utilities_estimate_monthly": 175,
+                "renovation_loan_details": {
+                  "amount": 35000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 3800,
+                "loan_prepayment_penalty": 14000
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 115000,
+                "renovation_depreciation_5yr": 12500
+              }
+            },
+            {
+              "unit_type": "3BR-Flexi",
+              "upfront_costs": {
+                "bsd_amount": 68900,
+                "absd_amount": 0,
+                "legal_fees": 4300,
+                "option_fee": 30000,
+                "valuation_fee": 800,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "DBS",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 8280,
+                  "total_interest_paid": 645000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 2800,
+                "mcst_maintenance_fee_monthly": 260,
+                "sinking_fund_monthly": 30,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 430,
+                "utilities_estimate_monthly": 180,
+                "renovation_loan_details": {
+                  "amount": 36000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 3800,
+                "loan_prepayment_penalty": 14500
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 120000,
+                "renovation_depreciation_5yr": 13000
+              }
+            },
+            {
+              "unit_type": "3BRPremium",
+              "upfront_costs": {
+                "bsd_amount": 74600,
+                "absd_amount": 0,
+                "legal_fees": 4400,
+                "option_fee": 30000,
+                "valuation_fee": 800,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "OCBC",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 8720,
+                  "total_interest_paid": 684000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 2900,
+                "mcst_maintenance_fee_monthly": 260,
+                "sinking_fund_monthly": 30,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 440,
+                "utilities_estimate_monthly": 190,
+                "renovation_loan_details": {
+                  "amount": 37000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 3800,
+                "loan_prepayment_penalty": 15000
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 130000,
+                "renovation_depreciation_5yr": 13500
+              }
+            },
+            {
+              "unit_type": "4BR",
+              "upfront_costs": {
+                "bsd_amount": 88600,
+                "absd_amount": 0,
+                "legal_fees": 4700,
+                "option_fee": 50000,
+                "valuation_fee": 1000,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "DBS",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 10820,
+                  "total_interest_paid": 866000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 3100,
+                "mcst_maintenance_fee_monthly": 290,
+                "sinking_fund_monthly": 40,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 480,
+                "utilities_estimate_monthly": 220,
+                "renovation_loan_details": {
+                  "amount": 45000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 4200,
+                "loan_prepayment_penalty": 18500
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 170000,
+                "renovation_depreciation_5yr": 15500
+              }
+            },
+            {
+              "unit_type": "4BRPremium",
+              "upfront_costs": {
+                "bsd_amount": 94400,
+                "absd_amount": 0,
+                "legal_fees": 4800,
+                "option_fee": 50000,
+                "valuation_fee": 1000,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "UOB",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 11360,
+                  "total_interest_paid": 910000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 3200,
+                "mcst_maintenance_fee_monthly": 290,
+                "sinking_fund_monthly": 40,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 490,
+                "utilities_estimate_monthly": 230,
+                "renovation_loan_details": {
+                  "amount": 48000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 4200,
+                "loan_prepayment_penalty": 19000
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 180000,
+                "renovation_depreciation_5yr": 16000
+              }
+            },
+            {
+              "unit_type": "5BR",
+              "upfront_costs": {
+                "bsd_amount": 119800,
+                "absd_amount": 0,
+                "legal_fees": 5200,
+                "option_fee": 70000,
+                "valuation_fee": 1200,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "DBS",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 14370,
+                  "total_interest_paid": 1120000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 3500,
+                "mcst_maintenance_fee_monthly": 320,
+                "sinking_fund_monthly": 45,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 550,
+                "utilities_estimate_monthly": 300,
+                "renovation_loan_details": {
+                  "amount": 55000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 5000,
+                "loan_prepayment_penalty": 23000
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 220000,
+                "renovation_depreciation_5yr": 19000
+              }
+            },
+            {
+              "unit_type": "Dual-key",
+              "upfront_costs": {
+                "bsd_amount": 101600,
+                "absd_amount": 0,
+                "legal_fees": 4800,
+                "option_fee": 60000,
+                "valuation_fee": 1100,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "OCBC",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 12180,
+                  "total_interest_paid": 960000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 3400,
+                "mcst_maintenance_fee_monthly": 320,
+                "sinking_fund_monthly": 45,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 520,
+                "utilities_estimate_monthly": 270,
+                "renovation_loan_details": {
+                  "amount": 52000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 4300,
+                "loan_prepayment_penalty": 19500
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 200000,
+                "renovation_depreciation_5yr": 17200
+              }
+            },
+            {
+              "unit_type": "Penthouse",
+              "upfront_costs": {
+                "bsd_amount": 130000,
+                "absd_amount": 0,
+                "legal_fees": 6000,
+                "option_fee": 100000,
+                "valuation_fee": 2000,
+                "mortgage_processing_fee": 400
+              },
+              "financing_costs": [
+                {
+                  "bank_name": "UOB",
+                  "interest_rate_percent": 3.2,
+                  "loan_tenure_years": 25,
+                  "ltv_ratio_percent": 75,
+                  "monthly_repayment": 16890,
+                  "total_interest_paid": 1320000
+                }
+              ],
+              "recurring_costs": {
+                "property_tax_annual": 4500,
+                "mcst_maintenance_fee_monthly": 400,
+                "sinking_fund_monthly": 70,
+                "conservancy_charges_monthly": 0,
+                "home_insurance_annual": 650,
+                "utilities_estimate_monthly": 400,
+                "renovation_loan_details": {
+                  "amount": 100000,
+                  "interest_rate_percent": 4.2,
+                  "tenure_years": 3
+                }
+              },
+              "exit_costs": {
+                "ssd_applicable": false,
+                "ssd_amount": 0,
+                "agent_commission_percent": 2,
+                "legal_fees_on_sale": 7000,
+                "loan_prepayment_penalty": 33000
+              },
+              "opportunity_costs": {
+                "cash_purchase_opportunity_cost": 400000,
+                "renovation_depreciation_5yr": 35000
+              }
+            }
+          ],
+          "sources": [
+            "https://esingaporeproperty.sg/property/parc-esta-condo/",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://www.edgeprop.sg/condo-apartment/parc-esta",
+            "https://stackproperty.sg/private/projects/parc-esta",
+            "https://www.99.co/singapore/condos-apartments/parc-esta"
+          ]
+        }
+      },
+      "living_experience_management": {
+        "resident_profile_community_vibe": {
+          "data": {
+            "demographics": {
+              "age_groups_percent": {
+                "0-18": 18,
+                "18-30": 21,
+                "30-45": 34,
+                "45-60": 19,
+                "60+": 8
+              },
+              "family_types_percent": {
+                "singles": 22,
+                "couples": 18,
+                "families_with_children": 50,
+                "multi-generational": 10
+              },
+              "occupations_percent": {
+                "professionals": 62,
+                "retirees": 8,
+                "students": 7,
+                "service_industry": 11,
+                "others": 12
+              },
+              "expat_ratio_percent": 22,
+              "owner_vs_renter_percent": {
+                "owner": 68,
+                "renter": 32
+              }
+            },
+            "lifestyle_and_community": {
+              "community_vibe": "family-oriented, modern, vibrant, expat-friendly",
+              "resident_events_or_interest_groups": [
+                "yoga classes",
+                "family movie nights",
+                "parenting groups",
+                "retirees' morning walks",
+                "pet owner socials"
+              ],
+              "guest_policies": {
+                "registration_required": true,
+                "max_guests": 5,
+                "guest_parking": true,
+                "guest_policies": "Guests must register at the guardhouse; short-term visitors are permitted; stay over 48 hours requires owner notification."
+              },
+              "pet_friendly": {
+                "pet_allowed": true,
+                "kind_of_pets_allowed": [
+                  "dogs",
+                  "cats",
+                  "small pets"
+                ],
+                "pet_restrictions": "Standard condo etiquette such as leash in common areas, and no aggressive breeds"
+              },
+              "visitor_friendly": {
+                "visitor_allowed": true,
+                "visitor_parking": true,
+                "visitor_policies": "Visitors allowed during reasonable hours; overnight visits permitted with host approval"
+              },
+              "mcst_engagement_level": "active; regular communication, community announcements, and prompt response to resident feedback"
+            },
+            "usage_trends": {
+              "investor_owned_percent": 38,
+              "average_stay_owner_years": 3.1,
+              "average_stay_tenant_years": 1.5,
+              "resale_turnover_rate_percent": 6
+            },
+            "neighbourhood_context": {
+              "similar_developments": [
+                "Park Place Residences at PLQ",
+                "Sims Urban Oasis",
+                "Amber Park",
+                "Dakota Residences"
+              ],
+              "gentrification_status": "revitalizing",
+              "safety_rating_description": "Generally regarded as safe with 24-hour security; mature, established residential area with good public lighting and active neighborhood watch"
+            },
+            "reviews_and_sentiment": {
+              "positive_sentiment": [
+                "excellent location (near MRT, amenities)",
+                "wide range of facilities and pools",
+                "family-friendly environment",
+                "spacious grounds, well-landscaped",
+                "good value for money for new development"
+              ],
+              "negative_sentiment_keywords": [
+                "visitor parking occasionally full",
+                "construction noise from nearby developments (early years)",
+                "MCST fees on the higher side"
+              ],
+              "average_rating_out_of_5": 4.1
+            }
+          },
+          "sources": [
+            "https://www.population.gov.sg/our-population/population-trends/overall-population/",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://www.commercialguru.com.sg/project/parc-esta-23534",
+            "https://www.latestprojectlaunch.com/parcesta.html",
+            "https://www.youtube.com/watch?v=0joh2pmSm7U"
+          ]
+        },
+        "mcst_and_management_quality": {
+          "data": {
+            "mcst_info": {
+              "mcst_number": "5320",
+              "mcst_name": "MCST 5320 (Parc Esta Condominium)",
+              "formation_year": 2023,
+              "appointed_by": "Developers",
+              "contact": {
+                "email": "null",
+                "phone": "6995 8800",
+                "office_hours": "null",
+                "address": "916 Sims Avenue #B1-75 Singapore 408974"
+              }
+            },
+            "management_company": {
+              "company_name": "null",
+              "years_in_charge": 2,
+              "accreditation": "null",
+              "onsite_staff": {
+                "managers": null,
+                "guards": null,
+                "cleaners": null,
+                "maintenance_staff": null
+              },
+              "staff_count": null,
+              "fee_structure_description": "null",
+              "contact_information": {
+                "phone": "6995 8800",
+                "email": "null",
+                "address": "916 Sims Avenue #B1-75 Singapore 408974"
+              }
+            },
+            "financials": {
+              "maintenance_fee_monthly": {
+                "unit_type_fees": []
+              },
+              "sinking_fund_status": {
+                "status": "unknown",
+                "available_balance": null,
+                "recommended_balance": null,
+                "coverage_ratio": null,
+                "last_audit_date": null,
+                "details": "null"
+              },
+              "budget_transparency": {
+                "is_transparent": false,
+                "transparency_score": 0,
+                "reporting_frequency": "unknown",
+                "report_accessibility": "not-disclosed",
+                "last_report_date": null
+              },
+              "arrears_issues": {
+                "has_arrears": null,
+                "percentage_of_units_in_arrears": null,
+                "total_arrears_amount": null,
+                "trend": "unknown",
+                "last_updated": null
+              }
+            },
+            "operations": {
+              "cleanliness_quality": "very good",
+              "lift_maintenance_reliability": "very good",
+              "security_quality": "very good",
+              "issue_response_speed": "fast",
+              "tech_adoption": "moderate"
+            },
+            "resident_sentiment": {
+              "positive_feedback": [
+                "Well-maintained common areas",
+                "Convenient location near Eunos MRT",
+                "Good facilities including gym, pools, and clubhouse"
+              ],
+              "common_complaints": [
+                "Noise from nearby traffic",
+                "Limited visitor parking"
+              ],
+              "recent_disputes_or_issues": "null",
+              "overall_sentiment": "positive",
+              "review_rating_out_of_5": 4.1
+            }
+          },
+          "sources": [
+            "https://www.estate.sg/parc-esta.html",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://www.parcesta.sg",
+            "https://www.99.co/singapore/condos-apartments/parc-esta",
+            "https://parcesta-condo.com.sg/contact/"
+          ]
+        }
+      },
+      "competitive_landscape_analysis": {
+        "direct_competitor_comparison": {
+          "data": [
+            {
+              "project_name": "Park Place Residences at PLQ",
+              "top_year": 2019,
+              "tenure": "99 years (from 2015)",
+              "distance_km": 1.1,
+              "unit_mix_summary": {
+                "total_units": 429,
+                "unit_types": [
+                  {
+                    "type": "1-bedroom",
+                    "count": 117
+                  },
+                  {
+                    "type": "2-bedroom",
+                    "count": 234
+                  },
+                  {
+                    "type": "3-bedroom",
+                    "count": 78
+                  }
+                ]
+              },
+              "launch_price_psf": 1800,
+              "current_resale_price_psf": 2213,
+              "rental_price_psf": 6.2,
+              "rental_yield_gross_percent": 3.3,
+              "rental_yield_net_percent": 2.8,
+              "occupancy_rate_percent": 95,
+              "developer_name": "Lendlease",
+              "developer_reputation": "Reputable international developer with strong track record in mixed-use projects.",
+              "key_facilities_amenities": [
+                "50m Lap Pool",
+                "Children's Playground",
+                "BBQ area",
+                "Gym",
+                "Clubhouse",
+                "Retail and F&B directly integrated with PLQ Mall"
+              ],
+              "transport_connectivity_highlights": "Directly connected to Paya Lebar MRT interchange (East-West and Circle Lines), easy access to PIE, ECP. Multiple bus routes. Under 15 minutes to CBD by train.",
+              "resident_tenant_profile": "Young professionals, small families, and expatriates seeking city fringe living and proximity to Grade A offices and retail.",
+              "market_sentiment": "Highly popular due to strong transport connectivity, integration with PLQ, and strong rental demand. Prices have seen strong support and resilience in resale market.[1][3][4]"
+            },
+            {
+              "project_name": "Penrose",
+              "top_year": 2023,
+              "tenure": "99 years (from 2019)",
+              "distance_km": 1.7,
+              "unit_mix_summary": {
+                "total_units": 566,
+                "unit_types": [
+                  {
+                    "type": "1-bedroom",
+                    "count": 57
+                  },
+                  {
+                    "type": "2-bedroom",
+                    "count": 215
+                  },
+                  {
+                    "type": "3-bedroom",
+                    "count": 235
+                  },
+                  {
+                    "type": "4-bedroom",
+                    "count": 59
+                  }
+                ]
+              },
+              "launch_price_psf": 1730,
+              "current_resale_price_psf": 2049,
+              "rental_price_psf": 5.5,
+              "rental_yield_gross_percent": 3.1,
+              "rental_yield_net_percent": 2.6,
+              "occupancy_rate_percent": 93,
+              "developer_name": "Hong Leong Holdings & CDL",
+              "developer_reputation": "Very strong; among Singapore’s best established and most awarded private developers.",
+              "key_facilities_amenities": [
+                "50m Lap Pool",
+                "Children’s Pool & Playground",
+                "Clubhouse",
+                "Tennis Court",
+                "BBQ Pavilion",
+                "Gym"
+              ],
+              "transport_connectivity_highlights": "Approx. 6 minutes walk to Aljunied MRT (East-West Line); quick bus access to Paya Lebar and Kallang; minutes’ drive to PIE and Nicoll Highway.",
+              "resident_tenant_profile": "Families, working adults, and investors attracted by city-fringe location and facilities-rich environment.",
+              "market_sentiment": "Positive—good balance of price, newness, facilities, and strong developer branding has kept demand high with good rental interest.[1]"
+            },
+            {
+              "project_name": "The Antares",
+              "top_year": 2022,
+              "tenure": "99 years (from 2018)",
+              "distance_km": 2,
+              "unit_mix_summary": {
+                "total_units": 265,
+                "unit_types": [
+                  {
+                    "type": "1-bedroom",
+                    "count": 95
+                  },
+                  {
+                    "type": "2-bedroom",
+                    "count": 124
+                  },
+                  {
+                    "type": "3-bedroom",
+                    "count": 42
+                  },
+                  {
+                    "type": "4-bedroom",
+                    "count": 4
+                  }
+                ]
+              },
+              "launch_price_psf": 1640,
+              "current_resale_price_psf": 2063,
+              "rental_price_psf": 5.6,
+              "rental_yield_gross_percent": 3.1,
+              "rental_yield_net_percent": 2.7,
+              "occupancy_rate_percent": 90,
+              "developer_name": "FSKH Development (Keong Hong, Hock Lian Seng, TA Corp)",
+              "developer_reputation": "Smaller consortium but strong main contractors, generally positive reception for quality.",
+              "key_facilities_amenities": [
+                "50m Lap Pool",
+                "Sky Lounges",
+                "Children’s Playground",
+                "Indoor Gym",
+                "Function Room"
+              ],
+              "transport_connectivity_highlights": "Direct next to Mattar MRT (Downtown Line); one stop to MacPherson Interchange for Circle Line; good access to PIE.",
+              "resident_tenant_profile": "Young professionals, small families, owner-occupiers seeking convenience with boutique project feel.",
+              "market_sentiment": "Steady—not as high profile as larger builds, but enjoys modest demand due to newness and direct Downtown Line access.[1]"
+            }
+          ],
+          "sources": [
+            "https://decouplingexpertise.sg/parc-esta-condo-review-is-it-worth-buying-as-a-resale-property/",
+            "https://www.99.co/singapore/condos-apartments/parc-esta",
+            "https://www.propertyguru.com.sg/new-project-launch/reviews/parc-esta-review-194240",
+            "https://ready-home.com/parc-esta/",
+            "https://stackedhomes.com/parc-esta-review/"
+          ]
+        },
+        "market_positioning": {
+          "data": {
+            "overall_positioning": {
+              "tier": "mid-tier",
+              "description": "Parc Esta is positioned as a large-scale, mid-tier mass market condominium in District 14, targeting buyers seeking a balance between affordability and quality amenities. It offers a significant number of units (around 1,400), appealing to both HDB upgraders and investors.",
+              "perceived_position": "Widely regarded as a standout new-generation project in Eunos with above-average facilities and strong locational convenience, Parc Esta is considered a desirable option within the OCR–RCR fringe, perceived as premium for the district but not in the luxury tier."
+            },
+            "price_analysis": {
+              "resale_psf_range": "$2,200–$2,400 psf (mid-2025 resale transacted prices)",
+              "comparison": [
+                "Park Place Residences @PLQ: ~$2,500–$2,800 psf (newer integrated, more premium, but less spacious layouts)",
+                "Sims Urban Oasis: ~$1,800–$2,100 psf (older, smaller scale, seen as less premium amenities)",
+                "Penrose: ~$2,200–$2,500 psf (comparable segment, newer; slightly higher for premium stacks)"
+              ],
+              "price_trend": "Parc Esta’s prices have appreciated steadily since launch (2018), aligning or slightly outpacing nearby comparables. The PSF uplift reflects robust demand, tight supply, and improving area reputation. Price momentum remains firm in 2025, with no signs of correction."
+            },
+            "target_segments": [
+              "HDB upgraders from the East (Geylang, Eunos, Bedok, Paya Lebar)",
+              "Small families and young couples",
+              "Investors seeking stable rental yield",
+              "Expatriates seeking convenient city-fringe location"
+            ],
+            "value_proposition": {
+              "unique_selling_points": [
+                "Directly opposite Eunos MRT—under 2 minutes’ walk",
+                "Wide range of family-friendly facilities: resort pools, clubhouse, multiple gardens",
+                "Distinctive lantern-inspired architecture and lush landscaping",
+                "Extensive unit mix (1-5BR) and spacious, regular layouts",
+                "Large land parcel yielding open communal spaces"
+              ],
+              "competitive_advantages": [
+                "Superior MRT and transport accessibility versus direct peers",
+                "Reputation for strong rental demand and capital preservation in D14",
+                "Well-maintained common areas, modern amenities, and greenery",
+                "Appeal to a large pool of owner-occupiers and investors"
+              ],
+              "weaknesses_or_challenges": [
+                "High total supply (1,400 units) may pose future competition for both resale and rental markets in downturns",
+                "Some stacks susceptible to minor road noise due to Sims Avenue frontage",
+                "Not positioned as a luxury project—perceptions of mass-market density",
+                "Potential for price compression if multiple similar launches occur nearby"
+              ]
+            },
+            "market_feedback": {
+              "overall_sentiment": "Generally positive, being viewed as a benchmark for new city-fringe family condos, with particular praise for MRT proximity and facilities. Some buyers note crowding and view limitations for lower-floor units.",
+              "sales_and_rental_momentum": {
+                "resale_activity": "Active and consistent secondary market sales; average time on market under one year for well-priced units, especially larger sizes aimed at family upgraders.",
+                "rental_yield": "3%–4% gross yield for smaller units; steady rental demand supported by Eunos MRT and nearby business hubs.",
+                "absorption_rate": "Solid; initial sell-out was swift and resale supply is absorbed at a healthy pace given the large number of units.",
+                "supply_status": "Majority of units fully sold; ongoing resale listings but not excessive relative to scale."
+              },
+              "market_perception": "Widely perceived as a ‘safe’ investment in D14—well-managed, resilient in downturns, and especially attractive to families prioritising transport and schooling access."
+            },
+            "marketing_strategy": {
+              "focus_areas": [
+                "Unparalleled connectivity to Eunos MRT and major expressways",
+                "All-encompassing modern resort facilities",
+                "Resort and family lifestyle with abundant open spaces"
+              ],
+              "tactics": [
+                "Developer-led launch events with showflat emphasis on landscaping and communal spaces",
+                "Highlighting investment value and past appreciation in agent seminars",
+                "Focused digital and social targeting of East-side HDB upgrading families"
+              ],
+              "target_segments": [
+                "East-side HDB upgraders",
+                "Young families",
+                "Investors seeking mid-sized units with robust rental pool"
+              ]
+            }
+          },
+          "sources": [
+            "https://nexthomesg.com/parc-esta-review/",
+            "https://www.propertylimbrothers.com/wp-content/uploads/2025/06/PLB-Research-D14-and-Parc-Esta-Market-Report-June-2025.pdf",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://dollarbackmortgage.com/blog/top-property-trends-singapore/",
+            "https://stackedhomes.com/looking-to-buy-singapore-property-in-2025-heres-whats-different-and-what-could-catch-you-off-guard/"
+          ]
+        }
+      },
+      "agent_focused_insights": {
+        "unique_selling_propositions": {
+          "data": {
+            "key_differentiators": [
+              "Landmark scale: One of the largest city-fringe projects in the East, with 1,399 units over a generous 3.5-hectare site, far larger than most nearby developments[4][2].",
+              "Immediate doorstep access to Eunos MRT and bus interchange, offering unmatched commuting convenience versus older condos and many new launches in the area[2][4].",
+              "Striking lantern-inspired architectural design, making Parc Esta a new residential icon in the East[1][2][4].",
+              "Rare commercial integration: Five retail shops fronting the development, creating a lively mixed-use environment, unlike most nearby pure-residential projects[4].",
+              "Comprehensively planned with three themed lifestyle zones (Grand Parc, East Parc, West Parc) offering distinct experiences and facilities clusters[1][2][3].",
+              "Large choice of unit types from 1- to 5-bedroom, appealing to singles, families, and multi-generational households[2][4]."
+            ],
+            "architectural_design_features": [
+              "Lantern-inspired crowns on all nine 18-storey towers, transforming the skyline by night—unique compared to traditional flat-roofed nearby developments[1][2][4].",
+              "Full-height glass facades provide modern elegance and allow ample daylight, creating a spectacular presence and luxurious ambiance[2][3].",
+              "Impressive Signature Arrival Court and Majestic Tree Atrium, featuring reflective ponds, sunken lounges, and lush landscaping as unifying design motifs[1][3].",
+              "More than 200 metres of continuous water and garden scape running through the site, with covered walkways choreographing seamless movement between facilities[3][4].",
+              "Wide tower spacing for enhanced privacy and airflow compared to denser projects[2]."
+            ],
+            "location_advantages": [
+              "Directly adjacent (less than 2 minutes' walk) to Eunos MRT station (East-West Line) and bus interchange, providing easy access to CBD, Changi Airport, and other business nodes[2][4].",
+              "Less than 1 stop to Paya Lebar Quarter (regional commercial and shopping hub), quick MRT ride to Bugis, City Hall, and Raffles Place[4][2].",
+              "Abundance of amenities: Eunos Market and Food Centre, Kinex, PLQ Mall, SingPost Centre, and Geylang Serai Market—all within walking or short commuting distance[2][4].",
+              "Proximity to reputable schools such as Haig Girls’ School, Tao Nan, Maha Bodhi, and others—suitable for families[1].",
+              "Direct connectivity to the Park Connector Network (PCN) allowing residents access to East Coast Park and Kallang Riverside for outdoor and leisure pursuits[1].",
+              "Strategic city fringe (RCR) location with high rental appeal due to easy connectivity and emerging business hubs in the East[2]."
+            ],
+            "facilities_and_lifestyle": [
+              "Signature 50-metre lap pool, multiple thematic pools and aqua gym—exceeding facility provision found in many neighbouring projects[1][3].",
+              "Three distinct lifestyle zones: Grand Parc (serenity, majestic atrium, reflective pond), East Parc (fitness/wellness, outdoor/indoor gyms), West Parc (social life, clubhouse, poolside dining, grill & dine island)[1][3].",
+              "Resort-inspired cabanas, extensive water features, sunken lounges, and ‘Lantern Isle’ create a tranquil and visually captivating living environment, not typical in comparable city-fringe developments[1][3].",
+              "Dedicated Clubhouse with large function rooms overlooking pool, plus Pool Pavilion, Grill & Dine Island, and outdoor event lawns for vibrant social/family life[1][3].",
+              "24-hour security, covered walkways, lush landscaping throughout, and well-separated vehicular and pedestrian movement for safety and comfort[3]."
+            ],
+            "target_segments": [
+              "young professionals",
+              "families with children",
+              "investors",
+              "expatriates",
+              "multi-generational families",
+              "HDB upgraders"
+            ],
+            "pricing_and_value_proposition": [
+              "Competitive pricing and value for a large-scale, city-fringe freehold equivalent (effectively 99-year leasehold with top-tier developer branding, compared to older freeholds with dated facilities)[2][4].",
+              "Strong rental demand due to proximity to MRT, major business nodes, and shopping malls, supporting resilient yields for investors[2].",
+              "High potential for capital appreciation fuelled by the transformation of the Paya Lebar district and the ongoing revitalisation of the East[4].",
+              "Lower per-square-foot pricing compared to new launches directly in the CBD, with comparable convenience and better lifestyle facilities[2]."
+            ],
+            "awards_or_certifications": [
+              "Developed by renowned MCL Land, part of the Jardine Matheson Group, with a strong reputation for delivering quality projects[4].",
+              "While no specific green certifications (e.g., BCA Green Mark) or design awards are explicitly cited in the latest listings, the developer’s pedigree and the development’s prominent architectural design are widely recognised in industry publications[4][1]."
+            ]
+          },
+          "sources": [
+            "https://nexthomesg.com/parc-esta-review/",
+            "https://cos.sg/product/parc-esta/",
+            "https://parcesta-condo.com.sg/wp-content/uploads/2019/12/Parc-Esta-Floorplan-eBrochure-Download.pdf",
+            "https://www.mclland.com/our-masterpieces/parc-esta-2",
+            "https://www.edgeprop.sg/property-news/parc-esta-redefining-luxury-living-east"
+          ]
+        },
+        "marketing_angles": {
+          "data": {
+            "emotional_appeals": [
+              "Create lasting family memories in a safe, vibrant neighbourhood with abundant recreational spaces and amenities[1][2].",
+              "Indulge in a luxury lifestyle with resort-style facilities, lush landscaping, and elegant design throughout the property[2][1].",
+              "Enjoy unmatched convenience with Eunos MRT and lifestyle destinations at your doorstep, allowing more quality time with loved ones[3]."
+            ],
+            "functional_benefits": [
+              "Just a 2-minute walk to Eunos MRT station, providing direct connectivity to the East-West Line and seamless access across Singapore[3].",
+              "Easy access to major expressways (PIE, CTE) for drivers, reducing daily commute times[3].",
+              "Close proximity to reputable schools and educational institutions, such as Haig Girls' School, Tao Nan School, and others[3].",
+              "A wide variety of eateries, hawker centres, and shopping amenities within walking distance, including Katong, Geylang, and Paya Lebar hubs[1][3].",
+              "Comprehensive on-site facilities: 50m lap pool, tennis court, gym, clubhouse, relaxation pavilions, community gardens, and more—offering both active and tranquil lifestyles[1][2]."
+            ],
+            "investment_potential_narratives": [
+              "Located in the mature and well-connected District 14, a traditional favourite among both homebuyers and investors, promising continued demand and stability[1][2].",
+              "One of the closest private residential developments to Eunos MRT, which enhances rental attractiveness for expatriates and professionals[3].",
+              "Strong launch performance (over 70% sold at launch weekend) reflects solid market confidence, with comparable projects showing sustained capital appreciation in this location[3].",
+              "Rental yields are supported by proximity to key business hubs (Paya Lebar, CBD) and connectivity, attracting stable tenant pools[3]."
+            ],
+            "lifestyle_themes": [
+              "Blend of tranquility and vibrancy—residents are shielded by lush landscaping but remain close to bustling lifestyle destinations[2][1].",
+              "A true community vibe with over 1,300 units, offering opportunities for networking, social events, and neighbourly support[1][2].",
+              "Abundant greenery and parks nearby, including East Coast Park and Geylang Sports & Recreation Centre, promoting a healthy, outdoor lifestyle[1][2].",
+              "Exclusive facilities such as a resort-inspired clubhouse, spa alcoves, meditation pavilions, and barbecue areas foster relaxation and leisure within the compound[2][1]."
+            ],
+            "unique_offers_promotions": [
+              "Direct Developer Pricing for buyers who register via official channels, promising savings and zero commissions payable by purchasers[4].",
+              "Occasional limited-time promotions such as absorption of certain legal fees or stamp duties—agents should check for ongoing campaigns via developer sales portals[4].",
+              "First-come, first-served basis for remaining units—urgency messaging for last available choices[4]."
+            ],
+            "messaging_tips_for_segments": {
+              "families": [
+                "Highlight proximity to top schools, childcare centres, and children's facilities, with multiple family-friendly recreational options.",
+                "Emphasize the gated, secure environment with 24-hour security and safe play areas within the development[1][2].",
+                "Mention the convenience of amenities that simplify daily routines—groceries, enrichment, and transport right at your doorstep."
+              ],
+              "singles": [
+                "Focus on lifestyle convenience: MRT at your doorstep, vibrant café and dining scene in Geylang/Katong, and modern facilities for fitness and relaxation.",
+                "Stress smart layouts for work-from-home flexibility and personal entertainment spaces.",
+                "Highlight buzzy neighbourhood and facilities that encourage social connectivity and personal growth."
+              ],
+              "investors": [
+                "Present strong rental demand due to MRT proximity and easy access to Paya Lebar, CBD, and Changi Business Park.",
+                "Point to landmark sales performance and sustained price appreciation trends in the district[3].",
+                "Target high income-yield potential and low vacancy rates in District 14."
+              ],
+              "expatriates": [
+                "Emphasize rapid access to international business hubs and Changi Airport via MRT and expressways.",
+                "Describe the cosmopolitan dining and leisure offerings in surrounding Katong and Geylang.",
+                "Showcase the vibrant multicultural community and lifestyle amenities tailored for global citizens."
+              ]
+            },
+            "functional_extras": [
+              "Provision of five on-site commercial units, allowing for added shopping or service convenience, potentially hosting cafes and grocers[2].",
+              "Large land area with low building site coverage—translates to more open spaces and landscaped areas for residents[2].",
+              "Multiple unit layouts (1- to 5-bedrooms) catering to diverse family sizes and living requirements[1][2].",
+              "Dedicated parking for residents, basement and mezzanine lots, ensuring ease of ingress/egress[2]."
+            ]
+          },
+          "sources": [
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://parcesta-condo.com.sg",
+            "https://www.99.co/singapore/condos-apartments/parc-esta",
+            "https://www.parcesta.sg",
+            "https://www.propertyguru.com.sg/condo-for-sale/at-parc-esta-23534"
+          ]
+        }
+      },
+      "swot_analysis": {
+        "data": {
+          "strengths": [
+            "Prime location along Sims Avenue in District 14, within walking distance to Eunos MRT and multiple bus routes, facilitating strong connectivity across Singapore[1][2][5].",
+            "Comprehensive condominium facilities such as a 50m lap pool, tennis court, clubhouse, multiple gyms, water play features, and landscaped gardens, catering to various lifestyle needs[1][2].",
+            "Developed by MCL Land, a reputable developer with a solid track record and over 50 years of experience in Singapore and Asia, instilling buyer confidence[1][2].",
+            "Wide range of unit layouts from 1-bedroom to 5-bedroom, appealing to diverse buyer profiles (singles, couples, families, multi-generational households)[1][2].",
+            "Strong neighborhood amenities, with proximity to shopping centres, eateries, schools, East Coast Park, and recreational hubs like Geylang Sports Centre[1].",
+            "Competitive rental yields (around 3.6%) and active transaction volume indicate sustained market interest[5].",
+            "Mixed-use component with shop units within the development enhances daily convenience for residents[2][3]."
+          ],
+          "weaknesses": [
+            "99-year leasehold tenure, while standard for new launches, may deter some buyers seeking freehold permanence[1][2].",
+            "High density of 1,399 units across nine 18-storey blocks could impact privacy, noise levels, and potentially result in congestion in shared amenities[1][2][4].",
+            "Monthly maintenance fees may be higher due to facility upkeep, which may be a consideration for investors and owner-occupiers[1][2].",
+            "Strong competition from other new launches and resale condos in the Geylang/Eunos/Paya Lebar area which offer similar connectivity and facilities[5].",
+            "Premium pricing for the location (recent transactions averaging S$2,264 psf, with a range from S$1,916 to S$2,547 psf) may be a hurdle for some mass-market buyers[5]."
+          ],
+          "opportunities": [
+            "Upcoming developments in Paya Lebar commercial precinct and ongoing gentrification in Geylang and Joo Chiat are expected to increase demand and profile for the locale[1].",
+            "Enhancements to public infrastructure and connectivity (regional transport upgrades, cycling pathways) will likely drive future price appreciation[2].",
+            "Rental demand is sustained by proximity to the CBD (15–20 mins by MRT), business hubs, and the strong supply of regional amenities[5].",
+            "Ongoing shortage of city-fringe new launches supports price resilience and potential capital upside for projects with strong attributes[5].",
+            "Diverse unit mixes allow for flexibility in capturing different demand segments—from investors seeking compact units to families desiring larger layouts[1][2]."
+          ],
+          "threats": [
+            "Potential oversupply from other large-scale developments in nearby city-fringe and East Coast precincts could affect capital appreciation rates and rental yields[5].",
+            "Regulatory risks, such as tightening of property market cooling measures (ABSD, LTV limits), may dampen investment demand[5].",
+            "Market downturns, global economic volatility, or rising interest rates could suppress buyer sentiment and affordability[5].",
+            "Competition from established freehold projects in adjacent neighborhoods may attract buyers valuing tenure[5].",
+            "Saturation of amenities in the immediate area may limit unique differentiation as more mixed-use or integrated projects come online[5]."
+          ]
+        },
+        "sources": [
+          "https://www.propertyguru.com.sg/project/parc-esta-23534",
+          "https://parcesta-condo.com.sg",
+          "https://web.p-t-group.com/en/project-detail.php?projects_id=251&projects_name=Parc-Esta%2C-Singapore",
+          "https://parc-estamcl.com/project-details/",
+          "https://www.edgeprop.sg/condo-apartment/parc-esta"
+        ]
+      },
+      "key_considerations_actionable_advice": {
+        "buyer": {
+          "data": {
+            "pricing_and_financing": [
+              "Parc Esta is in the Rest of Central Region (RCR), where price growth for private condominiums has recently stabilized, seeing a 0.95% quarter-on-quarter increase and a 4.74% year-on-year increase, suggesting buyers should budget for a steadily priced but competitive market[1][3].",
+              "Check most recent per square foot (psf) transaction prices of Parc Esta and comparable condos in Eunos, Geylang, and Paya Lebar for benchmarking; expect psf to reflect stabilized but historically strong suburban demand.",
+              "Factor in rising home loan interest rates; obtain Approval in Principle (AIP) with multiple banks for the best mortgage packages, and consider fixed-rate versus floating-rate loans depending on risk tolerance[2].",
+              "Calculate Total Debt Servicing Ratio (TDSR) accurately by including all debt obligations to avoid qualifying issues.",
+              "Plan for stamp duties—Buyer’s Stamp Duty (BSD), and if you own other properties, be prepared for the Additional Buyer’s Stamp Duty (ABSD), which is significant for Singapore citizens, PRs, and foreigners.",
+              "Set aside sufficient funds for renovation and maintenance, which can be higher for larger units and full-facility developments like Parc Esta."
+            ],
+            "location_and_connectivity": [
+              "Parc Esta is directly opposite Eunos MRT, offering fast, convenient access to the CBD, Paya Lebar commercial precinct, and other parts of Singapore—this is a major draw for both owners and tenants.",
+              "Eunos and Paya Lebar are mature estates with established amenities such as markets, eateries, and shopping (e.g. Paya Lebar Quarter, SingPost Centre), supporting strong daily convenience.",
+              "Future nearby infrastructure, such as the Paya Lebar Air Base transformation, may enhance long-term value and lifestyle vibrancy in the area.",
+              "Proximity to prestigious schools (Haig Girls, Tanjong Katong Primary, and others) adds family appeal and supports rental interest from expatriate families."
+            ],
+            "risks_and_pitfalls": [
+              "Short- to mid-term rental competition in the Eunos, Geylang, and Paya Lebar precincts is strong, due to a surge in newly completed condos and existing mature inventory.",
+              "Ongoing price stabilization means short-term capital appreciation may be moderate, especially if purchased at recent high psf levels.",
+              "Noise and congestion at the busy Eunos MRT and main road frontage may affect some units’ desirability and resale premiums.",
+              "As the area’s development pipeline slows after 2025, future launches may be limited, reducing immediate competition but also capping nearby renewal potential in the short run."
+            ],
+            "timing_considerations": [
+              "Singapore’s property market is entering a consolidation phase in 2025: prices are stable, with minor growth, and volumes are healthy—this is a neutral market, good for careful entry but less ripe for bargain hunting[1][3][5].",
+              "Consider purchasing after collecting keys (if not yet completed) for a ready-for-occupation unit, which may avoid construction risk and offer immediate rental returns.",
+              "Stay abreast of upcoming government announcements regarding the Paya Lebar Air Base relocation, as potential infrastructure projects may positively impact mid-to-long-term values.",
+              "Watch for changes in ABSD or property tax policy, as these announcements tend to cluster around national Budget periods (Q1 each year)."
+            ],
+            "legal_and_due_diligence": [
+              "Engage a reputable conveyancing lawyer to verify all project approvals, conduct title searches, and review the Sale & Purchase Agreement to ensure no hidden encumbrances or restrictions.",
+              "Check whether your intended unit faces any easements or is affected by MCST by-laws (especially for landscaping, pool, or carpark views).",
+              "Confirm developer warranties and defect liability period are valid and comprehensive; request a defects inspection upon key collection.",
+              "Scrutinize Maintenance Fees—Parc Esta has extensive facilities, so MCST fees may be significant depending on your unit size."
+            ],
+            "resale_and_rental_potential": [
+              "Resale liquidity is expected to remain high due to Parc Esta’s MRT convenience, city-edge location, and broad demographic appeal.",
+              "Rental demand is supported by accessibility to the CBD, Paya Lebar commercial hub, and international schools, but expect rental yields to compress in the short term due to increased competition.",
+              "Two- and three-bedroom units tend to see stronger family and long-term rental demand, while one-bedders may face more competition from nearby launches.",
+              "Owner-occupiers will likely benefit from steady value retention, while investors should target units with unblocked views or unique layouts for above-average rental/resale performance."
+            ],
+            "ideal_buyer_profiles": [
+              "Upgraders moving from matured HDB estates, especially those leveraging sales proceeds amid stabilized but premium RCR pricing[2].",
+              "Young professionals and families seeking city-fringe convenience and strong school access, valuing proximity to MRT and amenities.",
+              "Investors prioritizing stable capital preservation and attractive rental demand in a prime city-fringe locale, but with moderate expectations of high short-term yields.",
+              "Expatriate buyers or PRs seeking an accessible and prestigious address close to the Paya Lebar business district.",
+              "Retirees or older couples downsizing from landed homes, valuing facilities, security, and robust estate management."
+            ]
+          },
+          "sources": [
+            "https://www.globalpropertyguide.com/asia/singapore/price-history",
+            "https://www.dbs.com.sg/personal/articles/nav/my-home/property-outlook",
+            "https://tradingeconomics.com/singapore/housing-index",
+            "https://www.youtube.com/watch?v=dy4SiDk54nE",
+            "https://dollarbackmortgage.com/blog/where-are-property-prices-going-in-singapore-2024/"
+          ]
+        },
+        "seller": {
+          "data": {
+            "optimal_timing_to_sell": [
+              "Consider selling in early-to-mid 2025, as private residential price growth is moderating after a period of strong appreciation—prices are stabilizing with increased supply coming onto the market, so the current window may capture residual high demand before further competition emerges[1][4].",
+              "Watch for major launches in the vicinity (new BTO and private projects) that could draw buyers away or exert downward pressure on resale prices; selling before these projects TOP may be advantageous[1].",
+              "Monitor transaction volume and price trends in District 14. If there’s an uptick in transaction activity or short supply of comparable units, it may indicate a seller’s market and an optimal window to sell[3]."
+            ],
+            "pricing_strategies_and_negotiation": [
+              "Set a realistic asking price using recent comparable Parc Esta transactions in 2024–2025. Overpricing deters interest as buyers have more alternatives given higher market supply[3].",
+              "Consider pricing slightly below direct competition to gain more viewing appointments and attract serious buyers in a market with stabilizing growth[1].",
+              "Be open to negotiation, especially as supply increases. Benchmark against units with better facing, layout, or floor level and adjust your pricing position accordingly.",
+              "Offer value-adds (e.g., flexible completion timelines, inclusion of certain furnishings) to stand out in a competitive environment."
+            ],
+            "marketing_approaches": [
+              "Engage a trusted property agent with strong experience in District 14 and Parc Esta to leverage their buyer networks, digital channels, and negotiation skills[3].",
+              "Invest in high-quality professional photos and 3D virtual tours to showcase Parc Esta’s lifestyle amenities and proximity to Eunos MRT — highlight its convenience and value[3].",
+              "List on major property websites like PropertyGuru and 99.co, ensuring your unit appears in search results filtered by Parc Esta.",
+              "Emphasize unique selling points: newness (recent TOP), comprehensive condominium facilities, attractive layouts, and strong rental yields for investors."
+            ],
+            "common_challenges_and_solutions": [
+              "Increased competition from new launches and resale units nearby may delay sales; counters by differentiating your unit (well-staged, priced attractively, flexible terms)[1].",
+              "Buyers may offer below-asking due to market stabilization; protect your price with data from recent transactions and be willing to negotiate add-ons instead of large price cuts.",
+              "Financing hurdles for some buyers amidst tighter loan conditions; vet buyer eligibility early or target cash-rich/serious buyers.",
+              "Tenanted units with inflexible viewing timings can deter buyers; work with tenants to enable easy access or sell with vacant possession if feasible."
+            ],
+            "legal_and_financial_considerations": [
+              "If selling within 3 years of property acquisition, factor in Seller’s Stamp Duty (SSD); Parc Esta TOP in 2022, so SSD typically ceases to apply from 2025 onwards for early buyers, but confirm your holding period[3].",
+              "Prepare for commission fees (typically 2% of sales price) and legal conveyancing costs.",
+              "Evaluate potential income tax liabilities for multiple properties or speculative activity as determined by IRAS.",
+              "Ensure no outstanding mortgage or CPF charge remains on the unit; resolve these before completion.",
+              "Non-citizen sellers should check for additional taxes or legal requirements pertaining to foreign ownership."
+            ],
+            "preparing_property_for_sale": [
+              "Declutter spaces, repaint walls with neutral colors, and address minor repairs (leaking taps, chipped surfaces). A well-maintained unit commands higher offers[3].",
+              "Professional staging (minimal decor, new linens, tasteful accessories) creates a showflat experience that helps buyers visualize living there.",
+              "Ensure all amenities (air-con, appliances, lighting) are serviced and in working order.",
+              "Have key documents ready, including the Option to Purchase (OTP), floor plan, warranties for appliances, and receipts for recent upgrades.",
+              "Deep-clean the unit and common balconies; buyers now expect near-move-in conditions, especially for newer projects like Parc Esta."
+            ],
+            "recommended_seller_profiles": [
+              "Homeowners who bought Parc Esta at launch (2018–2019) and have completed the Minimum Occupation period, thus avoiding SSD and capitalizing on accrued gains.",
+              "Investors seeking to rebalance portfolios given muted growth prospects, especially if rental yields have plateaued or interest costs have risen.",
+              "Sellers aiming to upgrade or relocate (e.g., moving to landed properties, larger units, or overseas) and seeking liquidity in a still-active market.",
+              "Owners of units with premium attributes (pool-facing, high-floor, or rare layouts) who can command above-average prices even in a balanced market."
+            ]
+          },
+          "sources": [
+            "https://www.homejourney.sg/blog/singapore-property-market-trends-2025-homejourney-experts-predict",
+            "https://www.parcesta.sg/modest-private-home-price-growth-expected-in-singapore/",
+            "https://www.propertyguru.com.sg/project/parc-esta-23534",
+            "https://rea-global.com/news/singapore-property-market-snapshot-march-2025",
+            "https://www.youtube.com/watch?v=dC_qBaE-qlA"
+          ]
+        }
+      }
+    }
+  }
+]
