@@ -349,7 +349,7 @@
                       "operation": "equals",
                       "type": "string"
                     },
-                    "rightValue": ""
+                    "rightValue": "same"
                   }
                 ],
                 "options": {
@@ -449,19 +449,19 @@
       "id": "b76382f3-1e83-49f1-b38b-b387005bd261",
       "name": "Edit a file",
       "parameters": {
-        "commitMessage": "=[{{ $json.github_status }}] {{ $('Backup To Github').item.json.name }}-{{ $('Github Params').item.json.tags[0].name }} in {{ $('Github Params').item.json.tags[1].name }}",
+        "commitMessage": "=[{{ $json.github_status }}] {{ $json.name }}-{{ $json.tags.filter(tag => /^v(\\d+(\\.\\d+)*)?$/.test(tag.name))[0].name\n }} in {{ $json.tags.filter(tag => /^(development|integration|staging|production)$/i.test(tag.name))[0].name\n }}",
         "fileContent": "={{ $('Compare Files').item.json.n8n_data_stringy }}",
-        "filePath": "={{ $('Github Params').item.json.repo.path }}{{ $('Github Params').item.json.tags[1].name }}/{{ $('Github Params').item.json.name }}-{{ $('Github Params').item.json.tags[0].name }}.json",
+        "filePath": "=propertyguru/{{ $json.tags.filter(tag => /^(development|integration|staging|production)$/i.test(tag.name))[0].name }}/{{ $json.name }}-{{ $json.tags.filter(tag => /^v(\\d+(\\.\\d+)*)?$/.test(tag.name))[0].name }}.json",
         "operation": "edit",
         "owner": {
           "__rl": true,
           "mode": "name",
-          "value": "={{ $('Github Params').item.json.repo.owner }}"
+          "value": "=SandeepFinTechPG"
         },
         "repository": {
           "__rl": true,
           "mode": "name",
-          "value": "={{ $('Github Params').item.json.repo.name }}"
+          "value": "=ai-powered-project-insights"
         },
         "resource": "file"
       },
@@ -623,7 +623,7 @@
       "id": "ec79345b-df93-4ce5-882b-dbc11c41148a",
       "name": "Compare Files",
       "parameters": {
-        "jsCode": "function orderJsonKeys(obj) {\n  if (Array.isArray(obj)) {\n    return obj.map(orderJsonKeys);\n  } else if (obj && typeof obj === 'object') {\n    return Object.keys(obj)\n      .sort()\n      .reduce((acc, key) => {\n        acc[key] = orderJsonKeys(obj[key]);\n        return acc;\n      }, {});\n  }\n  return obj;\n}\nconst n8nNodesWithIds = $input.all()[0].json.nodes;\n\n// Create a deep clone and remove \"id\" from each node\nfunction removeIdsDeep(obj) {\n  if (Array.isArray(obj)) {\n    return obj.map(removeIdsDeep);\n  } else if (obj && typeof obj === 'object') {\n    const newObj = {};\n    for (const key in obj) {\n      if (key !== 'id') {\n        newObj[key] = removeIdsDeep(obj[key]);\n      }\n    }\n    return newObj;\n  }\n  return obj;\n}\n\nconst n8nNodesRemovedIds = n8nNodesWithIds.map(node => removeIdsDeep(node));\n\nconst n8nNodes = orderJsonKeys(n8nNodesRemovedIds);\n\n// check if file returned with content\nif (Object.keys($input.all()[1].json).includes(\"content\")) {\n  // decode base64 content and parse JSON\n  console.log('first if');\n  const n8nWorkflow = $input.all()[0].json;\n  const githubdecodedString = Buffer.from($input.all()[1].json.content, 'base64').toString('utf-8');\nconst githubDecodedJson = JSON.parse(githubdecodedString);\n\nconst githubNodes = orderJsonKeys(githubDecodedJson.nodes)\n\n  // Order JSON objects\n  const orderedN8N = orderJsonKeys(n8nWorkflow);\n\n  // Determine difference\n  if (JSON.stringify(n8nNodes) === JSON.stringify(githubNodes)) {\n    $input.all()[0].json.github_status = \"same\";\n  } else {\n    $input.all()[0].json.github_status = \"different\";\n    $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedN8N, null, 2);\n  }\n\n  $input.all()[0].json.content_decoded = orderedN8N;\n\n  // No file returned / new workflow\n} else if (Object.keys($input.all()[1].json).includes(\"data\")) {\n  console.log('second if');\n  const n8nWorkflow = $input.all()[0].json;\n  const githubdecodedString = Buffer.from($input.all()[1].json.content, 'base64').toString('utf-8');\nconst githubDecodedJson = JSON.parse(githubdecodedString);\n\nconst githubNodes = orderJsonKeys(githubDecodedJson.nodes);\n\n  // Order JSON objects\n  const orderedN8N = orderJsonKeys(n8nWorkflow);\n\n  // Determine difference\n  if (JSON.stringify(n8nNodes) === JSON.stringify(githubNodes)) {\n    $input.all()[0].json.github_status = \"same\";\n  } else {\n    $input.all()[0].json.github_status = \"different\";\n    $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedN8N, null, 2);\n  }\n\n  $input.all()[0].json.content_decoded = orderedN8N;\n} else {\n  // Order JSON Object\n  console.log('third if');\n  const n8nWorkflow = $input.all()[0].json;\n  const orderedN8N = orderJsonKeys(n8nWorkflow);\n\n  $input.all()[0].json.github_status = \"new\";\n  $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedN8N, null, 2);\n  $input.all()[0].json.content_decoded = orderedN8N;\n}\n\n// Return items\nreturn $input.all()[0];"
+        "jsCode": "function orderJsonKeys(obj) {\n  if (Array.isArray(obj)) {\n    return obj.map(orderJsonKeys);\n  } else if (obj && typeof obj === 'object') {\n    return Object.keys(obj)\n      .sort()\n      .reduce((acc, key) => {\n        acc[key] = orderJsonKeys(obj[key]);\n        return acc;\n      }, {});\n  }\n  return obj;\n}\nconst n8nNodesWithIds = $input.all()[0].json.nodes;\n\n// Create a deep clone and remove \"id\" from each node\nfunction removeIdsDeep(obj) {\n  if (Array.isArray(obj)) {\n    return obj.map(removeIdsDeep);\n  } else if (obj && typeof obj === 'object') {\n    const newObj = {};\n    for (const key in obj) {\n      if (key !== 'id') {\n        newObj[key] = removeIdsDeep(obj[key]);\n      }\n    }\n    return newObj;\n  }\n  return obj;\n}\n\nconst n8nNodesRemovedIds = n8nNodesWithIds\n\nconst n8nNodes = orderJsonKeys(n8nNodesRemovedIds);\n\n// check if file returned with content\nif (Object.keys($input.all()[1].json).includes(\"content\")) {\n  // decode base64 content and parse JSON\n  console.log('first if');\n  const n8nWorkflow = $input.all()[0].json;\n  const githubdecodedString = Buffer.from($input.all()[1].json.content, 'base64').toString('utf-8');\nconst githubDecodedJson = JSON.parse(githubdecodedString);\n\nconst githubNodes = orderJsonKeys(githubDecodedJson.nodes)\n\n  // Order JSON objects\n  const orderedN8N = orderJsonKeys(n8nWorkflow);\n\n  // for (var i = 0; i < githubNodes.length; i++) {\n  //   const res = (JSON.stringify(n8nNodes[i]) === JSON.stringify(githubNodes[i]));\n  //   console.log('i = ', i);\n\n  //   if (res === false) {\n      \n  //     console.log('n8n nodes ', n8nNodes[i]);\n  //     console.log('github nodes ', githubNodes[i]);\n      \n  //   }\n  // }\n\n  // Determine difference\n  if (JSON.stringify(n8nNodes) === JSON.stringify(githubNodes)) {\n    $input.all()[0].json.github_status = \"same\";\n  } else {\n    $input.all()[0].json.github_status = \"different\";\n    $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedN8N, null, 2);\n  }\n\n  $input.all()[0].json.content_decoded = orderedN8N;\n\n  // No file returned / new workflow\n} else if (Object.keys($input.all()[1].json).includes(\"data\")) {\n  console.log('second if');\n  const n8nWorkflow = $input.all()[0].json;\n  const githubdecodedString = Buffer.from($input.all()[1].json.content, 'base64').toString('utf-8');\nconst githubDecodedJson = JSON.parse(githubdecodedString);\n\nconst githubNodes = orderJsonKeys(githubDecodedJson.nodes);\n\n  // Order JSON objects\n  const orderedN8N = orderJsonKeys(n8nWorkflow);\n\n  // Determine difference\n  if (JSON.stringify(n8nNodes) === JSON.stringify(githubNodes)) {\n    $input.all()[0].json.github_status = \"same\";\n  } else {\n    $input.all()[0].json.github_status = \"different\";\n    $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedN8N, null, 2);\n  }\n\n  $input.all()[0].json.content_decoded = orderedN8N;\n} else {\n  // Order JSON Object\n  console.log('third if');\n  const n8nWorkflow = $input.all()[0].json;\n  const orderedN8N = orderJsonKeys(n8nWorkflow);\n\n  $input.all()[0].json.github_status = \"new\";\n  $input.all()[0].json.n8n_data_stringy = JSON.stringify(orderedN8N, null, 2);\n  $input.all()[0].json.content_decoded = orderedN8N;\n}\n\n// Return items\nreturn $input.all()[0];"
       },
       "position": [
         64,
@@ -715,6 +715,6 @@
     }
   ],
   "triggerCount": 0,
-  "updatedAt": "2025-09-20T13:30:39.000Z",
-  "versionId": "8c7bc02b-c907-44fc-ada2-95c1e972e4be"
+  "updatedAt": "2025-09-20T13:47:49.000Z",
+  "versionId": "4fde6dd4-d309-49bc-88fa-c7aeec57341f"
 }
