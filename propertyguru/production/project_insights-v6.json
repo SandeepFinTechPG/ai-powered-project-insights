@@ -1,0 +1,1766 @@
+{
+  "active": false,
+  "connections": {
+    "AGENT FOCUSED INSIGHTS - Marketing Angles": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Merge1",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "AGENT FOCUSED INSIGHTS - USPs": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Merge1",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "COMPETITIVE MARKET ANALYSIS - Direct Competitive Comparison": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Competitive Landscape Analysis",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "COMPETITIVE MARKET ANALYSIS - Market Positioning": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Competitive Landscape Analysis",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "If",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Competitive Landscape Analysis": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Merge2",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Core Overview & Unit Specifics": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Merge",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Create Project Details JSON": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Gemini",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Create Project Details JSON1": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Merge3",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Fetch Unit Types": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Unit Type JSON",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Final Combine": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Prepare Project Details - MongoDB Insertion",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Format After AI Agent Validation": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Merge3",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Format After AI Agent Validation1": {
+      "main": [
+        []
+      ]
+    },
+    "Format After AI Agent Validation2": {
+      "main": [
+        []
+      ]
+    },
+    "Format After AI Agent Validation3": {
+      "main": [
+        []
+      ]
+    },
+    "Gemini": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Format After AI Agent Validation",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Gemini1": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Format After AI Agent Validation2",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "index": 0,
+            "node": "Gemini",
+            "type": "ai_languageModel"
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "index": 0,
+            "node": "Gemini1",
+            "type": "ai_languageModel"
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Fetch Unit Types",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "Merge",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Project Already In MongoDB",
+            "type": "main"
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "node": "Project Overview",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "HTTP Request",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "Unit Specifics",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "Location Connectivity Amenities - Connectivity1",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "Location Connectivity Amenities - Surrounding Amenities1",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "Location Connectivity Amenities - Recreation & Lifestyle1",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "Location Connectivity Amenities - Education Institution",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "Location Connectivity Amenities - On-Site Amenities",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "LIVING EXPERIENCE & MANAGEMENT - Resident Profile & Community Vibe1",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "LIVING EXPERIENCE & MANAGEMENT - MCST",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "COMPETITIVE MARKET ANALYSIS - Direct Competitive Comparison",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "COMPETITIVE MARKET ANALYSIS - Market Positioning",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "AGENT FOCUSED INSIGHTS - USPs",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "AGENT FOCUSED INSIGHTS - Marketing Angles",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "SWOT Analysis",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "KEY CONSIDERATIONS & ACTIONABLE ADVICE - Buyer",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "KEY CONSIDERATIONS & ACTIONABLE ADVICE - Seller",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "KEY CONSIDERATIONS & ACTIONABLE ADVICE - Buyer": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Key Considerations & Actionable Advice",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "KEY CONSIDERATIONS & ACTIONABLE ADVICE - Seller": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Key Considerations & Actionable Advice",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Key Considerations & Actionable Advice": {
+      "main": [
+        [
+          {
+            "index": 4,
+            "node": "Merge2",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "LIVING EXPERIENCE & MANAGEMENT - MCST": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Living Experience & Management",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "LIVING EXPERIENCE & MANAGEMENT - Resident Profile & Community Vibe1": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Living Experience & Management",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Living Experience & Management": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Merge2",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Location Connectivity & Amenities": {
+      "main": [
+        [
+          {
+            "index": 2,
+            "node": "Merge",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Location Connectivity Amenities - Connectivity1": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Location Connectivity & Amenities",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Location Connectivity Amenities - Education Institution": {
+      "main": [
+        [
+          {
+            "index": 3,
+            "node": "Location Connectivity & Amenities",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Location Connectivity Amenities - On-Site Amenities": {
+      "main": [
+        [
+          {
+            "index": 4,
+            "node": "Location Connectivity & Amenities",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Location Connectivity Amenities - Recreation & Lifestyle1": {
+      "main": [
+        [
+          {
+            "index": 2,
+            "node": "Location Connectivity & Amenities",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Location Connectivity Amenities - Surrounding Amenities1": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Location Connectivity & Amenities",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "MARKET PERFORMANCE & FINANCIALS — Ownership Costs": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Market Performance & Financials",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "MARKET PERFORMANCE & FINANCIALS — Rental Market Analysis": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Market Performance & Financials",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "MARKET PERFORMANCE & FINANCIALS — Sales Transactions & Pricing": {
+      "main": [
+        [
+          {
+            "index": 2,
+            "node": "Market Performance & Financials",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Market Performance & Financials": {
+      "main": [
+        [
+          {
+            "index": 3,
+            "node": "Merge",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Create Project Details JSON",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "index": 2,
+            "node": "Merge2",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Merge2": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Create Project Details JSON1",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Merge3": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Final Combine",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "On form submission": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Project Search",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Open AI": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Format After AI Agent Validation1",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Open AI1": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Format After AI Agent Validation3",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "index": 0,
+            "node": "Open AI",
+            "type": "ai_languageModel"
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "index": 0,
+            "node": "Open AI1",
+            "type": "ai_languageModel"
+          }
+        ]
+      ]
+    },
+    "Prepare Project Details - MongoDB Insertion": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Insert Project Details",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Project Overview": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Core Overview & Unit Specifics",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Project Search": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Code",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "SWOT Analysis": {
+      "main": [
+        [
+          {
+            "index": 3,
+            "node": "Merge2",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Unit Specifics": {
+      "main": [
+        [
+          {
+            "index": 1,
+            "node": "Fetch Unit Types",
+            "type": "main"
+          },
+          {
+            "index": 1,
+            "node": "Core Overview & Unit Specifics",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Unit Type JSON": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "MARKET PERFORMANCE & FINANCIALS — Ownership Costs",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "MARKET PERFORMANCE & FINANCIALS — Rental Market Analysis",
+            "type": "main"
+          },
+          {
+            "index": 0,
+            "node": "MARKET PERFORMANCE & FINANCIALS — Sales Transactions & Pricing",
+            "type": "main"
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-07-24T17:49:53.316Z",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "project_insights",
+  "nodes": [
+    {
+      "name": "On form submission",
+      "parameters": {
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Project Name"
+            }
+          ]
+        },
+        "formTitle": "Location Analysis",
+        "options": {}
+      },
+      "position": [
+        -240,
+        544
+      ],
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "webhookId": "3c8a29e9-14f3-497c-b7b5-fe097aa3e629"
+    },
+    {
+      "alwaysOutputData": true,
+      "name": "If",
+      "parameters": {
+        "conditions": {
+          "combinator": "and",
+          "conditions": [
+            {
+              "leftValue": "={{ $json.result }}",
+              "operator": {
+                "operation": "true",
+                "singleValue": true,
+                "type": "boolean"
+              },
+              "rightValue": ""
+            }
+          ],
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          }
+        },
+        "options": {}
+      },
+      "position": [
+        304,
+        544
+      ],
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2
+    },
+    {
+      "name": "Code",
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nlet result = false;\nif ($input?.first()?.json?._id) {\n  result = true;\n}\n\nreturn {\n  result: result,\n  propertyName: $('On form submission').first().json['Project Name']\n}"
+      },
+      "position": [
+        128,
+        544
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "alwaysOutputData": true,
+      "credentials": {
+        "mongoDb": {
+          "name": "MongoDB Fintech INT Admin"
+        }
+      },
+      "name": "Project Search",
+      "parameters": {
+        "collection": "project",
+        "options": {},
+        "query": "={\n  \"project.core_property_unit_specifics.project_overview.data.project_name\": \"{{$json[\"Project Name\"]}}\"\n}"
+      },
+      "position": [
+        -64,
+        544
+      ],
+      "type": "n8n-nodes-base.mongoDb",
+      "typeVersion": 1.2
+    },
+    {
+      "alwaysOutputData": true,
+      "credentials": {
+        "mongoDb": {
+          "name": "MongoDB Fintech INT Admin"
+        }
+      },
+      "name": "Insert Project Details",
+      "parameters": {
+        "collection": "project",
+        "fields": "=project",
+        "operation": "insert",
+        "options": {}
+      },
+      "position": [
+        8080,
+        -352
+      ],
+      "type": "n8n-nodes-base.mongoDb",
+      "typeVersion": 1.2
+    },
+    {
+      "name": "Create Project Details JSON",
+      "parameters": {
+        "jsCode": "// Get all items from the merge node\nconst allItems = $input.all();\n\n// Initialize the result structure\nconst result = {\n  core_property_unit_specifics: {\n    project_overview: {},\n    unit_specifics: {}\n  },\n  location_connectivity_amenities: {\n    connectivity: {},\n    on_site_facilities: {},\n    surrounding_amenities: {},\n    recreational_lifestyle: {},\n    education_institutions: {} \n  },\n  market_performance_analysis: {\n    sales_transactions_pricing: {},\n    rental_market_analysis: {},\n    ownership_costs: {}\n  }\n};\n\n// Process each item from the merge node\nallItems.forEach(item => {\n  // The various possible input shapes\n  const apiResponse = item.json;\n\n  // Case 1: OpenAI/Anthropic-style JSON\n  if (apiResponse && apiResponse.choices && apiResponse.choices[0]) {\n    const content = apiResponse.choices[0].message.content;\n    const citations = apiResponse.citations || [];\n\n    if (!content) return [];\n\n    try {\n      const parsedContent = JSON.parse(content);\n      console.log(\"Development Overview\", parsedContent.development_overview);\n\n      // Development Overview\n      if (parsedContent.development_overview) {\n        result.core_property_unit_specifics.project_overview = {\n          data: {\n            project_id: $input.first().json.objectId,\n            project_type: $input.first().json.objectType,\n            project_name: $input.first().json.displayText,\n            project_display_type: $input.first().json.displayType,\n            project_description: $input.first().json.displayDescription,\n            property_type_group: $input.first().json.properties.propertyTypeGroup,\n            district: $input.first().json.properties.district,\n            ...parsedContent.development_overview\n          },\n          sources: citations\n        };\n      }\n\n      // Unit Specifics\n      if (parsedContent.unit_specifics) {\n        console.log('unit specifics');\n        result.core_property_unit_specifics.unit_specifics = {\n          data: parsedContent.unit_specifics,\n          sources: citations\n        };\n      }\n\n      // Transport Connectivity\n      if (parsedContent.connectivity) {\n        result.location_connectivity_amenities.connectivity = {\n          data: parsedContent.connectivity,\n          sources: citations\n        };\n      }\n\n      // On-Site Facilities\n      if (parsedContent.on_site_facilities) {\n        result.location_connectivity_amenities.on_site_facilities = {\n          data: parsedContent.on_site_facilities,\n          sources: citations\n        };\n      }\n      \n      // Surrounding Amenities\n      if (parsedContent.surrounding_amenities) {\n        result.location_connectivity_amenities.surrounding_amenities = {\n          data: parsedContent.surrounding_amenities,\n          sources: citations\n        };\n      }\n\n      // Recreational Lifestyle\n      if (parsedContent.recreational_lifestyle) {\nresult.location_connectivity_amenities.recreational_lifestyle = {\n          data: parsedContent.recreational_lifestyle,\n          sources: citations\n        };\n      }\n\n      // Education Institution\n      if (parsedContent.education_institutions) {\n        result.location_connectivity_amenities.education_institutions = {\n          data: parsedContent.education_institutions,\n          sources: citations\n        };\n      }\n\n      // Sales Transactions Pricing\n      if (parsedContent.sales_transactions_pricing) {\n        result.market_performance_analysis.sales_transactions_pricing = {\n          data: parsedContent.sales_transactions_pricing,\n          sources: citations\n        };\n      }\n\n      // Rental Market Analysis\n      if (parsedContent.rental_market_analysis) {\n        result.market_performance_analysis.rental_market_analysis = {\n          data: parsedContent.rental_market_analysis,\n          sources: citations\n        };\n      }\n\n      // Ownership Costs\n      if (parsedContent.ownership_costs) {\n        result.market_performance_analysis.ownership_costs = {\n          data: parsedContent.ownership_costs,\n          sources: citations\n        };\n      }\n\n    } catch (error) {\n      console.log('Failed to parse JSON for item:', error.message);\n      console.log('Content was:', content);\n    }\n\n  // Case 2: Direct data shape (e.g., project scores directly at top level)\n  } else if (apiResponse && (apiResponse.main_project || apiResponse.similar_projects)) {\n    // Defensive: Only fill it if not already filled\n    if (!result.comparison_similar_projects || Object.keys(result.comparison_similar_projects).length === 0) {\n      result.comparison_similar_projects = {\n        data: {\n          main_project: apiResponse.main_project || undefined,\n          similar_projects: apiResponse.similar_projects || undefined\n        },\n        sources: [] // Add citations if present at this level\n      };\n    }\n  }\n});\n\n// Clean up empty sections\nObject.keys(result).forEach(key => {\n  if (Object.keys(result[key]).length === 0) {\n    delete result[key];\n  }\n});\n\nreturn result instanceof Array\n  ? result.map(item => ({ json: {project: item} }))\n  : [{ json: {project: result} }];\n"
+      },
+      "position": [
+        5760,
+        -608
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "name": "Prepare Project Details - MongoDB Insertion",
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "name": "project",
+              "type": "object",
+              "value": "={{ $json }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "position": [
+        7824,
+        -368
+      ],
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4
+    },
+    {
+      "name": "HTTP Request",
+      "parameters": {
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-GB,en-US;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "authorization",
+              "value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6IkQ5R01LTUdJLTU5SDk0N1dFLTVNSjQyQ0pFLTlISDFBUDROIiwiY2xpZW50TmFtZSI6IndlYi1hZ2VudG5ldCIsInJlZ2lvbiI6InNnIiwic2NvcGUiOlsic2luZ2Fwb3JlIl0sInVzZXJuYW1lIjoicWFhZ2VudDJAcHJvcGVydHlndXJ1LmNvbSIsImFnZW50SWQiOjQzNzg0NCwidXNlcklkIjo0Mzc4NDQsImlkIjoiZTdhYzBjZjctNzgzZC00MTY0LWI4ZTYtY2E3MTliMjBjMDkyIiwidW1zdGlkIjoiNWYwYjI1MjItYWZiYi00NDNhLWFkZTItNDI2MTJiODkyZDRlIiwic2VuZGhlbHBlclVzZXJJZCI6bnVsbCwicm9sZXMiOlsiQUdFTlQiLCJVU0VSIl0sImdyYW50VHlwZSI6InJlZnJlc2hfdG9rZW4iLCJicmFuZCI6IlBHIiwiaWF0IjoxNzUwMDM5MDUzLCJleHAiOjE3NTAwMzk2NTMsImlzcyI6ImF1dGhvcml6YXRpb24tc2VydmVyIn0.e2iyN_K60AkHnnKk4XAH1dS2yyRuhTtXtETccpZUStAw-YVdW_nSbDkWefhNrBQLgl5KtT6tP09qhKOQcmHL28djL0j9i2BUufTqOjOQ1euFBoakli7z63dITVjwEaF-CdbL6hchpZyr54vAcVev1Rh_AVo--vp_IMl3spUgUY1kcUMVU0mgASLWqLTMijT1Mwk-h5FJdSd3LtMhwIz16ajF7HDejeu3WHYRvA1rqBwiQtqO4RhANGejL-CKO2kbqRdFOUR7ZooX5bI6Ix5jRMBOCMLQ3y13x-lWU4UlB3j31qr6YCr3Urt2xCDHhUyDdbW2rpzS0Nj71hnl-jR7uH3r4WxMHibZuAFwz3rfcWKSk9zOG6waU_LIGYOVGfWH1MK92V75rcvO_aRKLJF3NGgsRBqLzt7kHcS3QipadxS5EkvTViwHbDiWiKNcIVEGxsLVS0TiP1KlHpO3TKuh7hzH_UfSDnkf905ocPQPZWuMVOP3RHNjgVcTRmPBprRJuHCcKYyLroSlSStk28LnEnYYD1RuOMotIRoMzWTFAUDFYpqhg6NEHoMufR-VNoaU4XeOWw7L30OqCYz6Fn_kheP62y0EOi2RvlT3ZDQcyGrFF9LsOLBmas0MiAg2mFZvJsJ-t3I9GwHO0n6m_S4hQIcEGAghYQzh3JjNQtzAQDo"
+            },
+            {
+              "name": "origin",
+              "value": "https://agentnet.staging.propertyguru.com.sg"
+            },
+            {
+              "name": "priority",
+              "value": "u=1, i"
+            },
+            {
+              "name": "referer",
+              "value": "https://agentnet.staging.propertyguru.com.sg/v3/create-listing"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "cross-site"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            }
+          ]
+        },
+        "options": {},
+        "sendHeaders": true,
+        "url": "=https://prefix-search.propertyguru.com/v1/sg/autocomplete?locale=en&limit=1&object_type=PROPERTY&query={{ $json.propertyName }}&property_type_group_exclude[]=COMMERCIAL&property_type_group_exclude[]=OTHER"
+      },
+      "position": [
+        1824,
+        -1296
+      ],
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2
+    },
+    {
+      "name": "Core Overview & Unit Specifics",
+      "parameters": {},
+      "position": [
+        3184,
+        -736
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Location Connectivity & Amenities",
+      "parameters": {
+        "numberInputs": 5
+      },
+      "position": [
+        3184,
+        -448
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Format After AI Agent Validation",
+      "parameters": {
+        "jsCode": "const input = $input.all();\n\nreturn input.map((item, index) => {\n  try {\n    const rawOutput = item.json?.output;\n\n    if (!rawOutput || typeof rawOutput !== 'string') {\n      throw new Error(`Missing or invalid 'output' at index ${index}`);\n    }\n\n    const parsedOutput = JSON.parse(rawOutput);\n\n    return {\n      json: parsedOutput\n    };\n  } catch (error) {\n    return {\n      json: {\n        error: error.message,\n        originalOutput: item.json?.output\n      }\n    };\n  }\n});\n"
+      },
+      "position": [
+        6400,
+        -608
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "credentials": {
+        "googlePalmApi": {
+          "name": "Google Gemini(PaLM) - Aryan"
+        }
+      },
+      "name": "Google Gemini Chat Model",
+      "parameters": {
+        "modelName": "models/gemini-2.5-pro",
+        "options": {}
+      },
+      "position": [
+        6000,
+        -416
+      ],
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1
+    },
+    {
+      "name": "Format After AI Agent Validation1",
+      "parameters": {
+        "jsCode": "const input = $input.all();\n\nreturn input.map((item, index) => {\n  try {\n    const rawOutput = item.json?.output;\n\n    if (!rawOutput || typeof rawOutput !== 'string') {\n      throw new Error(`Missing or invalid 'output' at index ${index}`);\n    }\n\n    const parsedOutput = JSON.parse(rawOutput);\n\n    return {\n      json: parsedOutput\n    };\n  } catch (error) {\n    return {\n      json: {\n        error: error.message,\n        originalOutput: item.json?.output\n      }\n    };\n  }\n});\n"
+      },
+      "position": [
+        7024,
+        -128
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "name": "Market Performance & Financials",
+      "parameters": {
+        "numberInputs": 3
+      },
+      "position": [
+        3872,
+        -1440
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Living Experience & Management",
+      "parameters": {},
+      "position": [
+        3184,
+        -48
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Competitive Landscape Analysis",
+      "parameters": {},
+      "position": [
+        3200,
+        320
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Merge1",
+      "parameters": {},
+      "position": [
+        3200,
+        640
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Key Considerations & Actionable Advice",
+      "parameters": {},
+      "position": [
+        3200,
+        1824
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Project Already In MongoDB",
+      "parameters": {},
+      "position": [
+        528,
+        80
+      ],
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1
+    },
+    {
+      "name": "Fetch Unit Types",
+      "parameters": {},
+      "position": [
+        2624,
+        -1104
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Unit Type JSON",
+      "parameters": {
+        "jsCode": "const allItems = $input.all();\n\nlet propertyName = $input.first().json.displayText;\nlet unitTypes = [];\n\nfor (const item of allItems) {\n  const json = item.json;\n\n  console.log(json);\n\n  // Handle OpenAI/Anthropic-style completions\n  if (json.choices && Array.isArray(json.choices) && json.choices[0]?.message?.content) {\n    try {\n      const parsed = JSON.parse(json.choices[0].message.content);\n      const types = parsed.unit_specifics?.unit_types || [];\n\n      console.log('unit types', types);\n\n      unitTypes = types.map(unit => {\n        let type = unit.type.trim();\n\n        // Normalize common separators to hyphens\n        type = type\n          .replace(/\\s*\\+\\s*/g, '-')        // Replace + with -\n          .replace(/\\s*\\/\\s*/g, '-');       // Replace / with -\n\n        // Insert hyphen before a capitalized word that immediately follows a number and 'BR'\n        // This handles cases like \"4BRPremium\", \"1BRStudy\", \"2BRFlex\"\n        type = type.replace(/(\\dBR)([A-Z][a-z]*)/g, '$1-$2');\n\n        // Remove any remaining spaces\n        type = type.replace(/\\s+/g, '');\n\n        return {\n          key: type\n        };\n      });\n\n    } catch (err) {\n      console.log(\"Failed to parse unit_types:\", err.message);\n    }\n  }\n}\n\n// Return clean result\nreturn [\n  {\n    json: {\n      propertyName: propertyName,\n      unitTypes: unitTypes\n    }\n  }\n];\n"
+      },
+      "position": [
+        3008,
+        -1440
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "credentials": {
+        "openAiApi": {
+          "name": "OpenAi account"
+        }
+      },
+      "name": "OpenAI Chat Model",
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "cachedResultName": "gpt-5-2025-08-07",
+          "mode": "list",
+          "value": "gpt-5-2025-08-07"
+        },
+        "options": {}
+      },
+      "position": [
+        6640,
+        64
+      ],
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2
+    },
+    {
+      "name": "Open AI",
+      "parameters": {
+        "options": {},
+        "promptType": "define",
+        "text": "=You are an expert property data validation assistant with access to tools and real estate data sources. I will provide you a JSON file containing detailed information about a residential project in Singapore. Your task is to:\n\n1. Validate the factual accuracy of each field using trusted sources such as:\n   a. PropertyGuru\n   b. 99.co\n   c. EdgeProp\n   d. URA Master Plan\n   e. OneMap.sg\n   f. Official developer website\n   g. SingPost (for postal codes)\n   h. Google Maps\n\n2. Cross-check all fields, including but not limited to:\n   - living_experience_management\n      - resident_profile_community_vibe\n      - mcst_and_management_quality\n   - competitive_landscape_analysis\n      - direct_competitor_comparison\n      - market_positioning\n   - agent_focused_insights\n      - unique_selling_propositions\n      - marketing_angles\n   - swot_analysis\n   - key_considerations_actionable_advice\n      - buyer\n      - seller\n\n3. If you find any inconsistencies, invalid formats, incorrect values, or empty fields that can be confidently filled:\n   a. Update the fields with actual correct values. **NOTE: Only update the value if the confidence score for the updated value is more than 95%.**\n   d. Do not wrap the output in markdown code blocks or add any language tags.\n\n4. Also remove all the reference markers, citations, or footnote references from the fields.\n\nOutput only raw, valid JSON.\n\nBelow is the JSON file you need to validate:\n{{ JSON.stringify($json, null, 2) }}"
+      },
+      "position": [
+        6640,
+        -128
+      ],
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2
+    },
+    {
+      "name": "Gemini",
+      "parameters": {
+        "options": {
+          "systemMessage": ""
+        },
+        "promptType": "define",
+        "text": "=You are an expert property data validation assistant. I will provide you a JSON object describing detailed information about a residential project in Singapore. Your task is to:\n\n1. **Validate the factual accuracy of each field** using trusted sources like:\n   - PropertyGuru\n   - 99.co\n   - EdgeProp\n   - URA Master Plan\n   - OneMap.sg\n   - Official developer website\n   - SingPost (for postal codes)\n   - Google Maps\n   - Brochures\n\n2. **Cross-check all the fields (nested as well) within**:\n   - core_property_unit_specifics\n      - project_overview\n      - unit_specifics\n   - location_connectivity_amenities\n      - connectivity\n      - on_site_facilities\n      - surrounding_amenities\n      - recreational_lifestyle\n      - education_institutions\n   - market_performance_analysis\n      - sales_transactions_pricing\n      - rental_market_analysis\n      - ownership_costs\n\n3. For any field that is null, **try to find the value and update it**.\n\n4. For each field (including nested fields) for which the confidence score seems to be less than 70, update the field with actual correct value.\n\n5. In case more information is available, add it with the exact structure defined in the input json. **DO NOT CHANGE THE JSON STRUCTURE TO ANYTHING ELSE, FOLLOW IT STRICTLY.**\n\n6. **Do NOT return anything except the updated JSON**\n✅ If data is already accurate, leave it unchanged.\n❌ No explanations\n❌ ANY MARKDOWN CODE FENCES (e.g. ```json) SHOULD BE STRIPPED\n✅ Return only **valid raw JSON**\n❌ ❌ Do not leave the answer incomplete or cut off midway.\n\n7. Important:  \n**Please double check the sources** and **only make changes if you're sure** that current data is wrong.  \n\n\nHere's the JSON object with all the details of the Project:\n{{ JSON.stringify($json, null, 2) }}\n"
+      },
+      "position": [
+        6000,
+        -608
+      ],
+      "retryOnFail": true,
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2
+    },
+    {
+      "alwaysOutputData": true,
+      "name": "Merge",
+      "parameters": {
+        "numberInputs": 4
+      },
+      "position": [
+        5504,
+        -640
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "alwaysOutputData": true,
+      "name": "Merge2",
+      "parameters": {
+        "numberInputs": 5
+      },
+      "position": [
+        5472,
+        -176
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Create Project Details JSON1",
+      "parameters": {
+        "jsCode": "// Get all items from the merge node\nconst allItems = $input.all();\n\n// Initialize the result structure\nconst result = {\n  living_experience_management: {\n    resident_profile_community_vibe: {},\n    mcst_and_management_quality: {},\n  },\n  competitive_landscape_analysis: {\n    direct_competitor_comparison: {},\n    market_positioning: {},\n  },\n  agent_focused_insights: {\n    unique_selling_propositions: {},\n    marketing_angles: {},\n  },\n  swot_analysis: {},\n  key_considerations_actionable_advice: {\n    buyer: {},\n    seller: {}\n  }\n};\n\n// Process each item from the merge node\nallItems.forEach(item => {\n  // The various possible input shapes\n  const apiResponse = item.json;\n\n  // Case 1: OpenAI/Anthropic-style JSON\n  if (apiResponse && apiResponse.choices && apiResponse.choices[0]) {\n    const content = apiResponse.choices[0].message.content;\n    const citations = apiResponse.citations || [];\n\n    if (!content) return [];\n\n    try {\n      const parsedContent = JSON.parse(content);\n\n      // Resident Profile Community Vibe\n      if (parsedContent.resident_profile_community_vibe) {\n        result.living_experience_management.resident_profile_community_vibe = {\n          data: parsedContent.resident_profile_community_vibe,\n          sources: citations\n        };\n      }\n\n      // MCST and Management Quality\n      if (parsedContent.mcst_and_management_quality) {\n        result.living_experience_management.mcst_and_management_quality = {\n          data: parsedContent.mcst_and_management_quality,\n          sources: citations\n        };\n      }\n\n      // Direct Competitor Comparison\n      if (parsedContent.direct_competitor_comparison) {\n        result.competitive_landscape_analysis.direct_competitor_comparison = {\n          data: parsedContent.direct_competitor_comparison,\n          sources: citations\n        };\n      }\n\n      // Market Positioning\n      if (parsedContent.market_positioning) {\n        result.competitive_landscape_analysis.market_positioning = {\n          data: parsedContent.market_positioning,\n          sources: citations\n        };\n      }\n\n      // Unique Selling Propositions\n      if (parsedContent.unique_selling_propositions) {\n        result.agent_focused_insights.unique_selling_propositions = {\n          data: parsedContent.unique_selling_propositions,\n          sources: citations\n        };\n      }\n\n      // Marketing Angles\n      if (parsedContent.marketing_angles) {\n        result.agent_focused_insights.marketing_angles = {\n          data: parsedContent.marketing_angles,\n          sources: citations\n        };\n      }\n\n      // SWOT Analysis\n      if (parsedContent.swot_analysis) {\n        result.swot_analysis = {\n          data: parsedContent.swot_analysis,\n          sources: citations\n        };\n      }\n\n      // Key Considerations Actionable Advice Buyer\n      if (parsedContent.key_considerations_actionable_advice_buyers) {\n        result.key_considerations_actionable_advice.buyer = {\n          data: parsedContent.key_considerations_actionable_advice_buyers,\n          sources: citations\n        };\n      }\n\n      // Key Considerations Actionable Advice Seller\n      if (parsedContent.key_considerations_actionable_advice_sellers) {\n        result.key_considerations_actionable_advice.seller = {\n          data: parsedContent.key_considerations_actionable_advice_sellers,\n          sources: citations\n        };\n      }\n    } catch (error) {\n      console.log('Failed to parse JSON for item:', error.message);\n      console.log('Content was:', content);\n    }\n\n  // Case 2: Direct data shape (e.g., project scores directly at top level)\n  } else if (apiResponse && (apiResponse.main_project || apiResponse.similar_projects)) {\n    // Defensive: Only fill it if not already filled\n    if (!result.comparison_similar_projects || Object.keys(result.comparison_similar_projects).length === 0) {\n      result.comparison_similar_projects = {\n        data: {\n          main_project: apiResponse.main_project || undefined,\n          similar_projects: apiResponse.similar_projects || undefined\n        },\n        sources: [] // Add citations if present at this level\n      };\n    }\n  }\n});\n\n// Clean up empty sections\nObject.keys(result).forEach(key => {\n  if (Object.keys(result[key]).length === 0) {\n    delete result[key];\n  }\n});\n\nreturn result instanceof Array\n  ? result.map(item => ({ json: {project: item} }))\n  : [{ json: {project: result} }];\n"
+      },
+      "position": [
+        5760,
+        -128
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "name": "Gemini1",
+      "parameters": {
+        "options": {
+          "returnIntermediateSteps": false,
+          "systemMessage": ""
+        },
+        "promptType": "define",
+        "text": "=You are an expert property data validation assistant. I will provide you a JSON object describing detailed information about a residential project in Singapore. Your task is to:\n\n1. **Validate the factual accuracy of each field** using trusted sources like:\n   - PropertyGuru\n   - 99.co\n   - EdgeProp\n   - URA Master Plan\n   - OneMap.sg\n   - Official developer website\n   - SingPost (for postal codes)\n   - Google Maps\n   - Brochures\n\n2. **Cross-check all the fields (nested as well) within**:\n   - living_experience_management\n      - resident_profile_community_vibe\n      - mcst_and_management_quality\n   - competitive_landscape_analysis\n      - direct_competitor_comparison\n      - market_positioning\n   - agent_focused_insights\n      - unique_selling_propositions\n      - marketing_angles\n   - swot_analysis\n   - key_considerations_actionable_advice\n      - buyer\n      - seller\n\n3. For any field that is null, **try to find the value and update it**.\n\n4. For each field (including nested fields) for which the confidence score seems to be less than 70, update the field with actual correct value.\n\n5. In case more information is available, add it with the exact structure defined in the input json. **DO NOT CHANGE THE JSON STRUCTURE TO ANYTHING ELSE, FOLLOW IT STRICTLY.**\n\n6. **Do NOT return anything except the updated JSON**\n✅ If data is already accurate, leave it unchanged.\n❌ No explanations\n❌ ANY MARKDOWN CODE FENCES (e.g. ```json) SHOULD BE STRIPPED\n✅ Return only **valid raw JSON**\n❌ ❌ Do not leave the answer incomplete or cut off midway.\n\n7. Important:  \n**Please double check the sources** and **only make changes if you're sure** that current data is wrong.  \n\n\nHere's the JSON object with all the details of the Project:\n{{ JSON.stringify($json, null, 2) }}\n"
+      },
+      "position": [
+        5984,
+        -128
+      ],
+      "retryOnFail": false,
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2
+    },
+    {
+      "credentials": {
+        "googlePalmApi": {
+          "name": "Google Gemini(PaLM) - Aryan"
+        }
+      },
+      "name": "Google Gemini Chat Model1",
+      "parameters": {
+        "modelName": "models/gemini-2.5-pro",
+        "options": {}
+      },
+      "position": [
+        5984,
+        64
+      ],
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1
+    },
+    {
+      "name": "Format After AI Agent Validation2",
+      "parameters": {
+        "jsCode": "const input = $input.all();\n\nreturn input.map((item, index) => {\n  try {\n    const rawOutput = item.json?.output;\n\n    if (!rawOutput || typeof rawOutput !== 'string') {\n      throw new Error(`Missing or invalid 'output' at index ${index}`);\n    }\n\n    const parsedOutput = JSON.parse(rawOutput);\n\n    return {\n      json: parsedOutput\n    };\n  } catch (error) {\n    return {\n      json: {\n        error: error.message,\n        originalOutput: item.json?.output\n      }\n    };\n  }\n});\n"
+      },
+      "position": [
+        6400,
+        -128
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "name": "Final Combine",
+      "parameters": {
+        "jsCode": "const input = $input.all();\n\nlet mergedData = {};\n\nfor (const item of input) {\n  if (item?.json?.project) {\n    mergedData = {\n      ...mergedData,\n      ...item.json.project\n    };\n  }\n}\n\nreturn [\n  {\n    json: {\n      data: mergedData\n    }\n  }\n];\n"
+      },
+      "position": [
+        7632,
+        -368
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "alwaysOutputData": true,
+      "name": "Merge3",
+      "parameters": {},
+      "position": [
+        7424,
+        -368
+      ],
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2
+    },
+    {
+      "name": "Format After AI Agent Validation3",
+      "parameters": {
+        "jsCode": "const input = $input.all();\n\nreturn input.map((item, index) => {\n  try {\n    const rawOutput = item.json?.output;\n\n    if (!rawOutput || typeof rawOutput !== 'string') {\n      throw new Error(`Missing or invalid 'output' at index ${index}`);\n    }\n\n    const parsedOutput = JSON.parse(rawOutput);\n\n    return {\n      json: parsedOutput\n    };\n  } catch (error) {\n    return {\n      json: {\n        error: error.message,\n        originalOutput: item.json?.output\n      }\n    };\n  }\n});\n"
+      },
+      "position": [
+        7024,
+        -608
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "credentials": {
+        "openAiApi": {
+          "name": "OpenAi account"
+        }
+      },
+      "name": "OpenAI Chat Model1",
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "cachedResultName": "gpt-5-2025-08-07",
+          "mode": "list",
+          "value": "gpt-5-2025-08-07"
+        },
+        "options": {}
+      },
+      "position": [
+        6640,
+        -400
+      ],
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2
+    },
+    {
+      "name": "Open AI1",
+      "parameters": {
+        "options": {},
+        "promptType": "define",
+        "text": "=You are an expert property data validation assistant with access to tools and real estate data sources. I will provide you a JSON file containing detailed information about a residential project in Singapore. Your task is to:\n\n1. Validate the factual accuracy of each field using trusted sources such as:\n   a. PropertyGuru\n   b. 99.co\n   c. EdgeProp\n   d. URA Master Plan\n   e. OneMap.sg\n   f. Official developer website\n   g. SingPost (for postal codes)\n   h. Google Maps\n\n2. Cross-check all fields, including but not limited to:\n   - core_property_unit_specifics\n      - project_overview\n      - unit_specifics\n   - location_connectivity_amenities\n      - connectivity\n      - on_site_facilities\n      - surrounding_amenities\n      - recreational_lifestyle\n      - education_institutions\n   - market_performance_analysis\n      - sales_transactions_pricing\n      - rental_market_analysis\n      - ownership_costs\n   \n3. If you find any inconsistencies, invalid formats, incorrect values, or empty fields that can be confidently filled:\n   a. Update the fields with actual correct values. **NOTE: Only update the value if the confidence score for the updated value is more than 95%.**\n   d. Do not wrap the output in markdown code blocks or add any language tags.\n\n4. Also remove all the reference markers, citations, or footnote references from the fields.\n\nOutput only raw, valid JSON.\n\nBelow is the JSON file you need to validate:\n{{ JSON.stringify($json, null, 2) }}"
+      },
+      "position": [
+        6640,
+        -608
+      ],
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "Project Overview",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a **Singapore Real Estate** research assistant. Current date is: {{ $now.format('yyyy-MM-dd') }}. **STRICTLY use the location of the project as SINGAPORE**\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in **Singapore**: Find the developer info, project, tenure (leasehold or freehold), launch date, top year and month, completion date, Number of units, blocks (with names), parking spots, storeys, site area (sqft) and plot ratio, address of the project (along with administrative_levels), District and Planning Area, Total Percentage of Units Sold, Mode of land acquisition (GLS, En Bloc), price paid, and year. Also include parking situation summary: cover resident rules, visitor rules, season parking policy, enforcement issues (clamping, fines), congestion, carpark type, EV lots, and any feedback from real estate forums based on which fill the parking_space object. Use URA, 99.co, EdgeProp, PropertyGuru, developer website, developer brochures and similar reliable sources for information. Make sure that if any data is unavailable, use null. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"development_overview\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"developer_details\": {\n                \"type\": \"object\",\n                \"description\": \"Details about the developer of the property\",\n                \"properties\": {\n                  \"id\": { \"type\": \"number\" },\n                  \"name\": { \"type\": \"string\" },\n                  \"description\": { \"type\": \"string\" },\n                  \"established_year\": { \"type\": [\"number\", \"null\"] },\n                  \"project_count\": { \"type\": \"number\" },\n                  \"property_type\": { \"type\": \"string\" },\n                  \"website_url\": { \"type\": \"string\" },\n                  \"email\": { \"type\": [\"string\", \"null\"] },\n                  \"address\": {\n                    \"type\": \"object\",\n                    \"description\": \"Address of the developer's office\",\n                    \"properties\": {\n                      \"id\": { \"type\": \"number\" },\n                      \"street_no\": { \"type\": \"string\" },\n                      \"street_name\": { \"type\": \"string\" },\n                      \"localised_street_name\": { \"type\": [\"string\", \"null\"] },\n                      \"postal_code\": { \"type\": \"string\" },\n                      \"country\": { \"type\": \"string\" },\n                      \"administrative_levels\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"level1\": {\n                            \"type\": [\"object\", \"null\"],\n                            \"properties\": {\n                              \"code\": { \"type\": \"string\" },\n                              \"name\": { \"type\": \"string\" }\n                            },\n                            \"required\": [\"code\", \"name\"]\n                          },\n                          \"level2\": {\n                            \"type\": [\"object\", \"null\"],\n                            \"properties\": {\n                              \"code\": { \"type\": \"string\" },\n                              \"name\": { \"type\": \"string\" }\n                            },\n                            \"required\": [\"code\", \"name\"]\n                          },\n                          \"level3\": {\n                            \"type\": [\"object\", \"null\"],\n                            \"properties\": {\n                              \"code\": { \"type\": \"string\" },\n                              \"name\": { \"type\": \"string\" }\n                            },\n                            \"required\": [\"code\", \"name\"]\n                          }\n                        }\n                      }\n                    },\n                    \"required\": [\n                      \"id\",\n                      \"street_no\",\n                      \"street_name\",\n                      \"postal_code\",\n                      \"country\",\n                      \"administrative_levels\"\n                    ]\n                  }\n                },\n                \"required\": [\n                  \"id\",\n                  \"name\",\n                  \"description\",\n                  \"project_count\",\n                  \"property_type\",\n                  \"website_url\",\n                  \"address\"\n                ]\n              },\n              \"project_details\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"address\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"id\": { \"type\": \"number\" },\n                      \"street_no\": { \"type\": \"string\" },\n                      \"street_name\": { \"type\": \"string\" },\n                      \"localised_street_name\": { \"type\": [\"string\", \"null\"] },\n                      \"postal_code\": { \"type\": \"string\" },\n                      \"country\": { \"type\": \"string\" },\n                      \"administrative_levels\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"level1\": {\n                            \"type\": [\"object\", \"null\"],\n                            \"properties\": {\n                              \"code\": { \"type\": \"string\" },\n                              \"name\": { \"type\": \"string\" }\n                            },\n                            \"required\": [\"code\", \"name\"]\n                          },\n                          \"level2\": {\n                            \"type\": [\"object\", \"null\"],\n                            \"properties\": {\n                              \"code\": { \"type\": \"string\" },\n                              \"name\": { \"type\": \"string\" }\n                            },\n                            \"required\": [\"code\", \"name\"]\n                          },\n                          \"level3\": {\n                            \"type\": [\"object\", \"null\"],\n                            \"properties\": {\n                              \"code\": { \"type\": \"string\" },\n                              \"name\": { \"type\": \"string\" }\n                            },\n                            \"required\": [\"code\", \"name\"]\n                          }\n                        }\n                      },\n                      \"latitude\": { \"type\": \"number\", \"description\": \"Latitude of the project address\" },\n                      \"longitude\": { \"type\": \"number\", \"description\": \"Longitude of the project address\" }\n                    },\n                    \"required\": [\n                      \"id\",\n                      \"street_no\",\n                      \"street_name\",\n                      \"postal_code\",\n                      \"country\",\n                      \"administrative_levels\",\n                      \"latitude\",\n                      \"longitude\"\n                    ]\n                  },\n                  \"tenure\": { \"type\": \"string\" },\n                  \"launch_date\": { \"type\": \"string\" },\n                  \"completion_date\": { \"type\": \"string\" },\n                  \"top_date\": { \"type\": \"string\" },\n                  \"no_of_units\": { \"type\": \"number\" },\n                  \"no_of_blocks\": { \"type\": \"number\" },\n                  \"blocks\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\" }\n                  },\n                  \"no_of_storeys\": { \"type\": \"number\" },\n                  \"total_project_land_area_sqm\": { \"type\": \"number\", \"description\": \"Total Land Area of the whole project in sqm. NOTE: Do conversion if required.\" },\n                  \"gross_project_floor_area_sqm\": { \"type\": \"number\", \"description\": \"Gross Floor Area of the whole project in sqm. NOTE: Do conversion if required.\" },\n                  \"plot_ratio\": { \"type\": \"number\", \"description\": \"indicate the maximum permissible development intensity for a given land parcel, dictating the potential building height and density\" },\n                  \"district\": { \"type\": \"string\" },\n                  \"planning_area\": { \"type\": \"string\" },\n                  \"total_percentage_sold\": { \"type\": \"number\", \"description\": \"Percentage of units sold in the project\" },\n                  \"land_acquisition\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"mode\": { \"type\": \"string\" },\n                      \"price\": { \"type\": \"string\" },\n                      \"year\": { \"type\": \"string\" }\n                    },\n                    \"required\": [\"mode\", \"price\", \"year\"]\n                  },\n                  \"parking_space\": {\n                    \"type\": \"object\",\n                    \"description\": \"Parking Slots available in the project. NOTE: Incase the project has parking somewhere else (mixed development or White Sites. E.g. City Square Residences have parking lots available for it's residents in the City Square Mall), use that data instead of null.\",\n                    \"properties\": {\n                      \"total_parking_lots\": { \"type\": \"number\", \"description\": \"STRICTLY give total parking lots available in the project.\" },\n                      \"total_parking_basement_lots\": { \"type\": \"number\", \"description\": \"STRICTLY give total parking lots available in the basement of the project\" },\n                      \"total_parking_mechanical_lots\": { \"type\": \"number\", \"description\": \"STRICTLY give total mechanical parking lots available (utilize machinery to move and stack vehicles, maximizing parking space in a smaller footprint). If case the project doesn't have mechanical parking lots, use null\" },\n                      \"carpark_type\": { \"type\": \"string\" },\n                      \"total_parking_ev_charging_lots\": { \"type\": \"number\", \"description\": \"STRICTLY give total ev charging lots available in the project. If case the project doesn't have ev parking lots, use null\" }\n                    },\n                    \"required\": [\"total_lots\"]\n                  }\n                },\n                \"required\": [\n                  \"address\",\n                  \"tenure\",\n                  \"launch_date\",\n                  \"completion_date\",\n                  \"top_date\",\n                  \"no_of_units\",\n                  \"no_of_blocks\",\n                  \"blocks\",\n                  \"no_of_storeys\",\n                  \"site_area_sqft\",\n                  \"plot_ratio\",\n                  \"district\",\n                  \"planning_area\",\n                  \"land_acquisition\",\n                  \"total_percentage_sold\"\n                ]\n              }\n            },\n            \"required\": [\"developer_details\", \"project_details\"]\n          }\n        },\n        \"required\": [\"development_overview\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        -1104
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "Unit Specifics",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, find the following:\\n- Unit types (e.g. 1BR to 5BR, dual-key, penthouse. If you don't find details for any of the unit types, don't add it in the final output) and count\\n- Size ranges (min, max in sqft), \\n- maintenance charges for each unit type,\\n- floor plans (types of floor plans available for each unit type, \\n- Layout efficiency or space utilization\\n- Common layout designs (e.g., dumbbell, dual-key)\\n- Orientation (facing options and view types).\\nUse URA, EdgeProp, PropertyGuru, developer website, developer brochures and other similar reliable sources. Make sure that if any data is unavailable, use null. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"unit_specifics\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"unit_types\": {\n                \"type\": \"array\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., '1BR', '2BR', 'Penthouse' , etc.\"\n                    },\n                    \"count\": {\n                      \"type\": \"number\",\n                      \"description\": \"Number of units of this type\"\n                    },\n                    \"size_range_sqft\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"min\": {\n                          \"type\": \"number\",\n                          \"description\": \"Minimum size in sqft\"\n                        },\n                        \"max\": {\n                          \"type\": \"number\",\n                          \"description\": \"Maximum size in sqft\"\n                        }\n                      },\n                      \"required\": [\"min\", \"max\"]\n                    },\n                    \"maintenance_fee\": {\n                      \"type\": \"object\",\n                      \"description\": \"Maintenance charges per month for this unit type\",\n                      \"properties\": {\n                        \"amount_sgd\": {\n                          \"type\": \"number\",\n                          \"description\": \"Fee in SGD\"\n                        },\n                        \"frequency\": {\n                          \"type\": \"string\",\n                          \"enum\": [\"monthly\", \"quarterly\", \"annually\"],\n                          \"description\": \"Billing cycle\"\n                        }\n                      },\n                      \"required\": [\"amount_sgd\", \"frequency\"]\n                    },\n                    \"floor_plans\": {\n                      \"type\": \"array\",\n                      \"description\": \"List of floor plans/ types available for this unit type\",\n                      \"items\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"type\": {\n                            \"type\": \"string\",\n                            \"description\": \"Type of the floor plan (e.g., '2D', '3D', 'B2', etc.)\"\n                          },\n                          \"area_sqft\": {\n                            \"type\": \"object\",\n                            \"properties\": {\n                              \"min\": {\n                                \"type\": \"number\",\n                                \"description\": \"Minimum area in sqft\"\n                              },\n                              \"max\": {\n                                \"type\": \"number\",\n                                \"description\": \"Maximum area in sqft\"\n                              }\n                            },\n                            \"required\": [\"min\", \"max\"]\n                          },\n                          \"no_of_bedrooms\": {\n                            \"type\": \"string\",\n                            \"description\": \"Number of bedrooms in the floor plan\"\n                          },\n                          \"no_of_bathrooms\": {\n                            \"type\": \"string\",\n                            \"description\": \"Number of bathrooms in the floor plan\"\n                          }\n                        }\n                      }\n                    }\n                  },\n                  \"required\": [\"type\", \"count\", \"size_range_sqft\", \"maintenance_fee\", \"floor_plans\"]\n                }\n              },\n              \"layout_efficiency\": {\n                \"type\": \"string\",\n                \"description\": \"`TBC` or `Estimate` for space utilization efficiency\"\n              },\n              \"typical_layouts\": {\n                \"type\": \"array\",\n                \"items\": {\n                  \"type\": \"string\",\n                  \"description\": \"`dumbbell`, `dual-key`, etc.\"\n                }\n              },\n              \"orientation\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"facing_options\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"`North`, `South`, etc.\"\n                    }\n                  },\n                  \"view_types\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"`Sea view`, `City view`, etc.\"\n                    }\n                  }\n                },\n                \"required\": [\"facing_options\", \"view_types\"]\n              }\n            },\n            \"required\": [\n              \"unit_types\",\n              \"layout_efficiency\",\n              \"typical_layouts\",\n              \"orientation\"\n            ]\n          }\n        },\n        \"required\": [\"unit_specifics\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        -912
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "Location Connectivity Amenities - Connectivity1",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, find the following: \\n-Nearest MRT stations:(Station name, MRT line, Distance in kilometers, Estimated walking time in minutes, Latitude and longitude, Station code (e.g., CC6), Whether it is an interchange, Accessibility features (e.g., lift, tactile paving)),\\n- Nearby bus stops: (Stop name, LTA bus stop code, Distance in kilometers, Latitude and longitude, Served bus services (numbers), Accessibility features),\\n- Expressways: List all nearby expressways accessible from the site (e.g., ECP, PIE, KPE),\\n- Shuttle Service Availability: Indicate whether the property provided shuttle service is available.\\n\\nUse OneMap.sg, LTA Datamall, URA, Google Maps and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"connectivity\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"nearest_mrt\": {\n                \"type\": \"array\",\n                \"description\": \"Nearest MRT stations with full geolocation and details\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"station\": {\n                      \"type\": \"string\",\n                      \"description\": \"MRT station name, e.g., 'Stadium MRT'\"\n                    },\n                    \"station_code\": {\n                      \"type\": \"string\",\n                      \"description\": \"LTA MRT station code, e.g., 'CC6'\"\n                    },\n                    \"line\": {\n                      \"type\": \"string\",\n                      \"description\": \"MRT line name, e.g., 'Circle Line'\"\n                    },\n                    \"distance_km\": {\n                      \"type\": \"number\",\n                      \"description\": \"Walking distance in kilometers\"\n                    },\n                    \"walk_time_min\": {\n                      \"type\": \"number\",\n                      \"description\": \"Estimated walk time in minutes\"\n                    },\n                    \"latitude\": {\n                      \"type\": \"number\",\n                      \"description\": \"Latitude of the MRT station\"\n                    },\n                    \"longitude\": {\n                      \"type\": \"number\",\n                      \"description\": \"Longitude of the MRT station\"\n                    },\n                    \"is_interchange\": {\n                      \"type\": \"boolean\",\n                      \"description\": \"Whether this is an MRT interchange station\"\n                    },\n                    \"accessibility_features\": {\n                      \"type\": \"array\",\n                      \"description\": \"Accessibility features like lifts, tactile paving, etc.\",\n                      \"items\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"required\": [\n                    \"station\",\n                    \"station_code\",\n                    \"line\",\n                    \"distance_km\",\n                    \"walk_time_min\",\n                    \"latitude\",\n                    \"longitude\",\n                    \"is_interchange\",\n                    \"accessibility_features\"\n                  ]\n                }\n              },\n              \"bus_stops\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby bus stops with walk distance and coordinates\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"stop_name\": {\n                      \"type\": \"string\",\n                      \"description\": \"Name of the bus stop\"\n                    },\n                    \"bus_stop_code\": {\n                      \"type\": \"string\",\n                      \"description\": \"LTA bus stop code, e.g., '80279'\"\n                    },\n                    \"distance_km\": {\n                      \"type\": \"number\",\n                      \"description\": \"Walking distance in kilometers\"\n                    },\n                    \"latitude\": {\n                      \"type\": \"number\",\n                      \"description\": \"Latitude of the bus stop\"\n                    },\n                    \"longitude\": {\n                      \"type\": \"number\",\n                      \"description\": \"Longitude of the bus stop\"\n                    },\n                    \"served_bus_services\": {\n                      \"type\": \"array\",\n                      \"description\": \"List of bus service numbers at this stop\",\n                      \"items\": {\n                        \"type\": \"string\"\n                      }\n                    },\n                    \"accessibility_features\": {\n                      \"type\": \"array\",\n                      \"description\": \"e.g., 'wheelchair ramp', 'sheltered walkway'\",\n                      \"items\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"required\": [\n                    \"stop_name\",\n                    \"bus_stop_code\",\n                    \"distance_km\",\n                    \"latitude\",\n                    \"longitude\",\n                    \"served_bus_services\",\n                    \"accessibility_features\"\n                  ]\n                }\n              },\n              \"expressways\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby expressways accessible from the site with details\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": {\n                      \"type\": \"string\",\n                      \"description\": \"Full name of the expressway, e.g., 'Pan Island Expressway'\"\n                    },\n                    \"abbreviation\": {\n                      \"type\": \"string\",\n                      \"description\": \"Expressway abbreviation, e.g., 'PIE'\"\n                    },\n                    \"distance_km\": {\n                      \"type\": \"number\",\n                      \"description\": \"Distance from property to nearest entry/exit of this expressway\"\n                    },\n                    \"nearby_entry_points\": {\n                      \"type\": \"array\",\n                      \"description\": \"List of accessible entry or exit ramps near the property\",\n                      \"items\": {\n                        \"type\": \"string\"\n                      }\n                    },\n                    \"connects\": {\n                      \"type\": \"array\",\n                      \"description\": \"Key areas or hubs connected by this expressway\",\n                      \"items\": {\n                        \"type\": \"string\"\n                      }\n                    },\n                    \"traffic_conditions\": {\n                      \"type\": \"string\",\n                      \"description\": \"Typical traffic behavior, e.g., 'Heavy during peak hours'\"\n                    }\n                  },\n                  \"required\": [\"name\", \"abbreviation\", \"distance_km\", \"nearby_entry_points\"]\n                }\n              },\n\n              \"shuttle_service_available\": {\n                \"type\": \"boolean\",\n                \"description\": \"Whether the condo provides a private shuttle service\"\n              }\n            },\n            \"required\": [\n              \"nearest_mrt\",\n              \"bus_stops\",\n              \"expressways\",\n              \"shuttle_service_available\"\n            ]\n          }\n        },\n        \"required\": [\"connectivity\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        -672
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "Location Connectivity Amenities - Surrounding Amenities1",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, find the following: \\n-Supermarkets & Grocery Stores, \\n \\n-Convenience Stores, \\n-Pharmacies, \\n-Medical Facilities, \\n-Childcare Enrichments, \\n-Community Centers, \\n-Green Spaces, \\n-banks & atms, \\n-post office logistics, \\n- places of worship.\\n\\nUse OneMap.sg, LTA Datamall, URA, Google Maps and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"surrounding_amenities\": {\n            \"type\": \"object\",\n            \"description\": \"Functional amenities around the property for daily living, childcare, medical, and essential services\",\n            \"properties\": {\n              \"supermarkets_groceries\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby supermarkets like NTUC FairPrice, Sheng Siong, Giant, etc.\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"brand\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'NTUC FairPrice'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"brand\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"convenience_stores\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby 24/7 stores like 7-Eleven, Cheers\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"brand\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"brand\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"pharmacies\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby pharmacies like Guardian, Watsons, Unity\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"brand\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"brand\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"medical_facilities\": {\n                \"type\": \"array\",\n                \"description\": \"Clinics, dental clinics, TCMs, and hospitals nearby\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'GP Clinic', 'Dental Clinic', 'TCM', 'Hospital'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"childcare_enrichment\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby childcare centers and tuition/enrichment centres\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'Childcare', 'Enrichment', 'Kindergarten'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"community_centres\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby Community Clubs/Centres (e.g., Our Tampines Hub)\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"green_spaces\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby small parks or green patches, not large enough to be under 'recreational'\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"banks_atms\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby banks and ATMs\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'Bank Branch', 'ATM'\"\n                    },\n                    \"bank\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'DBS', 'UOB', 'OCBC', 'POSB'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\n                    \"name\",\n                    \"type\",\n                    \"bank\",\n                    \"distance_km\",\n                    \"walk_time_min\"\n                  ]\n                }\n              },\n              \"post_office_logistics\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby postal or parcel drop points\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'SingPost', 'POPStation', 'J&T Drop-off'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"places_of_worship\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby churches, temples, mosques, gurdwaras\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"religion\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'Christianity', 'Buddhism', 'Islam', 'Hinduism'\"\n                    },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'Church', 'Mosque', 'Temple'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\n                    \"name\",\n                    \"religion\",\n                    \"type\",\n                    \"distance_km\",\n                    \"walk_time_min\"\n                  ]\n                }\n              }\n            },\n            \"required\": [\n              \"supermarkets_groceries\",\n              \"convenience_stores\",\n              \"pharmacies\",\n              \"medical_facilities\",\n              \"childcare_enrichment\",\n              \"community_centres\",\n              \"green_spaces\",\n              \"banks_atms\",\n              \"post_office_logistics\",\n              \"places_of_worship\"\n            ]\n          }\n        },\n        \"required\": [\"surrounding_amenities\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        -464
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "Location Connectivity Amenities - Recreation & Lifestyle1",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, find the following:\\n- Parks & Nature Trails\\n- Beaches & Waterfronts\\n- Gyms & Sports Facilities\\n- Country Clubs\\n- Shopping, Malls & Lifestyle\\n- F&B, Cafes & Restaurants\\n- Hawker Centers\\n- Nightlife & Entertainments\\n- Wellness. \\n\\nUse OneMap.sg, LTA Datamall, URA, Google Maps and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"recreational_lifestyle\": {\n            \"type\": \"object\",\n            \"description\": \"Information about recreational and lifestyle amenities near the property\",\n            \"properties\": {\n              \"parks_nature\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby parks, nature reserves, PCNs, etc.\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'park', 'nature reserve', 'PCN'\"\n                    },\n                    \"activities\": {\n                      \"type\": \"array\",\n                      \"items\": { \"type\": \"string\" },\n                      \"description\": \"E.g., 'jogging', 'cycling', 'barbecue pits'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"beaches_waterfronts\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby beaches or waterfront recreational areas\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"features\": {\n                      \"type\": \"array\",\n                      \"items\": { \"type\": \"string\" },\n                      \"description\": \"E.g., 'beach access', 'kayaking', 'sunset view'\"\n                    },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"distance_km\"]\n                }\n              },\n              \"gyms_sports_facilities\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby sports complexes, stadiums, gyms, etc.\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'gym', 'swimming complex', 'sports hall'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"membership_required\": { \"type\": \"boolean\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"country_clubs\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby country or social clubs\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"membership_required\": { \"type\": \"boolean\" },\n                    \"features\": {\n                      \"type\": \"array\",\n                      \"items\": { \"type\": \"string\" },\n                      \"description\": \"E.g., 'golf', 'spa', 'private dining'\"\n                    },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"distance_km\"]\n                }\n              },\n              \"shopping_malls_lifestyle\": {\n                \"type\": \"array\",\n                \"description\": \"Lifestyle-focused shopping malls with entertainment, dining, or cultural offerings\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"notable_brands\": {\n                      \"type\": \"array\",\n                      \"items\": { \"type\": \"string\" }\n                    },\n                    \"features\": {\n                      \"type\": \"array\",\n                      \"items\": { \"type\": \"string\" },\n                      \"description\": \"E.g., 'cinema', 'events hall', 'rooftop garden'\"\n                    },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"distance_km\"]\n                }\n              },\n              \"fnb_cafes_restaurants\": {\n                \"type\": \"array\",\n                \"description\": \"F&B spots excluding hawker centres\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'café', 'restaurant', 'bar'\"\n                    },\n                    \"cuisine\": { \"type\": \"string\", \"nullable\": true },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"rating\": { \"type\": \"number\", \"minimum\": 0, \"maximum\": 5 },\n                    \"review_count\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"hawker_centres\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby hawker centres\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"rating\": { \"type\": \"number\" },\n                    \"review_count\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"nightlife_entertainment\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby nightlife and entertainment hubs\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'bar', 'nightclub', 'bowling alley', 'cinema'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"rating\": { \"type\": \"number\" },\n                    \"review_count\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\", \"walk_time_min\"]\n                }\n              },\n              \"wellness\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby spas, wellness centers, aesthetic clinics, yoga/pilates studios\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'spa', 'yoga studio', 'TCM clinic'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"walk_time_min\": { \"type\": \"number\" },\n                    \"rating\": { \"type\": \"number\" },\n                    \"review_count\": { \"type\": \"number\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\", \"walk_time_min\"]\n                }\n              }\n            },\n            \"required\": [\n              \"parks_nature\",\n              \"beaches_waterfronts\",\n              \"gyms_sports_facilities\",\n              \"country_clubs\",\n              \"shopping_malls_lifestyle\",\n              \"fnb_cafes_restaurants\",\n              \"hawker_centres\",\n              \"nightlife_entertainment\",\n              \"wellness\"\n            ]\n          }\n        },\n        \"required\": [\"recreational_lifestyle\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        -256
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "Location Connectivity Amenities - On-Site Amenities",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"model\": \"sonar-pro\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, find the following: \\n-Fitness and recreational (gym, pool, tennis court, BBQ pit) \\n- Smart home features (apps, parcel lockers), \\n-Co-working spaces or lounges, .\\n\\nUse developer brochures or listing portals and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"on_site_facilities\": {\n            \"type\": \"array\",\n            \"description\": \"List of on-site condo facilities available\",\n            \"items\": {\n              \"type\": \"string\",\n              \"enum\": [\n                \"gym\",\n                \"pool\",\n                \"tennis court\",\n                \"BBQ pit\",\n                \"parcel locker\",\n                \"coworking space\",\n                \"lounge\",\n                \"sauna\",\n                \"jacuzzi\",\n                \"function room\",\n                \"playground\",\n                \"security system\",\n                \"smart home app\",\n                \"fitness studio\",\n                \"bicycle rack\",\n                \"library\"\n              ]\n            }\n          }\n        },\n        \"required\": [\"on_site_facilities\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        160
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "LIVING EXPERIENCE & MANAGEMENT - Resident Profile & Community Vibe1",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide a detailed **Resident Profile & Community Vibe** report. \\n\\nBreak the data into the following categories:\\n\\n**1. Resident Profile & Community Vibe Demographics:**\\n- Age group breakdown \\n- Family types \\n- Occupation profiles \\n- Expatriate ratio or nationality distribution\\n- Owner-occupier vs rental ratio\\n\\n**2. Lifestyle & Community Traits:**\\n- Community vibe\\n- Resident events or interest groups \\n- Guest policies, visitor friendliness\\n- MCST engagement level\\n\\n**3. Usage Trends:**\\n- Percentage of investor-owned units vs owner-occupied\\n- Average length of stay \\n- Turnover rate or resale frequency\\n\\n**4. Neighbourhood Context:**\\n- Similar developments nearby\\n- Gentrification phase (e.g., mature, emerging, revitalizing)\\n- Safety perception\\n\\n**5. Resident Reviews & Reputation:**\\n- Positive sentiment themes \\n- Negative sentiment themes \\n- Average review rating (if available).\\n Use URA, EdgeProp, PropertyGuru, developer brochures and similar reliable sources for information. Make sure that if any data is unavailable, use null. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"resident_profile_community_vibe\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"demographics\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"age_groups_percent\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"0-18\": { \"type\": \"number\" },\n                      \"18-30\": { \"type\": \"number\" },\n                      \"30-45\": { \"type\": \"number\" },\n                      \"45-60\": { \"type\": \"number\" },\n                      \"60+\": { \"type\": \"number\" }\n                    }\n                  },\n                  \"family_types_percent\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"singles\": { \"type\": \"number\" },\n                      \"couples\": { \"type\": \"number\" },\n                      \"families_with_children\": { \"type\": \"number\" },\n                      \"multi-generational\": { \"type\": \"number\" }\n                    }\n                  },\n                  \"occupations_percent\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"professionals\": { \"type\": \"number\" },\n                      \"retirees\": { \"type\": \"number\" },\n                      \"students\": { \"type\": \"number\" },\n                      \"service_industry\": { \"type\": \"number\" },\n                      \"others\": { \"type\": \"number\" }\n                    }\n                  },\n                  \"expat_ratio_percent\": { \"type\": \"number\" },\n                  \"owner_vs_renter_percent\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"owner\": { \"type\": \"number\" },\n                      \"renter\": { \"type\": \"number\" }\n                    }\n                  }\n                }\n              },\n              \"lifestyle_and_community\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"community_vibe\": { \"type\": \"string\", \"description\": \"quiet, family-oriented, expat-friendly, pet-friendly, etc.\" },\n                  \"resident_events_or_interest_groups\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\", \"description\": \"yoga, parenting groups, retirees group\" }\n                  },\n                  \"guest_policies\": { \"type\": \"object\", \"properties\": {\n                      \"registration_required\": { \"type\": \"boolean\" },\n                      \"max_guests\": { \"type\": \"number\" },\n                      \"guest_parking\": { \"type\": \"boolean\" },\n                      \"guest_policies\": { \"type\": \"string\" }\n                  }},\n                  \"pet_friendly\": { \"type\": \"object\", \"properties\": {\n                      \"pet_allowed\": { \"type\": \"boolean\" },\n                      \"kind_of_pets_allowed\": { \n                        \"type\": \"array\", \n                        \"items\": { \"type\": \"string\", \"description\": \"e.g., dogs, cats\" } \n                      },\n                      \"pet_restrictions\": { \"type\": \"string\" }\n                  }},\n                  \"visitor_friendly\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                        \"visitor_allowed\": { \"type\": \"boolean\" },\n                        \"visitor_parking\": { \"type\": \"boolean\" },\n                        \"visitor_policies\": { \"type\": \"string\" }\n                    }\n                  },\n                  \"mcst_engagement_level\": { \"type\": \"string\" }\n                }\n              },\n              \"usage_trends\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"investor_owned_percent\": { \"type\": \"number\" },\n                  \"average_stay_owner_years\": { \"type\": \"number\", \"description\": \"average number of years owners stay\" },\n                  \"average_stay_tenant_years\": { \"type\": \"number\", \"description\": \"average number of years tenants stay\" },\n                  \"resale_turnover_rate_percent\": { \"type\": \"number\", \"description\": \"percentage of units sold in the last year\" }\n                }\n              },\n              \"neighbourhood_context\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"similar_developments\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\" }\n                  },\n                  \"gentrification_status\": { \"type\": \"string\", \"description\": \"e.g., mature, emerging, revitalizing\" },\n                  \"safety_rating_description\": { \"type\": \"string\", \"description\": \"general safety perception of the area\" }\n                }\n              },\n              \"reviews_and_sentiment\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"positive_sentiment\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\", \"description\": \"e.g., well-located, family-friendly, green spaces\" }\n                  },\n                  \"negative_sentiment_keywords\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\", \"description\": \"e.g., MCST issues, noise complaints, visitor parking problems\" }\n                  },\n                  \"average_rating_out_of_5\": { \"type\": \"number\" }\n                }\n              }\n            },\n            \"required\": [\n              \"demographics\",\n              \"lifestyle_and_community\",\n              \"usage_trends\",\n              \"neighbourhood_context\",\n              \"reviews_and_sentiment\"\n            ]\n          }\n        },\n        \"required\": [\"resident_profile_community_vibe\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        416
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "LIVING EXPERIENCE & MANAGEMENT - MCST",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide a detailed report on the **MCST & Management Quality** of the development.\\n\\nBreak the data into the following sections:\\n\\n**1. MCST Information:**\\n- MCST registration number\\n- MCST name or managing agent name\\n- Year of formation\\n- Whether MCST is developer-appointed or resident-elected\\n- MCST contact details (email, phone, office hours)\\n\\n**2. Managing Agent Profile:**\\n- Name of managing company\\n- Years in charge of the project\\n- Accreditation (e.g., BCA, ISO)\\n- On-site staffing (guards, cleaners, managers)\\n- Management fee structure (if available)\\n\\n**3. Financial Health & Transparency:**\\n- Maintenance fee per unit type or per share value\\n- Sinking fund status\\n- Budget transparency\\n- Issues with arrears or overdue payments\\n\\n**4. Operational Performance:**\\n- Cleanliness and landscaping\\n- Lift uptime and maintenance quality\\n- Security service quality and professionalism\\n- Complaint resolution speed\\n- Use of digital platforms (booking systems, feedback portals)\\n\\n**5. Resident Sentiment & Track Record:**\\n- Positive feedback themes (e.g., cleanliness, responsiveness)\\n- Common complaints (e.g., slow repairs, rude staff)\\n- Recent disputes or controversies (if any)\\n- Overall sentiment: “Good”, “Mixed”, or “Poor”\\n- Online or forum rating out of 5 (if available). Use sources such as URA, BCA, PropertyGuru, URA, Reddit, forums, AGM disclosures, developer brochures, and resident reviews. Make sure that if any data is unavailable, use null. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"mcst_and_management_quality\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"mcst_info\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"mcst_number\": {\n                    \"type\": \"string\",\n                    \"description\": \"Unique MCST (Management Corporation Strata Title) registration number.\"\n                  },\n                  \"mcst_name\": {\n                    \"type\": \"string\",\n                    \"description\": \"Official name of the MCST.\"\n                  },\n                  \"formation_year\": {\n                    \"type\": \"number\",\n                    \"description\": \"Year in which the MCST was formed.\"\n                  },\n                  \"appointed_by\": {\n                    \"type\": \"string\",\n                    \"description\": \"Entity or authority that appointed the MCST, e.g., 'Developers' or 'Strata Title Owners'.\"\n                  },\n                  \"contact\": {\n                    \"type\": \"object\",\n                    \"description\": \"Contact details for the MCST office or managing agent.\",\n                    \"properties\": {\n                      \"email\": {\n                        \"type\": \"string\",\n                        \"description\": \"Official email address for MCST inquiries.\"\n                      },\n                      \"phone\": {\n                        \"type\": \"string\",\n                        \"description\": \"Phone number for MCST office or managing agent.\"\n                      },\n                      \"office_hours\": {\n                        \"type\": \"string\",\n                        \"description\": \"Office hours during which MCST contact is available.\"\n                      },\n                      \"address\": {\n                        \"type\": \"string\",\n                        \"description\": \"Physical address of the MCST office or managing agent.\"\n                      }\n                    }\n                  }\n                },\n                \"required\": [\"mcst_number\", \"mcst_name\", \"formation_year\"]\n              },\n              \"management_company\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"company_name\": {\n                    \"type\": \"string\",\n                    \"description\": \"Name of the property management company.\"\n                  },\n                  \"years_in_charge\": {\n                    \"type\": \"number\",\n                    \"description\": \"Number of years the company has been managing the property.\"\n                  },\n                  \"accreditation\": {\n                    \"type\": \"string\",\n                    \"description\": \"Any professional accreditation or certification the company holds (e.g., BCA Licensed, ISO Certified).\"\n                  },\n                  \"onsite_staff\": {\n                    \"type\": \"object\",\n                    \"description\": \"Details about on-site staffing at the property managed by the company.\",\n                    \"properties\": {\n                      \"managers\": {\n                        \"type\": \"number\",\n                        \"description\": \"Number of on-site property managers.\"\n                      },\n                      \"guards\": {\n                        \"type\": \"number\",\n                        \"description\": \"Number of security guards.\"\n                      },\n                      \"cleaners\": {\n                        \"type\": \"number\",\n                        \"description\": \"Number of cleaning staff.\"\n                      },\n                      \"maintenance_staff\": {\n                        \"type\": \"number\",\n                        \"description\": \"Number of maintenance personnel or technicians.\"\n                      }\n                    }\n                  },\n                  \"staff_count\": {\n                    \"type\": \"number\",\n                    \"description\": \"Approximate total number of staff employed by the management company for this property or overall.\"\n                  },\n                  \"fee_structure_description\": {\n                    \"type\": \"string\",\n                    \"description\": \"Detailed description of how the management fees are structured, including fixed fees, variable fees, and any additional charges.\"\n                  },\n                  \"contact_information\": {\n                    \"type\": \"object\",\n                    \"description\": \"Contact details for the management company.\",\n                    \"properties\": {\n                      \"phone\": { \"type\": \"string\" },\n                      \"email\": { \"type\": \"string\" },\n                      \"address\": { \"type\": \"string\" }\n                    }\n                  }\n                },\n                \"required\": [\"company_name\", \"years_in_charge\"]\n              },\n              \"financials\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"maintenance_fee_monthly\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"unit_type_fees\": {\n                        \"type\": \"array\",\n                        \"items\": {\n                          \"type\": \"object\",\n                          \"properties\": {\n                            \"unit_type\": { \"type\": \"string\", \"description\": \"e.g., 1-bedroom, 2-bedroom, penthouse\" },\n                            \"monthly_fee\": { \"type\": \"number\" }\n                          },\n                          \"required\": [\"unit_type\", \"monthly_fee\"]\n                        }\n                      }\n                    }\n                  },\n                  \"sinking_fund_status\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"status\": {\n                        \"type\": \"string\",\n                        \"enum\": [\n                          \"well-funded\",\n                          \"moderate\",\n                          \"underfunded\",\n                          \"critical\",\n                          \"unknown\"\n                        ],\n                        \"description\": \"Overall assessment of the sinking fund’s sufficiency based on projected capital expenditure.\"\n                      },\n                      \"available_balance\": {\n                        \"type\": \"number\",\n                        \"description\": \"Current amount (in SGD) available in the sinking fund.\"\n                      },\n                      \"recommended_balance\": {\n                        \"type\": \"number\",\n                        \"description\": \"Estimated recommended amount (in SGD) that should be available in the fund for healthy reserves.\"\n                      },\n                      \"coverage_ratio\": {\n                        \"type\": \"number\",\n                        \"description\": \"Ratio of available vs recommended sinking fund amount, expressed as a percentage (e.g., 80 means 80%).\"\n                      },\n                      \"last_audit_date\": {\n                        \"type\": \"string\",\n                        \"format\": \"date\",\n                        \"description\": \"The date when the fund was last audited or reviewed.\"\n                      },\n                      \"details\": {\n                        \"type\": \"string\",\n                        \"description\": \"Narrative description or insights from the MCST or auditor regarding the health of the sinking fund.\"\n                      }\n                    },\n                    \"required\": [\n                      \"status\",\n                      \"available_balance\",\n                      \"recommended_balance\"\n                    ]\n                  },\n                  \"budget_transparency\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"is_transparent\": {\n                        \"type\": \"boolean\",\n                        \"description\": \"Indicates whether the project's financial budgeting practices are transparent to stakeholders, including homeowners and investors.\"\n                      },\n                      \"transparency_score\": {\n                        \"type\": \"integer\",\n                        \"minimum\": 0,\n                        \"maximum\": 100,\n                        \"description\": \"A score indicating the level of budget transparency, where 0 is opaque and 100 is fully transparent.\"\n                      },\n                      \"reporting_frequency\": {\n                        \"type\": \"string\",\n                        \"enum\": [\n                          \"monthly\",\n                          \"quarterly\",\n                          \"bi-annually\",\n                          \"annually\",\n                          \"unknown\"\n                        ],\n                        \"description\": \"How often financial statements and budget reports are shared with stakeholders.\"\n                      },\n                      \"report_accessibility\": {\n                        \"type\": \"string\",\n                        \"enum\": [\n                          \"public\",\n                          \"owners-only\",\n                          \"upon-request\",\n                          \"not-disclosed\"\n                        ],\n                        \"description\": \"How accessible the financial reports are to the general public or property owners.\"\n                      },\n                      \"last_report_date\": {\n                        \"type\": \"string\",\n                        \"format\": \"date\",\n                        \"description\": \"The date when the most recent financial report was published or made available.\"\n                      }\n                    },\n                    \"required\": [\n                      \"is_transparent\",\n                      \"reporting_frequency\",\n                      \"report_accessibility\"\n                    ]\n                  },\n                  \"arrears_issues\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"has_arrears\": {\n                        \"type\": \"boolean\",\n                        \"description\": \"Indicates whether the development is currently experiencing issues with arrears, i.e., unpaid maintenance or sinking fund contributions by unit owners.\"\n                      },\n                      \"percentage_of_units_in_arrears\": {\n                        \"type\": \"number\",\n                        \"minimum\": 0,\n                        \"maximum\": 100,\n                        \"description\": \"The percentage of units currently in arrears relative to the total number of units.\"\n                      },\n                      \"total_arrears_amount\": {\n                        \"type\": \"number\",\n                        \"description\": \"Total amount (in SGD) of outstanding arrears owed by all unit owners combined.\"\n                      },\n                      \"trend\": {\n                        \"type\": \"string\",\n                        \"enum\": [\n                          \"increasing\",\n                          \"decreasing\",\n                          \"stable\",\n                          \"unknown\"\n                        ],\n                        \"description\": \"The recent trend in arrears — whether it’s getting better or worse over time.\"\n                      },\n                      \"last_updated\": {\n                        \"type\": \"string\",\n                        \"format\": \"date\",\n                        \"description\": \"The date when arrears data was last updated.\"\n                      }\n                    },\n                    \"required\": [\"has_arrears\"]\n                  }\n                }\n              },\n              \"operations\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"cleanliness_quality\": {\n                    \"type\": \"string\",\n                    \"description\": \"Assessment of overall cleanliness of common areas (e.g., lobbies, corridors, facilities).\",\n                    \"enum\": [\"poor\", \"fair\", \"good\", \"very good\", \"excellent\"]\n                  },\n                  \"lift_maintenance_reliability\": {\n                    \"type\": \"string\",\n                    \"description\": \"Reliability and upkeep quality of lifts/elevators in the development.\",\n                    \"enum\": [\"poor\", \"fair\", \"good\", \"very good\", \"excellent\"]\n                  },\n                  \"security_quality\": {\n                    \"type\": \"string\",\n                    \"description\": \"Effectiveness of security measures including guards, cameras, and access control.\",\n                    \"enum\": [\"poor\", \"fair\", \"good\", \"very good\", \"excellent\"]\n                  },\n                  \"issue_response_speed\": {\n                    \"type\": \"string\",\n                    \"description\": \"Average speed at which reported issues or maintenance requests are addressed.\",\n                    \"enum\": [\n                      \"very slow\",\n                      \"slow\",\n                      \"average\",\n                      \"fast\",\n                      \"very fast\"\n                    ]\n                  },\n                  \"tech_adoption\": {\n                    \"type\": \"string\",\n                    \"description\": \"Level of adoption of technology for operations and resident convenience (e.g., app-based reporting, smart access).\",\n                    \"enum\": [\"none\", \"low\", \"moderate\", \"high\", \"very high\"]\n                  }\n                },\n                \"required\": [\n                  \"cleanliness_quality\",\n                  \"lift_maintenance_reliability\",\n                  \"security_quality\",\n                  \"issue_response_speed\",\n                  \"tech_adoption\"\n                ]\n              },\n              \"resident_sentiment\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"positive_feedback\": {\n                    \"type\": \"array\",\n                    \"description\": \"List of common positive remarks or praises expressed by residents.\",\n                    \"items\": { \"type\": \"string\" }\n                  },\n                  \"common_complaints\": {\n                    \"type\": \"array\",\n                    \"description\": \"List of frequent complaints or issues raised by residents.\",\n                    \"items\": { \"type\": \"string\" }\n                  },\n                  \"recent_disputes_or_issues\": {\n                    \"type\": \"string\",\n                    \"description\": \"Summary of any notable disputes or issues among residents or with management in recent times.\"\n                  },\n                  \"overall_sentiment\": {\n                    \"type\": \"string\",\n                    \"description\": \"General sentiment expressed by residents (e.g., 'positive', 'neutral', 'negative').\",\n                    \"enum\": [\n                      \"positive\",\n                      \"neutral\",\n                      \"negative\",\n                      \"mixed\",\n                      \"unknown\"\n                    ]\n                  },\n                  \"review_rating_out_of_5\": {\n                    \"type\": \"number\",\n                    \"description\": \"Average rating given by residents, on a scale of 0 to 5.\",\n                    \"minimum\": 0,\n                    \"maximum\": 5\n                  }\n                },\n                \"required\": [\"overall_sentiment\", \"review_rating_out_of_5\"]\n              }\n            },\n            \"required\": [\n              \"mcst_info\",\n              \"management_company\",\n              \"financials\",\n              \"operations\",\n              \"resident_sentiment\"\n            ]\n          }\n        },\n        \"required\": [\"mcst_and_management_quality\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        640
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "Location Connectivity Amenities - Education Institution",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, find the following: \\n-MOE schools within 1km and 2km, \\n-International schools nearby (with distance), \\n-Any elite schools (ACS, Tao Nan, etc.), \\n-Colleges.\\n\\nUse OneMap.sg, LTA Datamall, URA, Google Maps and other reliable sources for information. If any data is unavailable, use null instead of leaving it blank. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"education_institutions\": {\n            \"type\": \"object\",\n            \"description\": \"Information about educational institutions near the property\",\n            \"properties\": {\n              \"within_1km\": {\n                \"type\": \"array\",\n                \"description\": \"MOE schools within 1 km radius\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"level\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'Primary', 'Secondary', 'Junior College'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"address\": { \"type\": \"string\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"level\", \"distance_km\"]\n                }\n              },\n              \"within_2km\": {\n                \"type\": \"array\",\n                \"description\": \"MOE schools within 2 km radius\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"level\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"address\": { \"type\": \"string\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"level\", \"distance_km\"]\n                }\n              },\n              \"international_schools\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby international schools\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"address\": { \"type\": \"string\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"distance_km\"]\n                }\n              },\n              \"colleges\": {\n                \"type\": \"array\",\n                \"description\": \"Nearby colleges (e.g., Junior Colleges, Polytechnics, Technical Colleges)\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"name\": { \"type\": \"string\" },\n                    \"type\": {\n                      \"type\": \"string\",\n                      \"description\": \"e.g., 'Junior College', 'Polytechnic', 'Institute of Technical Education'\"\n                    },\n                    \"distance_km\": { \"type\": \"number\" },\n                    \"address\": { \"type\": \"string\" },\n                    \"latitude\": { \"type\": \"number\" },\n                    \"longitude\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\"name\", \"type\", \"distance_km\"]\n                }\n              },\n              \"school_rankings\": {\n                \"type\": \"object\",\n                \"description\": \"Rankings or notable achievements of schools if available. Also \",\n                \"additionalProperties\": {\n                  \"type\": \"string\",\n                  \"description\": \"Ranking details or notes keyed by school name\"\n                }\n              }\n            },\n            \"required\": [\n              \"within_1km\",\n              \"within_2km\",\n              \"international_schools\",\n              \"colleges\",\n              \"school_rankings\"\n            ]\n          }\n        },\n        \"required\": [\n          \"within_1km\",\n          \"within_2km\",\n          \"international_schools\",\n          \"colleges\",\n          \"school_rankings\"\n        ]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        -48
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "COMPETITIVE MARKET ANALYSIS - Direct Competitive Comparison",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, find **direct competitor projects** within a 1-2KM radius. Provide detailed comparative data on each competitor covering:\\n\\n- Project name\\n- TOP year\\n- Tenure\\n- Distance from {{ $json.propertyName }} (KM)\\n- Unit mix summary\\n- Launch price PSF\\n- Current average resale price PSF\\n- Rental price PSF\\n- Rental yield (gross and net)\\n- Occupancy or vacancy rate\\n- Developer name and reputation\\n- Key facilities and amenities\\n- Transport connectivity highlights\\n- Typical resident/tenant profile\\n- Current market sentiment or popularity\\n\\nUse reliable sources such as URA, EdgeProp, PropertyGuru, SRX, developer websites, and real estate forums. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"direct_competitor_comparison\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"project_name\": { \"type\": \"string\" },\n                \"top_year\": { \"type\": \"number\" },\n                \"tenure\": { \"type\": \"string\" },\n                \"distance_km\": { \"type\": \"number\" },\n                \"unit_mix_summary\": { \n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"total_units\": { \"type\": \"number\" },\n                      \"unit_types\": {\n                        \"type\": \"array\",\n                        \"items\": {\n                          \"type\": \"object\",\n                          \"properties\": {\n                            \"type\": { \"type\": \"string\" },\n                            \"count\": { \"type\": \"number\" }\n                          },\n                          \"required\": [\"type\", \"count\"]\n                        }\n                      }\n                    }\n                },\n                \"launch_price_psf\": { \"type\": \"number\" },\n                \"current_resale_price_psf\": { \"type\": \"number\" },\n                \"rental_price_psf\": { \"type\": \"number\" },\n                \"rental_yield_gross_percent\": { \"type\": \"number\" },\n                \"rental_yield_net_percent\": { \"type\": \"number\" },\n                \"occupancy_rate_percent\": { \"type\": \"number\" },\n                \"developer_name\": { \"type\": \"string\" },\n                \"developer_reputation\": { \"type\": \"string\" },\n                \"key_facilities_amenities\": {\n                  \"type\": \"array\",\n                  \"items\": { \"type\": \"string\" }\n                },\n                \"transport_connectivity_highlights\": { \"type\": \"string\" },\n                \"resident_tenant_profile\": { \"type\": \"string\" },\n                \"market_sentiment\": { \"type\": \"string\" }\n              },\n              \"required\": [\n                \"project_name\",\n                \"top_year\",\n                \"tenure\",\n                \"distance_km\",\n                \"unit_mix_summary\",\n                \"launch_price_psf\",\n                \"current_resale_price_psf\",\n                \"rental_price_psf\",\n                \"rental_yield_gross_percent\",\n                \"rental_yield_net_percent\",\n                \"occupancy_rate_percent\",\n                \"developer_name\",\n                \"developer_reputation\",\n                \"key_facilities_amenities\",\n                \"transport_connectivity_highlights\",\n                \"resident_tenant_profile\",\n                \"market_sentiment\"\n              ]\n            }\n          }\n        },\n        \"required\": [\"direct_competitor_comparison\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        896
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "COMPETITIVE MARKET ANALYSIS - Market Positioning",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide a detailed **Market Positioning** analysis. Use sources such as URA, EdgeProp, PropertyGuru, developer brochures, agent interviews, and market reports.\\n\\nInclude:\\n- Overall market positioning (luxury, mid-tier, affordable, niche)\\n- Price positioning relative to direct competitors\\n- Target buyer/tenant segments\\n- Unique selling points (USPs) and differentiators\\n- Competitive advantages and weaknesses\\n- Market perception among buyers and agents\\n- Recent sales and rental momentum\\n- Price trend comparison with market and competitors\\n- Developer marketing strategy if available. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"market_positioning\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"overall_positioning\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"tier\": {\n                    \"type\": \"string\",\n                    \"description\": \"e.g., luxury, mid-tier, affordable\"\n                  },\n                  \"description\": {\n                    \"type\": \"string\",\n                    \"description\": \"Brief description of the market tier\"\n                  },\n                  \"perceived_position\": {\n                    \"type\": \"string\",\n                    \"description\": \"How the market perceives the property within its tier\"\n                  }\n                },\n                \"required\": [\"tier\", \"description\", \"perceived_position\"]\n              },\n              \"price_analysis\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"resale_psf_range\": {\n                    \"type\": \"string\",\n                    \"description\": \"e.g., $1,500 - $2,000 psf\"\n                  },\n                  \"comparison\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"List of direct competitors with their PSF prices\"\n                    }\n                  },\n                  \"price_trend\": {\n                    \"type\": \"string\",\n                    \"description\": \"Description of the price trend over time\"\n                  }\n                },\n                \"required\": [\"resale_psf_range\", \"comparison\", \"price_trend\"]\n              },\n              \"target_segments\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"value_proposition\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"unique_selling_points\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"List of unique selling points that differentiate the property\"\n                    }\n                  },\n                  \"competitive_advantages\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"List of competitive advantages the property has over others\"\n                    }\n                  },\n                  \"weaknesses_or_challenges\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"List of weaknesses or challenges faced by the property\"\n                    }\n                  }\n                },\n                \"required\": [\n                  \"unique_selling_points\",\n                  \"competitive_advantages\",\n                  \"weaknesses_or_challenges\"\n                ]\n              },\n              \"market_feedback\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"overall_sentiment\": {\n                    \"type\": \"string\",\n                    \"description\": \"Overall sentiment from the market regarding the property\"\n                  },\n                  \"sales_and_rental_momentum\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"resale_activity\": {\n                        \"type\": \"string\",\n                        \"description\": \"Description of resale activity in the market\"\n                      },\n                      \"rental_yield\": {\n                        \"type\": \"string\",\n                        \"description\": \"Expected rental yield for the property\"\n                      },\n                      \"absorption_rate\": {\n                        \"type\": \"string\",\n                        \"description\": \"Absorption rate of the property in the market\"\n                      },\n                      \"supply_status\": {\n                        \"type\": \"string\",\n                        \"description\": \"Current supply status of the property\"\n                      }\n                    }\n                  },\n                  \"market_perception\": {\n                    \"type\": \"string\",\n                    \"description\": \"How the market perceives the property\"\n                  }\n                }\n              },\n              \"marketing_strategy\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"focus_areas\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"Key focus areas for marketing the property\"\n                    }\n                  },\n                  \"tactics\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"Specific messaging tactics used in marketing\"\n                    }\n                  },\n                  \"target_segments\": {\n                    \"type\": \"array\",\n                    \"items\": {\n                      \"type\": \"string\",\n                      \"description\": \"Target segments for the marketing strategy\"\n                    }\n                  }\n                },\n                \"required\": [\"focus_areas\", \"tactics\", \"target_segments\"]\n              }\n            },\n            \"required\": [\n              \"overall_positioning\",\n              \"price_positioning_vs_competitors\",\n              \"target_segments\",\n              \"unique_selling_points\",\n              \"competitive_advantages\",\n              \"weaknesses_or_challenges\",\n              \"market_feedback\",\n              \"sales_and_rental_momentum\",\n              \"price_trend_comparison\",\n              \"marketing_strategy\"\n            ]\n          }\n        },\n        \"required\": [\"market_positioning\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        1104
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "AGENT FOCUSED INSIGHTS - USPs",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide a detailed list of **Unique Selling Propositions (USPs)** that agents can use for marketing and advisory purposes. Include:\\n\\n- Key differentiators of the project compared to nearby developments\\n- Unique architectural or design features\\n- Location advantages (connectivity, nearby amenities, schools, parks)\\n- Facilities and lifestyle offerings that stand out\\n- Target buyer/tenant segments attracted by these USPs\\n- Pricing advantages or value propositions\\n- Any awards, recognitions, or certifications\\n\\nUse sources such as developer brochures, URA, EdgeProp, PropertyGuru, real estate forums, and agent interviews. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"unique_selling_propositions\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"key_differentiators\": {\n                \"type\": \"array\",\n                \"description\": \"What makes this development stand out compared to nearby projects.\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"architectural_design_features\": {\n                \"type\": \"array\",\n                \"description\": \"Unique architectural or design elements of the building or unit layout.\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"location_advantages\": {\n                \"type\": \"array\",\n                \"description\": \"Geographical or connectivity-related benefits (e.g. MRT access, schools nearby, city proximity).\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"facilities_and_lifestyle\": {\n                \"type\": \"array\",\n                \"description\": \"Facilities, community features, or lifestyle offerings that go beyond standard expectations.\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"target_segments\": {\n                \"type\": \"array\",\n                \"description\": \"Specific buyer or tenant groups attracted by these USPs.\",\n                \"items\": {\n                  \"type\": \"string\",\n                  \"enum\": [\n                    \"young professionals\",\n                    \"families with children\",\n                    \"retirees\",\n                    \"expatriates\",\n                    \"HDB upgraders\",\n                    \"investors\",\n                    \"students\",\n                    \"multi-generational families\",\n                    \"foreign buyers\"\n                  ]\n                }\n              },\n              \"pricing_and_value_proposition\": {\n                \"type\": \"array\",\n                \"description\": \"How the development delivers value in terms of pricing, rental yield, or price growth potential.\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"awards_or_certifications\": {\n                \"type\": \"array\",\n                \"description\": \"Awards, sustainability certifications, or developer accolades relevant to the project.\",\n                \"items\": { \"type\": \"string\" }\n              }\n            },\n            \"required\": [\n              \"key_differentiators\",\n              \"location_advantages\",\n              \"facilities_and_lifestyle\",\n              \"target_segments\"\n            ]\n          }\n        },\n        \"required\": [\"unique_selling_propositions\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        1328
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "AGENT FOCUSED INSIGHTS - Marketing Angles",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide detailed **Marketing Angles** that real estate agents can use to position and promote the property effectively. Include:\\n\\n- Emotional appeals (e.g., family-friendly, luxury lifestyle, convenience)\\n- Functional benefits (e.g., proximity to MRT, schools, amenities)\\n- Investment potential narratives (e.g., expected appreciation, rental yield)\\n- Lifestyle themes (e.g., community vibe, green spaces, exclusive facilities)\\n- Unique offers or promotions by developer or agents\\n- Messaging tips for different target segments (families, singles, investors, expats)\\n\\nUse data from developer materials, market reports, agent forums, and marketing collateral. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"marketing_angles\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"emotional_appeals\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" },\n                \"description\": \"Emotional drivers and themes appealing to buyers.\"\n              },\n              \"functional_benefits\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" },\n                \"description\": \"Tangible benefits like location, transport, schools.\"\n              },\n              \"investment_potential_narratives\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" },\n                \"description\": \"Key points on expected capital growth, rental yield, demand.\"\n              },\n              \"lifestyle_themes\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" },\n                \"description\": \"Community vibe, green spaces, social and recreational facilities.\"\n              },\n              \"unique_offers_promotions\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" },\n                \"description\": \"Current promotions or special offers from developer or agents.\"\n              },\n              \"messaging_tips_for_segments\": {\n                \"type\": \"object\",\n                \"description\": \"Recommended messaging for different buyer/tenant segments.\",\n                \"properties\": {\n                  \"families\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\" }\n                  },\n                  \"singles\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\" }\n                  },\n                  \"investors\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\" }\n                  },\n                  \"expatriates\": {\n                    \"type\": \"array\",\n                    \"items\": { \"type\": \"string\" }\n                  }\n                }\n              },\n              \"functional_extras\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" },\n                \"description\": \"Additional functional features adding value.\"\n              }\n            },\n            \"required\": [\n              \"emotional_appeals\",\n              \"functional_benefits\",\n              \"investment_potential_narratives\",\n              \"lifestyle_themes\",\n              \"messaging_tips_for_segments\"\n            ]\n          }\n        },\n        \"required\": [\"marketing_angles\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        1536
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "KEY CONSIDERATIONS & ACTIONABLE ADVICE - Buyer",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide detailed **Key Considerations and Actionable Advice for Buyers** considering this project. Include:\\n\\n- Important factors buyers should evaluate (pricing, financing, location, future developments)\\n- Potential risks or pitfalls to watch out for\\n- Tips for negotiating price or terms\\n- Timing considerations (market cycles, project completion, upcoming infrastructure)\\n- Recommendations for financing and legal due diligence\\n- Advice on resale and rental potential\\n- Suggested buyer profiles who would benefit most\\n\\nUse data from market reports, expert opinions, agent interviews, and buyer feedback. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"key_considerations_actionable_advice_buyers\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"pricing_and_financing\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"location_and_connectivity\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"risks_and_pitfalls\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"timing_considerations\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"legal_and_due_diligence\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"resale_and_rental_potential\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"ideal_buyer_profiles\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              }\n            },\n            \"required\": [\n              \"pricing_and_financing\",\n              \"location_and_connectivity\",\n              \"risks_and_pitfalls\",\n              \"timing_considerations\",\n              \"legal_and_due_diligence\",\n              \"resale_and_rental_potential\",\n              \"ideal_buyer_profiles\"\n            ]\n          }\n        },\n        \"required\": [\"key_considerations_actionable_advice_buyers\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        1984
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "KEY CONSIDERATIONS & ACTIONABLE ADVICE - Seller",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide detailed **Key Considerations and Actionable Advice for Sellers** considering this project. Include:\\n\\n- Optimal timing to sell (market cycles, demand trends)\\n- Pricing strategies and negotiation tips\\n- Marketing approaches to maximize sale value\\n- Common challenges sellers face and how to overcome them\\n- Legal and financial considerations (e.g., taxes, stamp duties)\\n- Advice on preparing the property for sale (staging, repairs)\\n- Recommended seller profiles who would benefit most\\n\\nUse data from market reports, expert opinions, agent interviews, and seller feedback. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"key_considerations_actionable_advice_sellers\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"optimal_timing_to_sell\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"pricing_strategies_and_negotiation\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"marketing_approaches\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"common_challenges_and_solutions\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"legal_and_financial_considerations\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"preparing_property_for_sale\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"recommended_seller_profiles\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              }\n            },\n            \"required\": [\n              \"optimal_timing_to_sell\",\n              \"pricing_strategies_and_negotiation\",\n              \"marketing_approaches\",\n              \"common_challenges_and_solutions\",\n              \"legal_and_financial_considerations\",\n              \"preparing_property_for_sale\",\n              \"recommended_seller_profiles\"\n            ]\n          }\n        },\n        \"required\": [\"key_considerations_actionable_advice_sellers\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        2192
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "SWOT Analysis",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide a detailed and synthesized SWOT (Strengths, Weaknesses, Opportunities, Threats) analysis of the project. Include:\\n\\n- Strengths: Key advantages like location, facilities, developer reputation, pricing, design, and connectivity\\n- Weaknesses: Limitations or challenges such as pricing concerns, competition, accessibility issues, or management\\n- Opportunities: Market trends, upcoming infrastructure, demand drivers, or potential appreciation\\n- Threats: Risks such as competing projects, regulatory changes, market downturns, or oversupply\\n\\nBase your insights on data from URA, EdgeProp, PropertyGuru, market reports, developer materials, and expert commentary. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"swot_analysis\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"strengths\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"weaknesses\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"opportunities\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              },\n              \"threats\": {\n                \"type\": \"array\",\n                \"items\": { \"type\": \"string\" }\n              }\n            },\n            \"required\": [\n              \"strengths\",\n              \"weaknesses\",\n              \"opportunities\",\n              \"threats\"\n            ]\n          }\n        },\n        \"required\": [\"swot_analysis\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        1824,
+        1776
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "MARKET PERFORMANCE & FINANCIALS — Ownership Costs",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, return the **full ownership_costs** breakdown for **each unit type:**\\n\\n{{ $json.unitTypes.map(u => u.key).join(', ') }}.\\n\\nYou MUST return:\\n- A JSON object with key `ownership_costs`\\n- Each key in ownership_costs is a unit type (e.g. '1BR')\\n- Each unit type object MUST include EXACTLY these 5 sections:\\n  - `upfront_costs`\\n  - `financing_costs`\\n  - `recurring_costs`\\n  - `exit_costs`\\n  - `opportunity_costs`\\n\\nInside each section:\\n- Use **only the field names and types exactly as defined in the schema**.\\n- All fields are **required**. If any data is not available, set the value to `null`.\\n- Do NOT rename or omit any fields. Do NOT add any fields.\\n- Do NOT return explanations, markdown, units like \\\"$\\\" or \\\"approx.\\\", or placeholders like \\\"TBD\\\".\\n- Every `number` field must return a raw number. Every `boolean` field must return `true` or `false`.\\n- The output must be **pure JSON** — no extra comments, no formatting.\\n\\n⚠️ IMPORTANT:\\n- This will be parsed and validated by a strict JSON Schema validator.\\n- If you change field names, skip fields, or use incorrect data types (like strings instead of numbers), the response will be rejected. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"ownership_costs\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"unit_type\": { \"type\": \"string\" },\n\n                \"upfront_costs\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"bsd_amount\": { \"type\": \"number\" },\n                    \"absd_amount\": { \"type\": \"number\" },\n                    \"legal_fees\": { \"type\": \"number\" },\n                    \"option_fee\": { \"type\": \"number\" },\n                    \"valuation_fee\": { \"type\": \"number\" },\n                    \"mortgage_processing_fee\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\n                    \"bsd_amount\",\n                    \"absd_amount\",\n                    \"legal_fees\",\n                    \"option_fee\",\n                    \"valuation_fee\",\n                    \"mortgage_processing_fee\"\n                  ],\n                  \"additionalProperties\": false\n                },\n\n                \"financing_costs\": {\n                  \"type\": \"array\",\n                  \"items\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"bank_name\": { \"type\": \"string\" },\n                      \"interest_rate_percent\": { \"type\": \"number\" },\n                      \"loan_tenure_years\": { \"type\": \"number\" },\n                      \"ltv_ratio_percent\": { \"type\": \"number\" },\n                      \"monthly_repayment\": { \"type\": \"number\" },\n                      \"total_interest_paid\": { \"type\": \"number\" }\n                    },\n                    \"required\": [\n                      \"bank_name\",\n                      \"interest_rate_percent\",\n                      \"loan_tenure_years\",\n                      \"ltv_ratio_percent\",\n                      \"monthly_repayment\",\n                      \"total_interest_paid\"\n                    ],\n                    \"additionalProperties\": false\n                  }\n                },\n\n                \"recurring_costs\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"property_tax_annual\": { \"type\": \"number\" },\n                    \"mcst_maintenance_fee_monthly\": { \"type\": \"number\" },\n                    \"sinking_fund_monthly\": { \"type\": \"number\" },\n                    \"conservancy_charges_monthly\": { \"type\": \"number\" },\n                    \"home_insurance_annual\": { \"type\": \"number\" },\n                    \"utilities_estimate_monthly\": { \"type\": \"number\" },\n                    \"renovation_loan_details\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"amount\": { \"type\": \"number\" },\n                        \"interest_rate_percent\": { \"type\": \"number\" },\n                        \"tenure_years\": { \"type\": \"number\" }\n                      },\n                      \"required\": [\n                        \"amount\",\n                        \"interest_rate_percent\",\n                        \"tenure_years\"\n                      ],\n                      \"additionalProperties\": false\n                    }\n                  },\n                  \"required\": [\n                    \"property_tax_annual\",\n                    \"mcst_maintenance_fee_monthly\",\n                    \"sinking_fund_monthly\",\n                    \"conservancy_charges_monthly\",\n                    \"home_insurance_annual\",\n                    \"utilities_estimate_monthly\",\n                    \"renovation_loan_details\"\n                  ],\n                  \"additionalProperties\": false\n                },\n\n                \"exit_costs\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"ssd_applicable\": { \"type\": \"boolean\" },\n                    \"ssd_amount\": { \"type\": \"number\" },\n                    \"agent_commission_percent\": { \"type\": \"number\" },\n                    \"legal_fees_on_sale\": { \"type\": \"number\" },\n                    \"loan_prepayment_penalty\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\n                    \"ssd_applicable\",\n                    \"ssd_amount\",\n                    \"agent_commission_percent\",\n                    \"legal_fees_on_sale\",\n                    \"loan_prepayment_penalty\"\n                  ],\n                  \"additionalProperties\": false\n                },\n\n                \"opportunity_costs\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"cash_purchase_opportunity_cost\": { \"type\": \"number\" },\n                    \"renovation_depreciation_5yr\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\n                    \"cash_purchase_opportunity_cost\",\n                    \"renovation_depreciation_5yr\"\n                  ],\n                  \"additionalProperties\": false\n                }\n              },\n              \"required\": [\n                \"unit_type\",\n                \"upfront_costs\",\n                \"financing_costs\",\n                \"recurring_costs\",\n                \"exit_costs\",\n                \"opportunity_costs\"\n              ],\n              \"additionalProperties\": false\n            }\n          }\n        },\n        \"required\": [\"ownership_costs\"],\n        \"additionalProperties\": false\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        3408,
+        -1648
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "MARKET PERFORMANCE & FINANCIALS — Rental Market Analysis",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, provide a full **Rental Market Analysis for each unit type: {{ $json.unitTypes.map(u => u.key).join(', ') }} **. \\n\\nFor each unit type, include:\\n\\n**1. Historical Data:**\\n- Average rental PSF (monthly $/sqft)\\n- Median rent per month\\n- Annual rental growth over past 3–5 years (%)\\n- Occupancy rate (%)\\n\\n**2. Current Market Data:**\\n- Asking rent with floor/view premiums\\n- Rental range (min, median, max)\\n- Gross & Net rental yield (%)\\n- Maintenance fees (sinking fund + conservancy)\\n- Expected ROI for investors\\n- Vacancy rate (%)\\n- Average time on market (days)\\n- Break-even rental (landlord perspective)\\n\\n**3. Policy & Sentiment:**\\n- Minimum lease period (months)\\n- Tax implications for landlords\\n- Foreign worker policy impact\\n- Rental market sentiment\\n\\n**4. Rental Comparables (within 1–2KM):**\\n- Project name, TOP year, tenure, unit mix, rent PSF, yield, tenant demographics.\\n\\nUse URA, EdgeProp, PropertyGuru, SRX, OneMap, developer brochures, and reliable data sources.\\n\\nInside each section:\\n- Use **only the field names and types exactly as defined in the schema**.\\n- All fields are **required**. If any data is not available, set the value to `null`.\\n- Do NOT rename or omit any fields. Do NOT add any fields.\\n- Do NOT return explanations, markdown, units like \\\"$\\\" or \\\"approx.\\\", or placeholders like \\\"TBD\\\".\\n- Every `number` field must return a raw number. Every `boolean` field must return `true` or `false`.\\n- The output must be **pure JSON** — no extra comments, no formatting.\\n\\n⚠️ IMPORTANT:\\n- This will be parsed and validated by a strict JSON Schema validator.\\n- If you change field names, skip fields, or use incorrect data types (like strings instead of numbers), the response will be rejected. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"rental_market_analysis\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"unit_type\": { \"type\": \"string\" },\n                \"historical_data\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"average_rental_psf\": { \"type\": \"number\" },\n                    \"median_rent_monthly\": { \"type\": \"number\" },\n                    \"annual_rental_growth_percent\": { \"type\": \"number\" },\n                    \"occupancy_rate_percent\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\n                    \"average_rental_psf\",\n                    \"median_rent_monthly\",\n                    \"annual_rental_growth_percent\",\n                    \"occupancy_rate_percent\"\n                  ]\n                },\n                \"current_market_data\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"current_asking_rents\": {\n                      \"type\": \"array\",\n                      \"items\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"floor_level\": { \"type\": \"string\" },\n                          \"view_premium\": { \"type\": \"string\" },\n                          \"asking_rent\": { \"type\": \"number\" }\n                        },\n                        \"required\": [\"asking_rent\"]\n                      }\n                    },\n                    \"rental_range\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"min_rent\": { \"type\": \"number\" },\n                        \"median_rent\": { \"type\": \"number\" },\n                        \"max_rent\": { \"type\": \"number\" }\n                      },\n                      \"required\": [\"min_rent\", \"median_rent\", \"max_rent\"]\n                    },\n                    \"rental_yield\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"gross_yield_percent\": { \"type\": \"number\" },\n                        \"net_yield_percent\": { \"type\": \"number\" }\n                      },\n                      \"required\": [\"gross_yield_percent\", \"net_yield_percent\"]\n                    },\n                    \"maintenance_fees\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"sinking_fund\": { \"type\": \"number\" },\n                        \"conservancy_charges\": { \"type\": \"number\" }\n                      },\n                      \"required\": [\"sinking_fund\", \"conservancy_charges\"]\n                    },\n                    \"expected_roi_percent\": { \"type\": \"number\" },\n                    \"vacancy_data\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"vacancy_rate_percent\": { \"type\": \"number\" },\n                        \"average_time_on_market_days\": { \"type\": \"number\" }\n                      },\n                      \"required\": [\n                        \"vacancy_rate_percent\",\n                        \"average_time_on_market_days\"\n                      ]\n                    },\n                    \"break_even_rent\": { \"type\": \"number\" }\n                  },\n                  \"required\": [\n                    \"current_asking_rents\",\n                    \"rental_range\",\n                    \"rental_yield\",\n                    \"maintenance_fees\",\n                    \"expected_roi_percent\",\n                    \"vacancy_data\",\n                    \"break_even_rent\"\n                  ]\n                },\n                \"regulations_and_sentiment\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"minimum_lease_period_months\": { \"type\": \"number\" },\n                    \"tax_implications\": { \"type\": \"string\" },\n                    \"foreigner_policy_impact\": { \"type\": \"string\" },\n                    \"market_sentiment\": { \"type\": \"string\" }\n                  },\n                  \"required\": [\n                    \"minimum_lease_period_months\",\n                    \"tax_implications\",\n                    \"foreigner_policy_impact\",\n                    \"market_sentiment\"\n                  ]\n                },\n                \"rental_comparables\": {\n                  \"type\": \"array\",\n                  \"items\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                      \"project_name\": { \"type\": \"string\" },\n                      \"top_year\": { \"type\": \"number\" },\n                      \"tenure\": { \"type\": \"string\" },\n                      \"unit_mix\": { \"type\": \"string\" },\n                      \"average_rent_per_month\": { \"type\": \"number\" },\n                      \"average_rent_psf\": { \"type\": \"number\" },\n                      \"rental_yield_percent\": { \"type\": \"number\" },\n                      \"tenant_profile\": { \"type\": \"string\" }\n                    },\n                    \"required\": [\n                      \"project_name\",\n                      \"average_rent_per_month\",\n                      \"average_rent_psf\",\n                      \"top_year\",\n                      \"tenure\",\n                      \"unit_mix\",\n                      \"rental_yield_percent\",\n                      \"tenant_profile\"\n                    ]\n                  }\n                }\n              },\n              \"required\": [\n                \"unit_type\",\n                \"historical_data\",\n                \"current_market_data\",\n                \"regulations_and_sentiment\",\n                \"rental_comparables\"\n              ]\n            }\n          }\n        },\n        \"required\": [\"rental_market_analysis\"]\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        3408,
+        -1440
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "perplexityApi": {
+          "name": "Perplexity account"
+        }
+      },
+      "name": "MARKET PERFORMANCE & FINANCIALS — Sales Transactions & Pricing",
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "={\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a Singapore Real Estate research assistant. **STRICTLY use the location as SINGAPORE**. Current date is: {{ $now.format('yyyy-MM-dd') }}\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"For {{ $json.propertyName }} in Singapore, return **sales pricing and resale trends** data for **each unit type:**\\n\\n{{ $json.unitTypes.map(u => u.key).join(', ') }}.\\n\\nYou MUST return:\\n- A JSON object with key `sales_transactions_pricing`\\n- Inside it, a key `unit_types`, which must be an array\\n- Each item in `unit_types` is an object with the following fields:\\n  - `unit_type`\\n  - `market_performance_pricing`\\n    - `launch_price_psf`\\n    - `current_price_psf`\\n    - `peak_price_psf`\\n    - `resale_price_trends` (array of {date, price_psf})\\n  - `recent_transactions` (array of transactions with date, unit_type, floor_level, price, psf)\\n\\n⚠️ STRICT RULES:\\n- All fields are **required**\\n- Do NOT rename, skip, or add any fields\\n- Do NOT return markdown, explanations, or symbols like `$`\\n- All numbers must be raw\\n- Output must be **pure JSON only**, nothing else\\n\\nThis will be validated by a strict JSON Schema. Any deviation from the structure will be rejected. **STRICTLY use the location as SINGAPORE**. Any markdown code fences (e.g. ```json) are stripped. Structure your response **STRICTLY** to match the JSON in response_format.\"\n    }\n  ],\n  \"web_search_options\": {\n    \"search_context_size\": \"high\",\n    \"user_location\": {\n      \"country\": \"SG\"\n    }\n  },\n  \"response_format\": {\n    \"type\": \"json_schema\",\n    \"json_schema\": {\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"sales_transactions_pricing\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"unit_types\": {\n                \"type\": \"array\",\n                \"items\": {\n                  \"type\": \"object\",\n                  \"properties\": {\n                    \"unit_type\": { \"type\": \"string\" },\n                    \"market_performance_pricing\": {\n                      \"type\": \"object\",\n                      \"properties\": {\n                        \"launch_price_psf\": { \"type\": \"number\" },\n                        \"current_price_psf\": { \"type\": \"number\" },\n                        \"peak_price_psf\": { \"type\": \"number\" },\n                        \"resale_price_trends\": {\n                          \"type\": \"array\",\n                          \"items\": {\n                            \"type\": \"object\",\n                            \"properties\": {\n                              \"date\": { \"type\": \"string\" },\n                              \"price_psf\": { \"type\": \"number\" }\n                            },\n                            \"required\": [\"date\", \"price_psf\"],\n                            \"additionalProperties\": false\n                          }\n                        }\n                      },\n                      \"required\": [\n                        \"launch_price_psf\",\n                        \"current_price_psf\",\n                        \"peak_price_psf\",\n                        \"resale_price_trends\"\n                      ],\n                      \"additionalProperties\": false\n                    },\n                    \"recent_transactions\": {\n                      \"type\": \"array\",\n                      \"items\": {\n                        \"type\": \"object\",\n                        \"properties\": {\n                          \"date\": { \"type\": \"string\" },\n                          \"unit_type\": { \"type\": \"string\" },\n                          \"floor_level\": { \"type\": \"string\" },\n                          \"price\": { \"type\": \"number\" },\n                          \"psf\": { \"type\": \"number\" }\n                        },\n                        \"required\": [\n                          \"date\",\n                          \"unit_type\",\n                          \"floor_level\",\n                          \"price\",\n                          \"psf\"\n                        ],\n                        \"additionalProperties\": false\n                      }\n                    }\n                  },\n                  \"required\": [\n                    \"unit_type\",\n                    \"market_performance_pricing\",\n                    \"recent_transactions\"\n                  ],\n                  \"additionalProperties\": false\n                }\n              }\n            },\n            \"required\": [\"unit_types\"],\n            \"additionalProperties\": false\n          }\n        },\n        \"required\": [\"sales_transactions_pricing\"],\n        \"additionalProperties\": false\n      }\n    }\n  }\n}\n"
+            }
+          ]
+        },
+        "model": "sonar-pro",
+        "options": {},
+        "requestOptions": {}
+      },
+      "position": [
+        3408,
+        -1232
+      ],
+      "type": "n8n-nodes-base.perplexity",
+      "typeVersion": 1
+    }
+  ],
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-07-24T17:49:53.323Z",
+      "projectId": "wgKH4mLK7D585smm",
+      "role": "workflow:owner",
+      "updatedAt": "2025-07-24T17:49:53.323Z",
+      "workflowId": "yNpg5tcBG6NxcID9"
+    }
+  ],
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2025-07-24T17:49:51.579Z",
+      "name": "v6",
+      "updatedAt": "2025-07-24T17:49:51.579Z"
+    },
+    {
+      "createdAt": "2025-09-20T05:26:28.203Z",
+      "name": "production",
+      "updatedAt": "2025-09-20T05:26:28.203Z"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2025-09-20T06:38:43.000Z",
+  "versionId": "392cc29b-c1ae-42dc-bcf1-dac6cde5f72b"
+}
